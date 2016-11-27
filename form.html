@@ -13,21 +13,24 @@
   </head>
   <body class="page-inner">
     <header class="header-main">
-      <h1 class="header-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-      <div class="header-main__logo">
-        <img src="img/logo.svg" width="75" height="22" alt="Логотип">
+      <div class="header-main__top">
+        <a href="index.html" class="header-main__logo">
+          <img src="img/logo.svg" width="75" height="22" alt="Логотип">
+        </a>
+        <nav class="nav-main  nav-main--closed  nav-main--nojs">
+          <button class="nav-main__toggle" type="button">Открыть меню</button>
+          <div class="nav-main__container">
+            <ul class="nav-main__list">
+              <li class="nav-main__item">Главная<a href="index.html" class="nav-main__link"></a></li>
+              <li class="nav-main__item">Фотографии<a href="foto.html" class="nav-main__link"></a></li>
+              <li class="nav-main__item">Конкурс<a class="nav-main__link  nav-main__item--active"></a></li>
+              <li class="nav-main__item">Html Academy<a href="https://htmlacademy.ru/" class="nav-main__link"></a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="nav-main  nav-main--closed  nav-main--nojs">
-        <button class="nav-main__toggle" type="button">Открыть меню</button>
-        <div class="nav-main__container">
-          <ul class="nav-main__list">
-            <li class="nav-main__item">Главная<a href="index.html" class="nav-main__link"></a></li>
-            <li class="nav-main__item">Фотографии<a href="foto.html" class="nav-main__link"></a></li>
-            <li class="nav-main__item">Конкурс<a class="nav-main__link  nav-main__item--active"></a></li>
-            <li class="nav-main__item">Html Academy<a href="https://htmlacademy.ru/" class="nav-main__link"></a></li>
-          </ul>
-        </div>
-      </nav>
+      <h1 class="header-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+
     </header>
     <main class="content">
       <div class="form">
@@ -80,10 +83,7 @@
             <textarea class="form__input  form__input--text" rows="10" cols="45" name="message" id="message-field" value="Можно прям в красках, не стесняясь в выражениях" placeholder="Можно прям в красках, не стесняясь в выражениях" maxlength="300"></textarea>
           </fieldset>
           <button class="btn  btn--green  btn--block" type="submit">Показать</button>
-          <div class="required">
-            <sup>*</sup>
-            <span>&mdash; обязательные поля</span>
-          </div>
+          <small class="required"><sup>*</sup>&mdash; обязательные поля</small>
         </form>
       </div>
     </main>
