@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header-main">
-      <h1 class="visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
+      <h1 class="header-main__title  visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
       <div class="header-main__logo">
         <img src="img/logo.svg" width="75" height="22" alt="Логотип">
       </div>
@@ -29,155 +29,157 @@
         </div>
       </nav>
     </header>
-    <section class="download">
-      <div class="download__container">
-        <h2 class="download__title  visually-hidden">Загрузите наше приложение. Приложение доступно для разных платформ</h2>
-        <a href="#" class="btn">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">Приложение для Apple
-            <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
+    <main class="content">
+      <section class="download">
+        <div class="download__container">
+          <h2 class="download__title  visually-hidden">Загрузите наше приложение. Приложение доступно для разных платформ</h2>
+          <a href="#" class="btn">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">Приложение для Apple
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
+            </li>
+            <li class="download__item">Приложение для Android
+              <img src="img/android-logo.svg" width="43" height="47" alt="Android">
+            </li>
+            <li class="download__item">Приложение для Windows
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Windows">
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="promo">
+        <header class="promo__header">
+          <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
+          <div class="promo__heading">Устали от серости мегаполиса?</div>
+          <div class="promo__heading">Нам есть, что вам  предложить!</div>
+        </header>
+        <ul class="promo__list">
+          <li class="promo__item">Поднимает настроение
+            <p>
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
           </li>
-          <li class="download__item">Приложение для Android
-            <img src="img/android-logo.svg" width="43" height="47" alt="Android">
+          <li class="promo__item">Меняет мир вокруг
+            <p>
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
           </li>
-          <li class="download__item">Приложение для Windows
-            <img src="img/microsoft-logo.svg" width="44" height="41" alt="Windows">
+          <li class="promo__item">Заводит новых друзей
+            <p>
+              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            </p>
           </li>
         </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
-    <section class="promo">
-      <header class="promo__header">
-        <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
-        <div class="promo__heading">Устали от серости мегаполиса?</div>
-        <div class="promo__heading">Нам есть, что вам  предложить!</div>
-      </header>
-      <ul class="promo__list">
-        <li class="promo__item">Поднимает настроение
-          <p>
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </li>
-        <li class="promo__item">Меняет мир вокруг
-          <p>
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
-        </li>
-        <li class="promo__item">Заводит новых друзей
-          <p>
-            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <div class="reviews__container  slider">
-        <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-        <div class="reviews__list">
-          <blockquote class="reviews__item  slider__item  slider__item--1">
-            <cite class="reviews__author">Николай Петров</cite>
-            <p><q>
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-            </q></p>
-          </blockquote>
-          <blockquote class="reviews__item  slider__item  slider__item--2">
-            <cite class="reviews__author">Иван Демидов</cite>
-            <p><q>
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-            </q></p>
-          </blockquote>
-          <blockquote class="reviews__item  slider__item  slider__item--3">
-            <cite class="reviews__author">Владимир Серцов</cite>
-            <p><q>
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-            </q></p>
-          </blockquote>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container  slider">
+          <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <div class="reviews__list">
+            <blockquote class="reviews__item  slider__item  slider__item--1">
+              <cite class="reviews__author">Николай Петров</cite>
+              <p><q>
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              </q></p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item  slider__item--2">
+              <cite class="reviews__author">Иван Демидов</cite>
+              <p><q>
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              </q></p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item  slider__item--3">
+              <cite class="reviews__author">Владимир Серцов</cite>
+              <p><q>
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              </q></p>
+            </blockquote>
+          </div>
+          <div class="reviews__toggles  slider__toggles">
+            <label class="slider__toggle" for="reviews-input-1">1</label>
+            <label class="slider__toggle" for="reviews-input-2">2</label>
+            <label class="slider__toggle" for="reviews-input-3">3</label>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer__container  slider">
+          <h2 class="offer__title  visually-hidden">Наше ценовое предложение</h2>
+          <input class="slider__input" type="radio" name="offer" id="offer-input-1">
+          <input class="slider__input" type="radio" name="offer" id="offer-input-2" checked>
+          <input class="slider__input" type="radio" name="offer" id="offer-input-3">
+        </div>
+        <div class="offer__list">
+          <div class="offer__item  slider__item  slider__item--1">
+            <header class="offer__header">
+              <h3 class="offer__heading">База</h3>
+              <div class="offer__price">1,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point  offer__point--disabled">Смайлики</div>
+              <div class="offer__point  offer__point--disabled">Комментарии</div>
+            </div>
+          </div>
+          <div class="offer__item  slider__item  slider__item--2">
+            <header class="offer__header">
+              <div class="flag  flag--new">Выгодное предложение</div>
+              <h3 class="offer__heading">Анлим</h3>
+              <div class="offer__price">9,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point">Смайлики</div>
+              <div class="offer__point">Комментарии</div>
+            </div>
+          </div>
+          <div class="offer__item  slider__item  slider__item--3">
+            <header class="offer__header">
+              <h3 class="offer__heading">Стандарт</h3>
+              <div class="offer__price">3,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point">Смайлики</div>
+              <div class="offer__point  offer__point--disabled">Комментарии</div>
+            </div>
+          </div>
         </div>
         <div class="reviews__toggles  slider__toggles">
-          <label class="slider__toggle" for="reviews-input-1">1</label>
-          <label class="slider__toggle" for="reviews-input-2">2</label>
-          <label class="slider__toggle" for="reviews-input-3">3</label>
+          <label class="slider__toggle" for="offer-input-1">1</label>
+          <label class="slider__toggle" for="offer-input-2">2</label>
+          <label class="slider__toggle" for="offer-input-3">3</label>
         </div>
-      </div>
-    </section>
-    <section class="offer">
-      <div class="offer__container  slider">
-        <h2 class="offer__title  visually-hidden">Наше ценовое предложение</h2>
-        <input class="slider__input" type="radio" name="offer" id="offer-input-1">
-        <input class="slider__input" type="radio" name="offer" id="offer-input-2" checked>
-        <input class="slider__input" type="radio" name="offer" id="offer-input-3">
-      </div>
-      <div class="offer__list">
-        <div class="offer__item  slider__item  slider__item--1">
-          <header class="offer__header">
-            <h3 class="offer__heading">База</h3>
-            <div class="offer__price">1,99 usd</div>
-          </header>
-          <div class="offer__content">
-            <div class="offer__point">Розовый фильтр</div>
-            <div class="offer__point  offer__point--disabled">Смайлики</div>
-            <div class="offer__point  offer__point--disabled">Комментарии</div>
+      </section>
+      <section class="contacts">
+        <header class="contacts__header">
+          <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
+          <div class="contacts__heading">Остались вопросы?</div>
+          <div class="contacts__heading">Свяжитесь с нами</div>
+        </header>
+        <div class="contacts__list">
+          <div class="contact__phone">
+            <div class="contact__phone-title">Звоните:</div>
+            <a href="tel:+78125556666" class="contact__phone-link">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contact__mail">
+            <div class="contact__mail-title">Пишите:</div>
+            <a href="mailto:mail@htmlacademy.ru" class="contact__mail-link">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contact__address">
+            <div class="contact__address-title">Звоните:</div>
+            <div class="contact__address-text">ул. Большая Конюшенная, 19/8 </div>
           </div>
         </div>
-        <div class="offer__item  slider__item  slider__item--2">
-          <header class="offer__header">
-            <div class="flag  flag--new">Выгодное предложение</div>
-            <h3 class="offer__heading">Анлим</h3>
-            <div class="offer__price">9,99 usd</div>
-          </header>
-          <div class="offer__content">
-            <div class="offer__point">Розовый фильтр</div>
-            <div class="offer__point">Смайлики</div>
-            <div class="offer__point">Комментарии</div>
-          </div>
-        </div>
-        <div class="offer__item  slider__item  slider__item--3">
-          <header class="offer__header">
-            <h3 class="offer__heading">Стандарт</h3>
-            <div class="offer__price">3,99 usd</div>
-          </header>
-          <div class="offer__content">
-            <div class="offer__point">Розовый фильтр</div>
-            <div class="offer__point">Смайлики</div>
-            <div class="offer__point  offer__point--disabled">Комментарии</div>
-          </div>
-        </div>
-      </div>
-      <div class="reviews__toggles  slider__toggles">
-        <label class="slider__toggle" for="offer-input-1">1</label>
-        <label class="slider__toggle" for="offer-input-2">2</label>
-        <label class="slider__toggle" for="offer-input-3">3</label>
-      </div>
-    </section>
-    <section class="contacts">
-      <header class="contacts__header">
-        <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
-        <div class="contacts__heading">Остались вопросы?</div>
-        <div class="contacts__heading">Свяжитесь с нами</div>
-      </header>
-      <div class="contacts__list">
-        <div class="contact__phone">
-          <div class="contact__phone-title">Звоните:</div>
-          <a href="tel:+78125556666" class="contact__phone-link">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contact__mail">
-          <div class="contact__mail-title">Пишите:</div>
-          <a href="mailto:mail@htmlacademy.ru" class="contact__mail-link">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contact__address">
-          <div class="contact__address-title">Звоните:</div>
-          <div class="contact__address-text">ул. Большая Конюшенная, 19/8 </div>
-        </div>
-      </div>
-    </section>
-    <section class="map">
-      <h2 class="map__title  visually-hidden">Наше расположение на карте:</h2>
-      <div class="map-container" id="map"></div>
-    </section>
+      </section>
+      <section class="map">
+        <h2 class="map__title  visually-hidden">Наше расположение на карте:</h2>
+        <div class="map-container" id="map"></div>
+      </section>
+    </main>
 
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
     <!-- <script src="js/script.min.js"></script> -->
