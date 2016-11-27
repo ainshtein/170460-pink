@@ -12,6 +12,95 @@
     <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   </head>
   <body class="page-inner">
+    <header class="header-main">
+      <h1 class="header-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <div class="header-main__logo">
+        <img src="img/logo.svg" width="75" height="22" alt="Логотип">
+      </div>
+      <nav class="nav-main  nav-main--closed  nav-main--nojs">
+        <button class="nav-main__toggle" type="button">Открыть меню</button>
+        <div class="nav-main__container">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">Главная<a href="index.html" class="nav-main__link"></a></li>
+            <li class="nav-main__item">Фотографии<a href="foto.html" class="nav-main__link"></a></li>
+            <li class="nav-main__item">Конкурс<a class="nav-main__link  nav-main__item--active"></a></li>
+            <li class="nav-main__item">Html Academy<a href="https://htmlacademy.ru/" class="nav-main__link"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="form">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </div>
+          <fieldset class="form__group">
+            <legend class="form__heading  visually-hidden">Укажите свою фамилию, имя и отчество</legend>
+            <label for="surname-field" class="form__label">Фамилия:</label>
+            <input type="text" class="form__input" name="surname" id="surname-field" value="Укажите фамилию" maxlength="30">
+            <label for="name-field" class="form__label">Имя:</label>
+            <input type="text" class="form__input" name="name" id="name-field" value="Укажите ваше имя" maxlength="30">
+            <label for="middle-name-field" class="form__label">Отчество:</label>
+            <input type="text" class="form__input" name="middle-name" id="middle-name-field" value="Ну и отчество тоже" maxlength="30">
+          </fieldset>
+          <fieldset class="form__group  form__group--dark">
+            <legend class="form__heading">Ваши безбашенные достижения в путешествии</legend>
+            <input class="form__checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
+            <label class="form__label" for="selfie-field">Сделал селфи с акулой</label>
+            <input class="form__checkbox" type="checkbox" name="beach" id="beach-field" checked>
+            <label class="form__label" for="beach-field">Обгорел на пляже</label>
+            <input class="form__checkbox" type="checkbox" name="CHUCK-NORRIS" id="CHUCK-NORRIS-field">
+            <label class="form__label" for="CHUCK-NORRIS-field">Видел Чака Норриса</label>
+            <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+            <label class="form__label" for="souvenir-field">Накупил сувениров</label>
+            <input class="form__checkbox" type="checkbox" name="tower" id="tower-field" checked>
+            <label class="form__label" for="tower-field">Удержал башню</label>
+            <input class="form__checkbox" type="checkbox" name="hotel" id="hotel-field">
+            <label class="form__label" for="hotel-field">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__heading  visually-hidden">Укажите свои координаты</legend>
+            <label for="phone-field" class="form__label">Номер телефона</label>
+            <input type="text" class="form__input" name="phone" id="phone-field" value="Номер, пожалуйста" maxlength="30">
+            <label for="email-field" class="form__label">Адресок почты</label>
+            <input type="text" class="form__input" name="email" id="email-field" value="Введите почту" maxlength="30">
+          </fieldset>
+          <fieldset class="form__group  form__group--dark">
+            <legend class="form__heading">С каким приложением путешествовали</legend>
+            <input class="form__radio" type="radio" name="system" id="ios-field" value="ios" checked>
+            <label class="form__label" for="ios-field">Pink для iOS</label>
+            <input class="form__radio" type="radio" name="system" id="android-field" value="android">
+            <label class="form__label" for="android-field">Pink для Android</label>
+            <input class="form__radio" type="radio" name="system" id="windows-field" value="windows">
+            <label class="form__label" for="windows-field">Pink для Windows</label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__heading">Опишите свои эмоции</legend>
+            <textarea class="form__input  form__input--text" rows="10" cols="45" name="message" id="message-field" value="Можно прям в красках, не стесняясь в выражениях" placeholder="Можно прям в красках, не стесняясь в выражениях" maxlength="300"></textarea>
+          </fieldset>
+          <button class="btn  btn--green  btn--block" type="submit">Показать</button>
+          <div class="required">
+            <sup>*</sup>
+            <span>&mdash; обязательные поля</span>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer-main">
+      <div class="footer-main__logo">
+        <img src="img/logotype-blue-tablet.svg" width="147" height="40" alt="Логотип">
+      </div>
+      <div class="footer-main__socials">
+        <a href="img/twitter.svg" class="social-link  social-link--tw">Твитер</a>
+        <a href="img/facebook.svg" class="social-link  social-link--fb">Фейсбук</a>
+        <a href="img/youtube.svg" class="social-link  social-link--yt">Ютуб</a>
+      </div>
+      <div class="footer-main__copy">
+        <span>Разработано</span>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Копирайт">
+      </div>
+    </footer>
 
 
 
