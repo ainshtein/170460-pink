@@ -40,11 +40,11 @@
           <fieldset class="form__group">
             <legend class="form__heading  visually-hidden">Укажите свою фамилию, имя и отчество</legend>
             <label for="surname-field" class="form__label">Фамилия:</label>
-            <input type="text" class="form__input" name="surname" id="surname-field" value="Укажите фамилию" maxlength="30">
+            <input type="text" class="form__input" name="surname" id="surname-field" placeholder="Укажите фамилию" maxlength="30">
             <label for="name-field" class="form__label">Имя:</label>
-            <input type="text" class="form__input" name="name" id="name-field" value="Укажите ваше имя" maxlength="30">
+            <input type="text" class="form__input" name="name" id="name-field" placeholder="Укажите ваше имя" maxlength="30">
             <label for="middle-name-field" class="form__label">Отчество:</label>
-            <input type="text" class="form__input" name="middle-name" id="middle-name-field" value="Ну и отчество тоже" maxlength="30">
+            <input type="text" class="form__input" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже" maxlength="30">
           </fieldset>
           <fieldset class="form__group  form__group--dark">
             <legend class="form__heading">Ваши безбашенные достижения в путешествии</legend>
@@ -64,9 +64,9 @@
           <fieldset class="form__group">
             <legend class="form__heading  visually-hidden">Укажите свои координаты</legend>
             <label for="phone-field" class="form__label">Номер телефона</label>
-            <input type="text" class="form__input" name="phone" id="phone-field" value="Номер, пожалуйста" maxlength="30">
+            <input type="text" class="form__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" maxlength="30">
             <label for="email-field" class="form__label">Адресок почты</label>
-            <input type="text" class="form__input" name="email" id="email-field" value="Введите почту" maxlength="30">
+            <input type="text" class="form__input" name="email" id="email-field" placeholder="Введите почту" maxlength="30">
           </fieldset>
           <fieldset class="form__group  form__group--dark">
             <legend class="form__heading">С каким приложением путешествовали</legend>
@@ -81,7 +81,7 @@
             <legend class="form__heading">Опишите свои эмоции</legend>
             <textarea class="form__input  form__input--text" rows="10" cols="45" name="message" id="message-field" value="Можно прям в красках, не стесняясь в выражениях" placeholder="Можно прям в красках, не стесняясь в выражениях" maxlength="300"></textarea>
           </fieldset>
-          <button class="btn  btn--green  btn--block" type="submit">Показать</button>
+          <button class="btn  btn--green  btn--block" type="submit">Отправить форму</button>
           <small class="required"><sup>*</sup>&mdash; обязательные поля</small>
         </form>
       </div>
@@ -100,8 +100,28 @@
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Копирайт">
       </div>
     </footer>
-
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+    <div class="modal-send" id="modal-send-form">
+      <div class="modal-send__top">
+        <strong class="modal-send__title">Ваша заявка отправлена</strong>
+        <p class="modal-send__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+      <div class="modal-send__bottom">
+        <button class="btn  btn--green  btn--block" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal-failure" id="modal-failure-form">
+      <div class="modal-failure__top">
+        <strong class="modal-failure__title">Что-то пошло не так!</strong>
+        <p class="modal-failure__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
+      <div class="modal-failure__bottom">
+        <button class="btn  btn--green  btn--block" type="button">Ок</button>
+      </div>
+    </div>
     <!-- <script src="js/script.min.js"></script> -->
   </body>
 
