@@ -15,7 +15,7 @@
     <header class="header-main">
       <h1 class="header-main__title  visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
       <div class="header-main__top">
-        <div class="header-main__logo">
+        <div class="logo  header-main__logo">
           <img src="img/logo.svg" width="75" height="22" alt="Логотип">
         </div>
         <nav class="nav-main  nav-main--closed  nav-main--nojs">
@@ -33,8 +33,8 @@
     </header>
     <main class="content">
       <section class="download">
+        <h2 class="download__title  visually-hidden">Загрузите наше приложение. Приложение доступно для разных платформ</h2>
         <div class="download__container">
-          <h2 class="download__title  visually-hidden">Загрузите наше приложение. Приложение доступно для разных платформ</h2>
           <a href="#" class="btn">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">Приложение для Apple
@@ -51,10 +51,10 @@
         </div>
       </section>
       <section class="promo">
+        <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
         <header class="promo__header">
-          <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
-          <div class="promo__heading">Устали от серости мегаполиса?</div>
-          <div class="promo__heading">Нам есть, что вам  предложить!</div>
+          <b class="promo__heading">Устали от серости мегаполиса?</b>
+          <b class="promo__heading">Нам есть, что вам  предложить!</b>
         </header>
         <ul class="promo__list">
           <li class="promo__item">Поднимает настроение
@@ -75,29 +75,29 @@
         </ul>
       </section>
       <section class="reviews">
+        <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
         <div class="reviews__container  slider">
-          <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
           <div class="reviews__list">
             <blockquote class="reviews__item  slider__item  slider__item--1">
               <cite class="reviews__author">Николай Петров</cite>
-              <p><q>
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </q></p>
+              <p>
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
             </blockquote>
             <blockquote class="reviews__item  slider__item  slider__item--2">
               <cite class="reviews__author">Иван Демидов</cite>
-              <p><q>
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </q></p>
+              <p>
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
             </blockquote>
             <blockquote class="reviews__item  slider__item  slider__item--3">
               <cite class="reviews__author">Владимир Серцов</cite>
-              <p><q>
+              <p>
                 Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </q></p>
+              </p>
             </blockquote>
           </div>
           <div class="reviews__toggles  slider__toggles">
@@ -108,14 +108,34 @@
         </div>
       </section>
       <section class="offer">
+        <h2 class="offer__title  visually-hidden">Наше ценовое предложение</h2>
         <div class="offer__container  slider">
-          <h2 class="offer__title  visually-hidden">Наше ценовое предложение</h2>
           <input class="slider__input" type="radio" name="offer" id="offer-input-1">
           <input class="slider__input" type="radio" name="offer" id="offer-input-2" checked>
           <input class="slider__input" type="radio" name="offer" id="offer-input-3">
         </div>
         <div class="offer__list">
-          <div class="offer__item  slider__item  slider__item--1">
+          <table class="offer__item  slider__item  slider__item--1">
+            <th class="offer__heading">
+              <td colspan="2">
+                <h3 class="offer__heading">База</h3>
+                <span class="offer__price">1,99 usd</span>
+              </td>
+            </th>
+            <tr>
+              <td class="offer__option">Розовый фильтр</td>
+              <td class="offer__option-status">Входит в пакет</td>
+            </tr>
+            <tr>
+              <td class="offer__option">Смайлики</td>
+              <td class="offer__option-status">Входят в пакет</td>
+            </tr>
+            <tr>
+              <td class="offer__option">Комментарии</td>
+              <td class="offer__option-status">Не входят в пакет</td>
+            </tr>
+          </table>
+          <!-- <div class="offer__item  slider__item  slider__item--1">
             <header class="offer__header">
               <h3 class="offer__heading">База</h3>
               <div class="offer__price">1,99 usd</div>
@@ -125,7 +145,7 @@
               <div class="offer__point  offer__point--disabled">Смайлики</div>
               <div class="offer__point  offer__point--disabled">Комментарии</div>
             </div>
-          </div>
+          </div> -->
           <div class="offer__item  slider__item  slider__item--2">
             <header class="offer__header">
               <div class="flag  flag--new">Выгодное предложение</div>
@@ -157,8 +177,8 @@
         </div>
       </section>
       <section class="contacts">
+        <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
         <header class="contacts__header">
-          <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
           <div class="contacts__heading">Остались вопросы?</div>
           <div class="contacts__heading">Свяжитесь с нами</div>
         </header>
@@ -178,7 +198,7 @@
         </div>
       </section>
       <section class="map">
-        <h2 class="map__title  visually-hidden">Наше расположение на карте:</h2>
+        <h2 class="map__title  visually-hidden">Наше расположение на карте</h2>
         <div class="map-container" id="map"></div>
       </section>
     </main>
