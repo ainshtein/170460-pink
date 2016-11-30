@@ -2,11 +2,201 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>PINK - Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=1220">  -->
+    <meta name="keywords" content="разные, ключевые, слова">
+    <meta name="description" content="краткое описание сайта">
+    <meta name="author" content="ainshtein">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+  <body class="page">
+    <header class="header-main">
+      <h1 class="header-main__title  visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
+      <div class="header-main__top">
+        <div class="logo">
+          <img src="img/logo.svg" width="75" height="22" alt="Логотип">
+        </div>
+        <nav class="nav-main  nav-main--closed  nav-main--nojs">
+          <button class="nav-main__toggle" type="button">Открыть меню</button>
+          <div class="nav-main__container">
+            <ul class="nav-main__list">
+              <li class="nav-main__item  nav-main__item--active"><a class="nav-main__link">Главная</a></li>
+              <li class="nav-main__item"><a href="foto.html" class="nav-main__link">Фотографии</a></li>
+              <li class="nav-main__item"><a href="form.html" class="nav-main__link">Конкурс</a></li>
+              <li class="nav-main__item"><a href="https://htmlacademy.ru/" class="nav-main__link">Html Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <section class="download">
+        <h2 class="download__title  visually-hidden">Загрузите наше приложение. Приложение доступно для разных платформ</h2>
+        <div class="download__container">
+          <a href="#" class="btn">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">Приложение для Apple
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
+            </li>
+            <li class="download__item">Приложение для Android
+              <img src="img/android-logo.svg" width="43" height="47" alt="Android">
+            </li>
+            <li class="download__item">Приложение для Windows
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Windows">
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="promo">
+        <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
+        <div class="promo__heading">
+          <b class="heading">Устали от серости мегаполиса?</b>
+          <b class="heading">Нам есть, что вам  предложить!</b>
+        </div>
+        <ul class="promo__list">
+          <li class="promo__item">Поднимает настроение
+            <p>
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="promo__item">Меняет мир вокруг
+            <p>
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="promo__item">Заводит новых друзей
+            <p>
+              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__container  slider">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <div class="reviews__list">
+            <blockquote class="reviews__item  slider__item  slider__item--1">
+              <cite class="reviews__author">Николай Петров</cite>
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+            </blockquote>
+            <blockquote class="reviews__item  slider__item  slider__item--2">
+              <cite class="reviews__author">Иван Демидов</cite>
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+            </blockquote>
+            <blockquote class="reviews__item  slider__item  slider__item--3">
+              <cite class="reviews__author">Владимир Серцов</cite>
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </blockquote>
+          </div>
+          <div class="reviews__toggles  slider__toggles">
+            <label class="slider__toggle" for="reviews-input-1">1</label>
+            <label class="slider__toggle" for="reviews-input-2">2</label>
+            <label class="slider__toggle" for="reviews-input-3">3</label>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <h2 class="offer__title  visually-hidden">Наше ценовое предложение</h2>
+        <div class="offer__container  slider">
+          <input class="slider__input" type="radio" name="offer" id="offer-input-1">
+          <input class="slider__input" type="radio" name="offer" id="offer-input-2" checked>
+          <input class="slider__input" type="radio" name="offer" id="offer-input-3">
+        </div>
+        <div class="offer__list">
+          <table class="offer__item  slider__item  slider__item--1">
+            <tr class="offer__heading">
+              <th colspan="2">
+                <h3 class="offer__heading">База</h3>
+                <span class="offer__price">1,99 usd</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="offer__option">Розовый фильтр</td>
+              <td class="offer__option-status">Входит в пакет</td>
+            </tr>
+            <tr>
+              <td class="offer__option">Смайлики</td>
+              <td class="offer__option-status">Входят в пакет</td>
+            </tr>
+            <tr>
+              <td class="offer__option">Комментарии</td>
+              <td class="offer__option-status">Не входят в пакет</td>
+            </tr>
+          </table>
+          <!-- <div class="offer__item  slider__item  slider__item--1">
+            <header class="offer__header">
+              <h3 class="offer__heading">База</h3>
+              <div class="offer__price">1,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point  offer__point--disabled">Смайлики</div>
+              <div class="offer__point  offer__point--disabled">Комментарии</div>
+            </div>
+          </div> -->
+          <div class="offer__item  slider__item  slider__item--2">
+            <header class="offer__header">
+              <div class="flag  flag--new">Выгодное предложение</div>
+              <h3 class="offer__heading">Анлим</h3>
+              <div class="offer__price">9,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point">Смайлики</div>
+              <div class="offer__point">Комментарии</div>
+            </div>
+          </div>
+          <div class="offer__item  slider__item  slider__item--3">
+            <header class="offer__header">
+              <h3 class="offer__heading">Стандарт</h3>
+              <div class="offer__price">3,99 usd</div>
+            </header>
+            <div class="offer__content">
+              <div class="offer__point">Розовый фильтр</div>
+              <div class="offer__point">Смайлики</div>
+              <div class="offer__point  offer__point--disabled">Комментарии</div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__toggles  slider__toggles">
+          <label class="slider__toggle" for="offer-input-1">1</label>
+          <label class="slider__toggle" for="offer-input-2">2</label>
+          <label class="slider__toggle" for="offer-input-3">3</label>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
+        <div class="contacts__heading">
+          <b class="heading">Остались вопросы?</div>
+          <b class="heading">Свяжитесь с нами</div>
+        </div>
+        <div class="contacts__list">
+          <div class="contact__phone">
+            <div class="contact__phone-title">Звоните:</div>
+            <a href="tel:+78125556666" class="contact__phone-link">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contact__mail">
+            <div class="contact__mail-title">Пишите:</div>
+            <a href="mailto:mail@htmlacademy.ru" class="contact__mail-link">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contact__address">
+            <div class="contact__address-title">Приезжайте в гости:</div>
+            <div class="contact__address-text">ул. Большая Конюшенная, 19/8 </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="map__title  visually-hidden">Наше расположение на карте</h2>
+        <div class="map-container" id="map"></div>
+      </section>
+    </main>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+    <!-- <script src="js/script.min.js"></script> -->
   </body>
 </html>
