@@ -39,10 +39,14 @@
           </div>
           <fieldset class="form-group">
             <legend class="form-group__heading  visually-hidden">Укажите свою фамилию, имя и отчество</legend>
-            <label class="form-group__label" for="surname-field">Фамилия:</label>
-            <input class="form-group__input" type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" maxlength="30">
-            <label class="form-group__label" for="name-field">Имя:</label>
-            <input class="form-group__input" type="text" name="name" id="name-field" placeholder="Укажите ваше имя" maxlength="30">
+            <label class="form-group__label" for="surname-field">Фамилия:
+              <input class="form-group__input" type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+            </label>
+            <label class="form-group__label" for="name-field">Имя:
+              <input class="form-group__input" type="text" name="name" id="name-field" placeholder="Укажите ваше имя" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+            </label>
             <label class="form-group__label" for="middle-name-field">Отчество:</label>
             <input class="form-group__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже" maxlength="30">
           </fieldset>
@@ -64,9 +68,11 @@
           <fieldset class="form-group">
             <legend class="form-group__heading  visually-hidden">Укажите свои координаты</legend>
             <label class="form-group__label" for="phone-field">Номер телефона</label>
-            <input class="form-group__input" type="text" name="phone" id="phone-field" placeholder="Номер, пожалуйста" maxlength="30">
-            <label class="form-group__label" for="email-field">Адресок почты</label>
-            <input class="form-group__input" type="text" name="email" id="email-field" placeholder="Введите почту" maxlength="30">
+            <input class="form-group__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста" maxlength="30">
+            <label class="form-group__label" for="email-field">Адресок почты
+              <input class="form-group__input" type="email" name="email" id="email-field" placeholder="Введите почту" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+            </label>
           </fieldset>
           <fieldset class="form-group  form-group--dark">
             <legend class="form-group__heading">С каким приложением путешествовали</legend>
