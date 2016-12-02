@@ -8,10 +8,9 @@
     <meta name="keywords" content="разные, ключевые, слова">
     <meta name="description" content="краткое описание сайта">
     <meta name="author" content="ainshtein">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page">
+  <body>
     <header class="header-main">
       <h1 class="header-main__title  visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
       <div class="header-main__top">
@@ -168,23 +167,25 @@
           <b class="heading">Свяжитесь с нами</div>
         </div>
         <div class="contacts__list">
-          <div class="contact__phone">
-            <div class="contact__phone-title">Звоните:</div>
+          <div class="contacts__phone">
+            <div class="contacts__phone-title">Звоните:</div>
             <a href="tel:+78125556666" class="contact__phone-link">+7 (812) 555-66-66</a>
           </div>
-          <div class="contact__mail">
-            <div class="contact__mail-title">Пишите:</div>
-            <a href="mailto:mail@htmlacademy.ru" class="contact__mail-link">mail@htmlacademy.ru</a>
+          <div class="contacts__mail">
+            <div class="contacts__mail-title">Пишите:</div>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__mail-link">mail@htmlacademy.ru</a>
           </div>
-          <div class="contact__address">
-            <div class="contact__address-title">Приезжайте в гости:</div>
-            <div class="contact__address-text">ул. Большая Конюшенная, 19/8 </div>
+          <div class="contacts__address">
+            <div class="contacts__address-title">Приезжайте в гости:</div>
+            <div class="contacts__address-text">ул. Большая Конюшенная, 19/8 </div>
           </div>
         </div>
       </section>
       <section class="map">
         <h2 class="map__title  visually-hidden">Наше расположение на карте</h2>
-        <div class="map-container" id="map"></div>
+        <div class="map__container" id="map">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта">
+        </div>
       </section>
     </main>
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
