@@ -1,0 +1,36 @@
+.reviews {
+  padding: 60px 20px ;
+}
+
+.reviews__title {
+
+}
+
+.reviews__container {
+
+}
+
+.reviews__list {
+
+}
+
+.reviews__item {
+  font: inherit;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reviews__author {
+  @include opensans(bold);
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.reviews__toggles {
+  text-align: center;
+  font-size: 0;
+}

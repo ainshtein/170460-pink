@@ -1,0 +1,43 @@
+.editor {
+  @include color($gray, $WHITE);
+  padding: 20px 20px 40px;
+}
+
+.editor__title {
+
+}
+
+.editor__top {
+  border-bottom: 1px solid rgba($BLACK, 0.1);
+}
+
+.editor__image {
+
+}
+
+.editor__tools {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.editor__tool {
+  @include inlineblock(middle);
+}
+
+.editor__tool--crop {
+  background: url("../../img/icon-editor-crop.svg") 0 0 no-repeat;
+}
+
+.editor__tool--fill {
+  background: url("../../img/icon-editor-fill.svg") 0 0 no-repeat;
+}
+
+.editor__tool--contrast {
+  background: url("../../img/icon-editor-contrast.svg") 0 0 no-repeat;
+
+}
+
+.editor__bottom {
+  padding: 40px 20px ;
+}

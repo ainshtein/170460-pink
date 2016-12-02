@@ -1,0 +1,22 @@
+.flag {
+  position: absolute;
+}
+
+.flag--profit {
+
+}
+
+.flag {
+
+}
+
+.flag--photo {
+  @include color($red, $WHITE);
+  @include opensans(bold);
+  left: 50%;
+  top: 0;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 10px 20px 15px;
+}

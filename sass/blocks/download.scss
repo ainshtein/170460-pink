@@ -1,0 +1,32 @@
+.download {
+  @include color($blue-dark, $WHITE);
+  padding: 30px 20px 35px 20px;
+}
+
+.download__title {
+
+}
+
+.download__container {
+
+}
+.download__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.download__item {
+  @include inlineblock(middle);
+}
+
+.download__text {
+  @include opensans(light);
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+}

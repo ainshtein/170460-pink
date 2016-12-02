@@ -1,0 +1,64 @@
+.btn {
+  @include inlineblock;
+  @include color(transparent, $WHITE);
+
+  padding: 17px 40px 20px;
+
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+
+  border: 3px solid $WHITE;
+  border-radius: 27px;
+  outline: none;
+
+  @include opensans(bold);
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+    &:hover {
+      @include color($WHITE, $red);
+    }
+
+    &:active {
+      @include color($WHITE, rgba($red, 0.3));
+    }
+}
+.btn--red {
+  border-color: $red;
+  color: $red;
+
+    &:hover {
+      @include color($red, $WHITE);
+    }
+
+    &:active {
+      @include color($red, rgba($WHITE, 0.3));
+    }
+}
+
+.btn--gray {
+  border-color: rgba($BLACK, 0.1);
+  color: rgba($BLACK, 0.1);
+
+    &:hover {
+      border-color: rgba($BLACK, 0.3);
+      color: rgba($BLACK, 0.3);
+      background: transparent;
+    }
+
+    &:active {
+      @include color(rgba($BLACK, 0.3), rgba($WHITE, 0.3));
+      border-color: transparent;
+      // border-color: rgba($BLACK, 0.3);
+    }
+}
+
+.btn--green {
+
+}
+
+.btn--block {
+  width: 100%;
+}
