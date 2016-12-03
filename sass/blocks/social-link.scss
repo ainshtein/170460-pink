@@ -1,5 +1,17 @@
 .social-link {
+  @include inlineblock;
+  width: 51px;
+  height: 51px;
+  border: 3px solid rgba($blue-nav, 0.3);
+  border-radius: 50%;
 
+    &:hover {
+      border-color: $blue-nav;
+    }
+
+    &:active {
+      border-color: rgba($blue-nav, 0.1);
+    }
 }
 
 .social-link--tw {

@@ -1,8 +1,17 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
 .header-main {
-  background: $blue-dark url("../../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
+  background: url("../../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
               url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
   color: $WHITE;
+  background-color: $blue-dark;
 }
+
+// ==========================================================================
+// Elements
+// ==========================================================================
 
 .header-main__title {
   @include opensans(light);
@@ -19,6 +28,10 @@
   padding: 22px 20px;
   // margin-bottom: 400px;
 }
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
 
 .header-main--inner {
   // margin-bottom: 170px;

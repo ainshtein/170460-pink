@@ -1,3 +1,7 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
 .btn {
   @include inlineblock;
   @include color(transparent, $WHITE);
@@ -25,6 +29,16 @@
       @include color($WHITE, rgba($red, 0.3));
     }
 }
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
 .btn--red {
   border-color: $red;
   color: $red;
@@ -56,7 +70,18 @@
 }
 
 .btn--green {
+  @include color($green, $WHITE);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
 
+    &:hover {
+      @include color($green-hvr, $WHITE);
+    }
+
+    &:active {
+      @include color($green-hvr, rgba($WHITE, 0.3));
+    }
 }
 
 .btn--block {

@@ -1,33 +1,54 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
 .form-group {
+  padding: 40px 0;
+  border: none;
 
 }
+
+// ==========================================================================
+// Elements
+// ==========================================================================
 
 .form-group__heading {
-
-}
-
-.form-group__heading--ordinar-text {
-
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $red;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .form-group__label {
-
+  position: relative;
+  display: block;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  color: $red;
 }
 
 .form-group__input {
-
+  @include color;
+  @include opensans;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  outline: none;
+  border: 2px solid $gray-dark;
+  padding: 23px;
 }
 
 .form-group__flag {
-
-}
-
-.form-group__flag--required {
-
-}
-
-.form-group--dark {
-
+  position: relative;
+  font-size: 0;
 }
 
 .form-group__checkbox {
@@ -38,6 +59,39 @@
 
 }
 
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
+.form-group--dark {
+  background-color: $gray;
+}
+
+.form-group--dark .form-group__label {
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 45px;
+  text-transform: none;
+  padding-left: 70px;
+  color: $BLACK;
+}
+
+.form-group__heading--ordinar-text {
+  @include inlineblock;
+  width: 200px;
+  font: inherit;
+  font-size: inherit;
+  color: $BLACK;
+}
+
+.form-group__heading--ordinar-text sup {
+  color: $red;
+}
+
 .form-group__input--text {
+
+}
+
+.form-group__flag--required {
 
 }

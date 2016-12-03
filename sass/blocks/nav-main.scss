@@ -1,14 +1,13 @@
+// ==========================================================================
+// Block
+// ==========================================================================
 .nav-main {
   @include inlineblock;
 }
 
-.nav-main--closed {
-
-}
-
-.nav-main--nojs {
-
-}
+// ==========================================================================
+// Elements
+// ==========================================================================
 
 .nav-main__toggle {
   padding: 0;
@@ -35,12 +34,6 @@
   text-transform: uppercase;
 }
 
-.nav-main__item--active {
-
-    & .nav-main__link {
-      text-decoration: underline;
-    }
-}
 
 .nav-main__link {
   @include color($blue-nav, $WHITE);
@@ -52,3 +45,23 @@
   box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   margin-bottom: 1px;
 }
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
+.nav-main--closed {
+
+}
+
+.nav-main--nojs {
+
+}
+
+.nav-main__item--active {
+
+    & .nav-main__link {
+      text-decoration: underline;
+    }
+}
+

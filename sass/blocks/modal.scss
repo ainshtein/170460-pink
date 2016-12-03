@@ -1,27 +1,57 @@
+// ==========================================================================
+// Block
+// ==========================================================================
 .modal {
-
+  @include color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+.modal__top {
+  padding: 40px 20px 35px;
+}
+
+.modal__title {
+  display: block;
+  @include opensans(bold);
+  font-size: 18px;
+  line-height: inherit;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.modal__text {
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  text-align: center;
+}
+
+.modal__bottom {
+  background-color: $gray;
+  padding: 50px 20px;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
 
 .modal--send {
 
 }
 
-.modal__top {
-
-}
-
-.modal__title {
-
-}
-
-.modal__text {
-
-}
-
-.modal__bottom {
-
-}
 
 .modal--failure {
 
 }
+
+.modal--failure .modal__bottom {
+  background-color: $WHITE;
+}
+
+// .modal--failure .modal__text {
+//   margin-bottom: 40px;
+// }
