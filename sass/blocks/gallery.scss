@@ -1,0 +1,95 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
+.gallery {
+
+}
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+
+.gallery__header {
+  padding: 0 20px;
+}
+
+.gallery__title {
+
+}
+
+.gallery__header-text,
+.gallery__footer-text {
+  font: inherit;
+  font-size: inherit;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.gallery__content {
+  padding: 0 20px;
+}
+
+.gallery__item {
+  margin-bottom: 20px;
+}
+
+.gallery__image {
+  position: relative;
+  background-color: $blue-dark;
+}
+
+.gallery__description {
+  background-color: $gray;
+  padding: 25px 15px;
+}
+
+.gallery__user {
+  @include opensans(bold);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.gallery__date {
+  @include opensans(light);
+  font-size: 12px;
+  line-height: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+
+}
+
+.gallery__text {
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.gallery__likes {
+  font: inherit;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $red;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.gallery__footer {
+  padding: 0 20px;
+}
+
+.gallery__footer-text {
+  padding: 50px 10px;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
+.gallery__image--active {
+  width: 100%;
+}

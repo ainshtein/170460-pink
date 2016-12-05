@@ -1,0 +1,40 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
+.footer-main {
+  padding: 40px 20px;
+}
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+
+.footer-main__logo,
+.footer-main__socials {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.footer-main__socials {
+  font-size: 0;
+  text-align: center;
+}
+
+.footer-main__copy {
+  font: inherit;
+  font-size: inherit;
+  line-height: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-main__copy span {
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================

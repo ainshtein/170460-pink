@@ -1,0 +1,39 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+
+.header-main {
+  background: url("../../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
+              url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  color: $WHITE;
+  background-color: $blue-dark;
+}
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+
+.header-main__title {
+  @include opensans(light);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 30px 50px 80px;
+  text-align: center;
+  margin: 0;
+}
+
+.header-main__top {
+  background-color: rgba($blue-dark, 0.3);
+  padding: 22px 20px;
+  // margin-bottom: 400px;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
+.header-main--inner {
+  // margin-bottom: 170px;
+  background: $blue-dark url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+}

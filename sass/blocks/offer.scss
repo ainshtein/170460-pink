@@ -1,0 +1,98 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+.offer {
+  padding: 60px 0;
+  background: $gray;
+  position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+      border-color: rgba(255, 255, 255, 0);
+      border-style: solid;
+      border-width: 20px 100px;
+      border-right-color: #92c100;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-bottom: -20px;
+   }
+}
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+.offer__title {
+
+}
+
+.offer__container {
+
+}
+
+.offer__list {
+
+}
+
+.offer__table {
+  border-collapse: collapse;
+  border: 2px solid $gray;
+}
+
+.offer__table-header {
+  @include color($blue-nav, $WHITE);
+  border: 2px solid $gray;
+  border-bottom: 2px solid $blue-nav;
+}
+
+.offer__table-header th,
+.offer__table-header tr,
+.offer__table-header td {
+  border: 2px solid $gray;
+}
+
+.offer__table-header th {
+  width: 140px;
+  text-align: center;
+  border: 2px solid $gray;
+}
+.offer__heading {
+  @include opensans(bold);
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.offer__price {
+  @include opensans(light);
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.offer__option {
+  width: 200px;
+  font: inherit;
+  font-size: inherit;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 2px solid $gray;
+  background-color: $WHITE;
+}
+
+.offer__option-status {
+  width: 80px;
+  font-size: 0;
+}
+
+.offer__toggles {
+  font-size: 0;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================

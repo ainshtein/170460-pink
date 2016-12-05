@@ -1,0 +1,66 @@
+// ==========================================================================
+// Block
+// ==========================================================================
+.nav-main {
+  @include inlineblock;
+}
+
+// ==========================================================================
+// Elements
+// ==========================================================================
+
+.nav-main__toggle {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0;
+
+}
+
+.nav-main__container {
+
+}
+
+.nav-main__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-main__item {
+  @include opensans(bold);
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+
+.nav-main__link {
+  @include color($blue-nav, $WHITE);
+  display: block;
+  text-decoration: none;
+  padding: 10px 80px 13px;
+  font-size: inherit;
+  line-height: 30px;
+  box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  margin-bottom: 1px;
+}
+
+// ==========================================================================
+// Modifiers
+// ==========================================================================
+
+.nav-main--closed {
+
+}
+
+.nav-main--nojs {
+
+}
+
+.nav-main__item--active {
+
+    & .nav-main__link {
+      text-decoration: underline;
+    }
+}

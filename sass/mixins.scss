@@ -1,0 +1,47 @@
+// ==========================================================================
+// Миксины для работы со шрифтами
+// ==========================================================================
+
+@mixin opensans($style: regular) {
+    @if $style == regular {
+      font-family: 'opensans', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+
+    @if $style == bold {
+      font-family: 'opensansbold', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans','sans-serif';
+    }
+
+    @if $style == light {
+      font-family: 'opensanslight', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+}
+
+// ==========================================================================
+// Миксины для работы с цветом
+// ==========================================================================
+@mixin color($bg: $WHITE, $color: $BLACK) {
+  background: $bg;
+  color: $color;
+}
+
+// ==========================================================================
+// Миксины для работы с инлайн-блоками
+// ==========================================================================
+@mixin inlineblock($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+// ==========================================================================
+// Миксины для работы с сеткой
+// ==========================================================================
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
