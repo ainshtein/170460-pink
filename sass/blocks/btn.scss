@@ -6,7 +6,7 @@
   @include inlineblock;
   @include color(transparent, $WHITE);
 
-  padding: 17px 40px 20px;
+  padding: 17px 35px 20px;
 
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -52,7 +52,7 @@
     }
 }
 
-.btn--gray {
+.btn--grey {
   border-color: rgba($BLACK, 0.1);
   color: rgba($BLACK, 0.1);
 

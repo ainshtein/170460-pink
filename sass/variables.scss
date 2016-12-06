@@ -1,11 +1,12 @@
 // ==========================================================================
-// Цвета
+// Variables used in color properties
 // ==========================================================================
+
 $WHITE: #ffffff;
 $BLACK : #000000;
 
-$gray: #f2f2f2;       //content
-$gray-dark: #e5e5e5; //input borders
+$grey: #f2f2f2;       //content
+$grey-dark: #e5e5e5; //input borders
 
 $red: #d22856;
 $red-dwn: #f1becc;
@@ -15,3 +16,26 @@ $green-hvr: #1c9b5e;
 
 $blue-dark: #1d2631;
 $blue-nav: #283645;
+
+
+// ==========================================================================
+// Variables used in @media directives
+// ==========================================================================
+
+
+$desktop-width: "screen and (min-width: 1200px)";
+$laptop-width: "screen and (min-width: 992px)";
+$tablet-width: "screen and (min-width: 700px)";
+$phone-width: "screen and (min-width: 320px)";
+
+
+$breakpoints: (
+  'small'  : ( min-width:  768px ),
+  'medium' : ( min-width:  992px ),
+  'large'  : ( min-width: 1200px )
+);
+
+$container-small: 280px;
+$container-medium: 620px;
+$container-large: 940px;
+

@@ -2,7 +2,12 @@
 // Block
 // ==========================================================================
 .nav-main {
-  @include inlineblock;
+
+  @include desktop {
+    float: right;
+    width: 770px;
+  }
+
 }
 
 // ==========================================================================
@@ -14,7 +19,7 @@
   border: none;
   background: none;
   font-size: 0;
-
+  display: none;
 }
 
 .nav-main__container {
@@ -25,25 +30,49 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 0;
+
+  @include desktop {
+    text-align: right;
+  }
 }
 
 .nav-main__item {
+  @include color($blue-nav, $WHITE);
   @include opensans(bold);
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+
+  @include desktop {
+    @include inlineblock(middle);
+    @include opensans;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    margin-left: 80px;
+  }
+
 }
 
-
 .nav-main__link {
-  @include color($blue-nav, $WHITE);
+  @include color(transparent, $WHITE);
   display: block;
   text-decoration: none;
-  padding: 10px 80px 13px;
+  padding: 14px 0 17px;
   font-size: inherit;
-  line-height: 30px;
+  line-height: 32px;
+  text-align: center;
   box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   margin-bottom: 1px;
+
+  @include desktop {
+    box-shadow: none;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0;
+  }
 }
 
 // ==========================================================================

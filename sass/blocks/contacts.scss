@@ -3,7 +3,11 @@
 // ==========================================================================
 
 .contacts {
+  background-color: $WHITE;
+  position: relative;
+  z-index: 1;
   padding: 45px 20px 20px;
+  margin-bottom: -221px;
 }
 
 // ==========================================================================
@@ -16,6 +20,10 @@
 
 .contacts__heading {
   margin-bottom: 40px;
+}
+
+.contacts__heading  .heading {
+  margin: 0;
 }
 
 .contacts__list {

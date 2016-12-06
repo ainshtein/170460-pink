@@ -3,7 +3,8 @@
 // ==========================================================================
 
 .promo {
-  padding: 40px 20px;
+
+  // padding: 40px 20px;
 }
 
 // ==========================================================================
@@ -15,14 +16,14 @@
 }
 
 .promo__heading {
-
+  padding: 40px 57px;
 }
 
 .promo__list {
-  @include color($gray, $BLACK);
-  background: $gray url("../../img/iphone-screen-mobile@1x.png") 50% 100% no-repeat;
+  @include color($grey, $BLACK);
+  background: $grey url("../../img/iphone-screen-mobile@1x.png") 50% 100% no-repeat;
   position: relative;
-  padding: 55px 0 320px;
+  padding: 55px 20px 320px;
   margin: 0;
   list-style: none;
   text-align: center;

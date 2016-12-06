@@ -3,11 +3,23 @@
 // ==========================================================================
 
 .logo {
-  @include inlineblock;
+  padding: 17px 20px 20px;
+  box-shadow: 0 1px 0 black;
+  margin-bottom: 1px;
 
-  width: 75px;
-  height: 22px;
+  @include tablet {
+    padding: 27px 40px 40px;
+  }
+
+  @include desktop {
+    float: left;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
 }
+
 
 // ==========================================================================
 // Elements
