@@ -15,9 +15,23 @@
 }
 
 .map__container {
+  background: #eae6dd url("../../img/bg-map-mobile@1x.png") 50% 100% no-repeat;
+  min-height: 200px;
 
+  @include tablet {
+    min-height: 376px;
+  }
+
+  @include desktop {
+    min-height: 501px;
+  }
 }
 
+.map__container img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================

@@ -6,13 +6,25 @@
   background-color: $WHITE;
   position: relative;
   z-index: 1;
-  padding: 45px 20px 20px;
-  margin-bottom: -221px;
+  // margin-bottom: -221px;
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
+
+.contacts__wrapper {
+  @include container;
+  padding: 45px 0 40px;
+
+  @include tablet {
+    padding: 55px 0 30px;
+  }
+
+  @include desktop {
+    padding: 75px 0 25px;
+  }
+}
 
 .contacts__title {
 
@@ -20,6 +32,14 @@
 
 .contacts__heading {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts__heading  .heading {
@@ -28,16 +48,35 @@
 
 .contacts__list {
   text-align: center;
+  font-size: 0;
 }
 
 .contacts__group {
   margin-bottom: 25px;
+
+  @include tablet {
+    @include inlineblock;
+    width: 50%;
+    margin-bottom: 70px;
+  }
+
+  @include desktop {
+    width: 33.33%;
+  }
 }
 
 .contacts__group-title {
   @include opensans(bold);
   font-size: 18px;
   line-height: 30px;
+
+  @include tablet {
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__group-link,

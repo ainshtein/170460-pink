@@ -4,7 +4,6 @@
 
 .promo {
 
-  // padding: 40px 20px;
 }
 
 // ==========================================================================
@@ -16,19 +15,19 @@
 }
 
 .promo__heading {
-  padding: 40px 57px;
+  @include container;
+  padding: 45px 35px 30px;
+
+  @include tablet {
+    padding: 55px 0 45px;
+  }
 }
 
-.promo__list {
+.promo__wrapper {
   @include color($grey, $BLACK);
-  background: $grey url("../../img/iphone-screen-mobile@1x.png") 50% 100% no-repeat;
   position: relative;
-  padding: 55px 20px 320px;
-  margin: 0;
-  list-style: none;
-  text-align: center;
 
-    &::before {
+   &::before {
       display: block;
       content: "";
       width: 0;
@@ -42,6 +41,30 @@
       right: 0;
       margin-bottom: -20px;
    }
+
+}
+
+.promo__list {
+  background: url("../../img/iphone-screen-mobile@1x.png") 50% 100% no-repeat;
+  padding: 55px 20px 320px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+
+
+   @include tablet {
+    @include container;
+    padding: 45px 0;
+    background: $grey url("../../img/iphone-screen-mobile@1x.png") 0 100% no-repeat;
+    text-align: left;
+    padding-left: 200px;
+   }
+
+   @include desktop {
+    padding-left: 0;
+    background: $grey;
+   }
 }
 
 .promo__item {
@@ -50,6 +73,24 @@
   line-height: inherit;
   color: inherit;
   margin-bottom: 20px;
+  width: 280px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 310px;
+  }
+
+  @include desktop {
+    @include inlineblock;
+    width: 310px;
+    padding-top: 360px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
 }
 
 .promo__item p {
@@ -58,6 +99,11 @@
   line-height: inherit;
   color: inherit;
   margin-bottom: 40px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 // ==========================================================================

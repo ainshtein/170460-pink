@@ -10,7 +10,7 @@
     <meta name="author" content="ainshtein">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header-main">
       <h1 class="header-main__title  visually-hidden">"PINK" - приложение, которое изменит вашу жизнь</h1>
       <div class="header-main__top">
@@ -56,25 +56,39 @@
         <h2 class="promo__title  visually-hidden">Преимущества использования нашего приложения</h2>
         <div class="promo__heading">
           <b class="heading">Устали от серости мегаполиса?</b>
-          <b class="heading">Нам есть, что вам  предложить!</b>
+          <b class="heading  heading--wrap">Нам есть, что вам  предложить!</b>
         </div>
-        <ul class="promo__list">
-          <li class="promo__item">Поднимает настроение
-            <p>
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        <div class="promo__wrapper">
+          <ul class="promo__list">
+            <li class="promo__item">Поднимает настроение
+              <p>
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="promo__item">Меняет мир вокруг
+              <p>
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="promo__item">Заводит новых друзей
+              <p>
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="effect">
+        <div class="effect__wrapper">
+          <h2 class="effect__title  visually-hidden">Эффект от  нашего приложения.</h2>
+          <div class="effect__content">
+            <h3 class="effect__heading">Эффект на 24 часа!</h3>
+            <p class="effect__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
-          </li>
-          <li class="promo__item">Меняет мир вокруг
-            <p>
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="promo__item">Заводит новых друзей
-            <p>
-              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+            <a href="#" class="effect__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
       <section class="reviews">
         <h2 class="reviews__title  visually-hidden">Отзывы о нас</h2>
@@ -84,16 +98,16 @@
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
           <div class="reviews__list">
             <blockquote class="reviews__item  slider__item  slider__item--1">
-              <cite class="reviews__author">Николай Петров</cite>
+              <cite class="reviews__author">Николай Петров<span class="reviews__author-status">25 лет, водитель трамвая</span></cite>
               <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </blockquote>
             <blockquote class="reviews__item  slider__item  slider__item--2">
-              <cite class="reviews__author">Иван Демидов</cite>
+              <cite class="reviews__author">Иван Демидов<span class="reviews__author-status">27 лет, ведущий телепередачи</span></cite>
               <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </blockquote>
             <blockquote class="reviews__item  slider__item  slider__item--3">
-              <cite class="reviews__author">Владимир Серцов</cite>
-                <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+              <cite class="reviews__author">Владимир Серцов<span class="reviews__author-status">35 лет, художник</span></cite>
+              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </blockquote>
           </div>
           <div class="reviews__toggles  slider__toggles">
@@ -160,33 +174,49 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
-        <div class="contacts__heading">
-          <b class="heading">Остались вопросы?</b>
-          <b class="heading">Свяжитесь с нами</b>
-        </div>
-        <div class="contacts__list">
-          <div class="contacts__group">
-            <div class="contacts__group-title">Звоните:</div>
-            <a href="tel:+78125556666" class="contacts__group-link">+7 (812) 555-66-66</a>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title  visually-hidden">Наши координаты</h2>
+          <div class="contacts__heading">
+            <b class="heading">Остались вопросы?</b>
+            <b class="heading">Свяжитесь с нами</b>
           </div>
-          <div class="contacts__group">
-            <div class="contacts__group-title">Пишите:</div>
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__group-link">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__group">
-            <div class="contacts__group-title">Приезжайте в гости:</div>
-            <div class="contacts__group-text">ул. Большая Конюшенная, 19/8 </div>
+          <div class="contacts__list">
+            <div class="contacts__group">
+              <div class="contacts__group-title">Звоните:</div>
+              <a href="tel:+78125556666" class="contacts__group-link">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__group">
+              <div class="contacts__group-title">Пишите:</div>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__group-link">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__group">
+              <div class="contacts__group-title">Приезжайте в гости:</div>
+              <div class="contacts__group-text">ул. Большая Конюшенная, 19/8 </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="map">
         <h2 class="map__title  visually-hidden">Наше расположение на карте</h2>
         <div class="map__container" id="map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта">
+          <!-- <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта"> -->
         </div>
       </section>
     </main>
+    <footer class="footer-main">
+      <div class="footer-main__logo">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+      </div>
+      <div class="footer-main__socials">
+        <a href="img/twitter.svg" class="social-link  social-link--tw">Твитер</a>
+        <a href="img/facebook.svg" class="social-link  social-link--fb">Фейсбук</a>
+        <a href="img/youtube.svg" class="social-link  social-link--yt">Ютуб</a>
+      </div>
+      <div class="footer-main__copy">
+        <span>Разработано</span>
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Копирайт">
+      </div>
+    </footer>
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
     <!-- <script src="js/script.min.js"></script> -->
   </body>

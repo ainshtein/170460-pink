@@ -20,6 +20,14 @@
       right: 0;
       margin-bottom: -20px;
    }
+
+   @include tablet {
+      padding: 90px 0 68px;
+   }
+
+   @include desktop {
+      padding: 150px 0 96px;
+   }
 }
 
 // ==========================================================================
@@ -31,6 +39,9 @@
 
 .offer__container {
 
+  @include tablet {
+    @include container;
+  }
 }
 
 .offer__list {
@@ -39,31 +50,67 @@
 
 .offer__table {
   border-collapse: collapse;
-  border: 2px solid $grey;
+  border: 2px solid $grey-dark;
 }
 
 .offer__table-header {
   @include color($blue-nav, $WHITE);
-  border: 2px solid $grey;
+  border: 2px solid $grey-dark;
   border-bottom: 2px solid $blue-nav;
+
+  // @include tablets {
+  //   display: block;
+  // }
+
+  // @include desktop {
+  //   display: block;
+  // }
 }
 
 .offer__table-header th,
 .offer__table-header tr,
 .offer__table-header td {
-  border: 2px solid $grey;
+  border: 2px solid $grey-dark;
 }
+
+
+.offer__table tr td:nth-child(2n+3) {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
 
 .offer__table-header th {
   width: 140px;
   text-align: center;
-  border: 2px solid $grey;
+  border: 2px solid $grey-dark;
+
+  @include tablet {
+    width: 156px;
+  }
+
+  @include desktop {
+    width: 237px;
+  }
 }
 .offer__heading {
   @include opensans(bold);
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .offer__price {
@@ -71,26 +118,52 @@
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
 }
 
 .offer__option {
-  width: 200px;
+  width: 210px;
   font: inherit;
   font-size: inherit;
   line-height: 30px;
   text-transform: uppercase;
   padding: 20px;
-  border: 2px solid $grey;
+  border: 2px solid $grey-dark;
+  // border-right: 0;
   background-color: $WHITE;
+
+  @include tablet {
+    width: 156px;
+  }
+
+  @include desktop {
+    width: 238px;
+    font-size: 18px;
+  }
 }
 
 .offer__option-status {
-  width: 80px;
+  width: 70px;
   font-size: 0;
+  border: 2px solid $grey-dark;
+  // border-left: 0;
+  background-color: $WHITE;
+
 }
 
 .offer__toggles {
   font-size: 0;
+
+  @include tablet {
+    display: none;
+   }
 }
 
 // ==========================================================================
