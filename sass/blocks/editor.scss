@@ -178,8 +178,10 @@
 
 .editor__buttons .btn--red,
 .editor__buttons .btn--grey{
-  width: 183px;
 
+  @include desktop {
+    width: 183px;
+  }
 }
 
 // ==========================================================================
