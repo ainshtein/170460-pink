@@ -3,15 +3,15 @@
 // ==========================================================================
 
 .header-main {
-  background: url("../../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
-              url("../../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
+              url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   color: $WHITE;
   background-color: $blue-nav;
   padding-bottom: 395px;
 
   @include tablet {
-    background: url("../../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
-              url("../../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+    background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
+              url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
     background-color: $blue-nav;
     padding-bottom: 620px;
     position: relative;
@@ -74,6 +74,6 @@
 // ==========================================================================
 
 .header-main--inner {
-  background: $blue-nav url("../../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   padding: 0;
 }

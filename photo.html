@@ -156,51 +156,60 @@
       </article>
       <section class="editor">
         <h2 class="editor__title  visually-hidden">Визуальный редактор</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="editor__top">
-            <div class="editor__image">
-              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="photo-7-mobile.jpg">
-            </div>
-            <div class="editor__tools">
-              <div class="editor__tools  editor__tool--crop">
-                <span>Обрезать изображение</span>
-                <div class="range">
-                  <div class="range__scale">Шкала
-                    <div class="range__toggle">Переключатель</div>
+        <div class="editor__wrapper">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <!-- <div class="editor__top"> -->
+              <div class="editor__image">
+                <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="photo-7-mobile.jpg">
+              </div>
+              <div class="editor__tools">
+
+
+                <div class="editor__tool  editor__tool--crop">
+                  <span>Обрезать изображение</span>
+                  <img src="../img/icon-editor-crop.svg" alt="Обрезать изображение">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="editor__tools  editor__tool--fill">
-                <span>Залить цветом изображение</span>
-                <div class="range">
-                  <div class="range__scale">Шкала
-                    <div class="range__toggle">Переключатель</div>
+
+
+                <div class="editor__tool  editor__tool--fill">
+                  <span>Залить цветом изображение</span>
+                  <img src="../img/icon-editor-fill.svg" alt="Залить цветом изображение">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="editor__tools  editor__tool--fill">
-                <span>Контраст изображения</span>
-                <div class="range">
-                  <div class="range__scale">Шкала
-                    <div class="range__toggle">Переключатель</div>
+                <div class="editor__tool  editor__tool--contrast">
+                  <span>Контраст изображения</span>
+                  <img src="../img/icon-editor-contrast.svg" alt="Контраст изображения">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
                   </div>
                 </div>
+                <!-- <span class="editor__tool  editor__tool--crop">Обрезать изображение</span>
+                <span class="editor__tool  editor__tool--fill">Залить цветом изображение</span>
+                <span class="editor__tool  editor__tool--contrast">Контраст изображения</span> -->
               </div>
-              <!-- <span class="editor__tool  editor__tool--crop">Обрезать изображение</span>
-              <span class="editor__tool  editor__tool--fill">Залить цветом изображение</span>
-              <span class="editor__tool  editor__tool--contrast">Контраст изображения</span> -->
-            </div>
-            <div class="range">
-              <div class="range__scale">Шкала
-                <div class="range__toggle">Переключатель</div>
+              <div class="range">
+                <div class="range__scale">Шкала
+                  <div class="range__toggle">Переключатель</div>
+                </div>
               </div>
+            <!-- </div> -->
+            <div class="editor__buttons">
+              <button class="btn  btn--red  btn--block" type="submit">Запостить</button>
+              <button class="btn  btn--grey  btn--block" type="reset">Отмена</button>
             </div>
-          </div>
-          <div class="editor__bottom">
-            <button class="btn  btn--red  btn--block" type="submit">Запостить</button>
-            <button class="btn  btn--grey  btn--block" type="reset">Отмена</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer-main">

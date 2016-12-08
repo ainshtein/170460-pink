@@ -117,6 +117,7 @@
   @include tablet {
     float: right;
     width: 160px;
+    margin-top: 10px;
   }
 
   @include desktop {
