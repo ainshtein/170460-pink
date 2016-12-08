@@ -18,8 +18,9 @@ html {
 }
 
 img {
+  display: block;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 // On screen - hidden, in accessibility tree - visible
@@ -57,5 +58,13 @@ body {
 
   min-width: 320px;
 }
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
 
 

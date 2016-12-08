@@ -28,12 +28,25 @@
 
 .header-main__title {
   @include opensans(light);
+  width: 280px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding: 30px 50px 80px;
+  padding: 30px 0 80px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 400px;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    padding: 80px 0 145px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .header-main__top {
@@ -61,5 +74,6 @@
 // ==========================================================================
 
 .header-main--inner {
-  background: $blue-dark url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background: $blue-nav url("../../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  padding: 0;
 }

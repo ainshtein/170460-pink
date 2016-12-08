@@ -11,10 +11,6 @@
   }
 }
 
-.page--inner .footer-main {
-  display: block;
-}
-
 .footer-main {
   @include container;
     padding: 35px 0;
@@ -23,6 +19,13 @@
     padding: 70px 0 85px;
   }
 }
+
+.page--inner .footer-main {
+  display: block;
+  padding: 40px 0;
+}
+
+
 
 // ==========================================================================
 // Elements
@@ -33,11 +36,44 @@
   width: 150px;
 }
 
+.page--inner .footer-main__logo {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @include tablet {
+    float: left;
+    width: 150px;
+  }
+
+  @include desktop {
+
+  }
+}
+
 .footer-main__socials {
   float: left;
   width: 310px;
   font-size: 0;
   text-align: center;
+
+  @include desktop {
+    width: 630px;
+  }
+}
+
+.page--inner .footer-main__socials {
+  float: none;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @include tablet {
+    float: left;
+    width: 310px;
+    font-size: 0;
+    text-align: center;
+  }
 
   @include desktop {
     width: 630px;
@@ -73,6 +109,21 @@
 .footer-main__copy img {
   @include inlineblock(middle);
 }
+
+.page--inner .footer-main__copy {
+  float: none;
+  margin: 0 auto;
+
+  @include tablet {
+    float: right;
+    width: 160px;
+  }
+
+  @include desktop {
+
+  }
+}
+
 // ==========================================================================
 // Modifiers
 // ==========================================================================

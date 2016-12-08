@@ -3,9 +3,11 @@
 // ==========================================================================
 
 .logo {
+  display: block;
   padding: 17px 20px 20px;
   box-shadow: 0 1px 0 black;
   margin-bottom: 1px;
+  background-color: $blue-nav;
 
   @include tablet {
     padding: 27px 40px 40px;
@@ -17,6 +19,7 @@
     padding: 0;
     margin: 0;
     box-shadow: none;
+    background-color: transparent;
   }
 }
 
