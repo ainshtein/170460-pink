@@ -36,58 +36,77 @@
       <div class="form">
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form__title">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на вашу бонусную карту!
+            <span>Пожалуйста, заполните форму ниже:</span>
           </div>
-          <fieldset class="form-group">
-            <legend class="form-group__heading  visually-hidden">Укажите свою фамилию, имя и отчество</legend>
-            <label class="form-group__label" for="surname-field">Фамилия:</label>
-            <input class="form-group__input" type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" maxlength="30" required>
-            <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
-            <label class="form-group__label" for="name-field">Имя:</label>
-            <input class="form-group__input" type="text" name="name" id="name-field" placeholder="Укажите ваше имя" maxlength="30" required>
-            <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
-            <label class="form-group__label" for="middle-name-field">Отчество:</label>
-            <input class="form-group__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже" maxlength="30">
+
+          <fieldset class="form-group  form-group--name-data">
+            <div class="form-group__wrapper">
+              <legend class="form-group__heading  visually-hidden">Укажите свою фамилию, имя и отчество</legend>
+              <label class="form-group__label" for="surname-field">Фамилия:</label>
+              <input class="form-group__input" type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+              <label class="form-group__label" for="name-field">Имя:</label>
+              <input class="form-group__input" type="text" name="name" id="name-field" placeholder="Укажите ваше имя" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+              <label class="form-group__label" for="middle-name-field">Отчество:</label>
+              <input class="form-group__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже" maxlength="30">
+            </div>
           </fieldset>
 
-          <fieldset class="form-group  form-group--dark">
-            <legend class="form-group__heading">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-group__checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
-            <label class="form-group__label" for="selfie-field">Сделал селфи с акулой</label>
-            <input class="form-group__checkbox" type="checkbox" name="beach" id="beach-field" checked>
-            <label class="form-group__label" for="beach-field">Обгорел на пляже</label>
-            <input class="form-group__checkbox" type="checkbox" name="CHUCK-NORRIS" id="CHUCK-NORRIS-field">
-            <label class="form-group__label" for="CHUCK-NORRIS-field">Видел Чака Норриса</label>
-            <input class="form-group__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
-            <label class="form-group__label" for="souvenir-field">Накупил сувениров</label>
-            <input class="form-group__checkbox" type="checkbox" name="tower" id="tower-field" checked>
-            <label class="form-group__label" for="tower-field">Удержал башню</label>
-            <input class="form-group__checkbox" type="checkbox" name="hotel" id="hotel-field">
-            <label class="form-group__label" for="hotel-field">Разгромил отель</label>
+          <fieldset class="form-group  form-group--goals-data  form-group--dark">
+            <div class="form-group__wrapper">
+              <legend class="form-group__heading">Ваши безбашенные достижения в путешествии</legend>
+              <input class="form-group__checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
+              <label class="form-group__label" for="selfie-field">Сделал селфи с акулой</label>
+              <input class="form-group__checkbox" type="checkbox" name="beach" id="beach-field" checked>
+              <label class="form-group__label" for="beach-field">Обгорел на пляже</label>
+              <input class="form-group__checkbox" type="checkbox" name="CHUCK-NORRIS" id="CHUCK-NORRIS-field">
+              <label class="form-group__label" for="CHUCK-NORRIS-field">Видел Чака Норриса</label>
+              <input class="form-group__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+              <label class="form-group__label" for="souvenir-field">Накупил сувениров</label>
+              <input class="form-group__checkbox" type="checkbox" name="tower" id="tower-field" checked>
+              <label class="form-group__label" for="tower-field">Удержал башню</label>
+              <input class="form-group__checkbox" type="checkbox" name="hotel" id="hotel-field">
+              <label class="form-group__label" for="hotel-field">Разгромил отель</label>
+            </div>
           </fieldset>
-          <fieldset class="form-group">
-            <legend class="form-group__heading  visually-hidden">Укажите свои координаты</legend>
-            <label class="form-group__label" for="phone-field">Номер телефона</label>
-            <input class="form-group__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста" maxlength="30">
-            <label class="form-group__label" for="email-field">Адресок почты</label>
-            <input class="form-group__input" type="email" name="email" id="email-field" placeholder="Введите почту" maxlength="30" required>
-            <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+
+          <fieldset class="form-group  form-group--contacts-data">
+            <div class="form-group__wrapper">
+              <legend class="form-group__heading">Контактная информация</legend>
+              <label class="form-group__label" for="phone-field">Номер телефона</label>
+              <input class="form-group__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста" maxlength="30">
+              <label class="form-group__label" for="email-field">Адресок почты</label>
+              <input class="form-group__input" type="email" name="email" id="email-field" placeholder="Введите почту" maxlength="30" required>
+              <span class="form-group__flag  form-group__flag--required">Обязательное поле</span>
+            </div>
           </fieldset>
-          <fieldset class="form-group  form-group--dark">
-            <legend class="form-group__heading">С каким приложением путешествовали</legend>
-            <input class="form-group__radio" type="radio" name="system" id="ios-field" value="ios" checked>
-            <label class="form-group__label" for="ios-field">Pink для iOS</label>
-            <input class="form-group__radio" type="radio" name="system" id="android-field" value="android">
-            <label class="form-group__label" for="android-field">Pink для Android</label>
-            <input class="form-group__radio" type="radio" name="system" id="windows-field" value="windows">
-            <label class="form-group__label" for="windows-field">Pink для Windows</label>
+
+          <fieldset class="form-group  form-group--app-data form-group--dark">
+            <div class="form-group__wrapper">
+              <legend class="form-group__heading">С каким приложением путешествовали</legend>
+              <input class="form-group__radio" type="radio" name="system" id="ios-field" value="ios" checked>
+              <label class="form-group__label" for="ios-field">Pink для iOS</label>
+              <input class="form-group__radio" type="radio" name="system" id="android-field" value="android">
+              <label class="form-group__label" for="android-field">Pink для Android</label>
+              <input class="form-group__radio" type="radio" name="system" id="windows-field" value="windows">
+              <label class="form-group__label" for="windows-field">Pink для Windows</label>
+            </div>
           </fieldset>
-          <fieldset class="form-group">
-            <legend class="form-group__heading">Опишите свои эмоции</legend>
-            <textarea class="form-group__input  form-group__input--text" rows="10" cols="45" name="message" id="message-field" value="Можно прям в красках, не стесняясь в выражениях" placeholder="Можно прям в красках, не стесняясь в выражениях" maxlength="300"></textarea>
+
+          <fieldset class="form-group  form-group--feel-data">
+            <div class="form-group__wrapper">
+              <legend class="form-group__heading">Опишите свои эмоции</legend>
+              <textarea class="form-group__input  form-group__input--text" rows="10" cols="45" name="message" id="message-field" value="Можно прям в красках, не стесняясь в выражениях" placeholder="Можно прям в красках, не стесняясь в выражениях" maxlength="300"></textarea>
+            </div>
           </fieldset>
-          <button class="btn  btn--green  btn--block" type="submit">Отправить форму</button>
-          <small class="form-group__heading  form-group__heading--ordinar-text"><sup>*</sup>&mdash; обязательные поля</small>
+          <fieldset class="form-group  form-group--btn-data">
+            <div class="form-group__wrapper">
+              <button class="btn  btn--green  btn--block" type="submit">Отправить форму</button>
+              <small class="form-group__heading  form-group__heading--ordinar-text"><sup>*</sup>&mdash; обязательные поля</small>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>

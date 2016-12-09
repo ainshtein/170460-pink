@@ -4,13 +4,37 @@
 
 .form-group {
   padding: 40px 0;
+  // margin-bottom: 40px;
   border: none;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+
+  }
 
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
+
+.form-group__wrapper {
+  @include container;
+
+  @include tablet {
+    position: relative;
+    border: 2px solid $grey-dark;
+    margin-bottom: 40px;
+    padding: 45px 60px 50px;
+  }
+
+  @include desktop {
+    width: auto;
+  }
+}
 
 .form-group__heading {
   font: inherit;
@@ -19,7 +43,22 @@
   text-transform: uppercase;
   color: $red;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  @include tablet {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+    background-color: $WHITE;
+    padding: 0 10px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .form-group__label {
@@ -33,6 +72,15 @@
   padding-left: 20px;
   margin-bottom: 5px;
   color: $red;
+
+  @include tablet {
+    @include inlineblock(middle);
+    margin-right: 20px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .form-group__input {
@@ -44,6 +92,17 @@
   outline: none;
   border: 2px solid $grey-dark;
   padding: 23px;
+  width: 100%;
+
+  @include tablet {
+    @include inlineblock(middle);
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    width: 70%;
+  }
 }
 
 .form-group__flag {
@@ -52,19 +111,101 @@
 }
 
 .form-group__checkbox {
+  display: block;
 
+  @include tablet {
+
+  }
+
+  @include desktop {
+    display: inline-block;
+  }
 }
 
 .form-group__radio {
-
+  display: block;
 }
 
 // ==========================================================================
 // Modifiers
 // ==========================================================================
+.form-group--name-data {
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    @include inlineblock;
+    width: 450px;
+    padding-bottom: 600px;
+  }
+
+}
+
+.form-group--app-data {
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 196px;
+    right: 0;
+    width: 450px;
+  }
+
+}
+
+.form-group--contacts-data {
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 520px;
+  }
+}
+
+.form-group--goals-data {
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 880px;
+  }
+}
+
+
+
+.form-group--contacts-data .form-group__wrapper .form-group__heading {
+  font-size: 0;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desktop {
+
+  }
+}
 
 .form-group--dark {
   background-color: $grey;
+
+  @include tablet {
+    background-color: $WHITE;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .form-group--dark .form-group__label {
@@ -74,14 +215,84 @@
   text-transform: none;
   padding-left: 70px;
   color: $BLACK;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
+.form-group--btn-data {
+  text-align: center;
+
+  @include tablet {
+    @include clearfix;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--name-data  .form-group__wrapper,
+.form-group--btn-data  .form-group__wrapper {
+
+  @include tablet {
+    border: none;
+    padding: 0;
+  }
+
+  @include desktop {
+
+  }
+
+.form-group--contacts-data  .form-group__wrapper .form-group__heading {
+  position: static;
+  font-size: 0;
+
+  @include tablet {
+  }
+
+  @include desktop {
+
+  }
+}
+
+}
+
+.form-group--btn-data  .btn--green {
+  margin-bottom: 40px;
+
+  @include tablet {
+    width: auto;
+    float: left;
+  }
+
+  @include desktop {
+
+  }
+}
+
+
 .form-group__heading--ordinar-text {
-  @include inlineblock;
+  @include inlineblock(middle);
   width: 200px;
   font: inherit;
   font-size: inherit;
   color: $BLACK;
+
+  @include tablet {
+    float: right;
+    margin-top: 10px;
+    position: static;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .form-group__heading--ordinar-text sup {
@@ -89,7 +300,11 @@
 }
 
 .form-group__input--text {
-
+  display: block;
+  margin: 0 auto;
+  resize: none;
+  width: 100%;
+  height: 200px;
 }
 
 .form-group__flag--required {

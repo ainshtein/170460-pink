@@ -2,7 +2,15 @@
 // Block
 // ==========================================================================
 .form {
-  padding: 0 20px;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    position: relative;
+    @include container;
+  }
 }
 
 // ==========================================================================
@@ -10,12 +18,30 @@
 // ==========================================================================
 
 .form__title {
+  @include container;
   font: inherit;
   font-size: inherit;
   line-height: 30px;
   text-align: center;
+  padding: 20px 0 40px;
+
+  @include tablet {
+    font-size: 18px;
+    padding: 100px 25px 40px;
+  }
+
+  @include desktop {
+    padding: 100px 0 40px;
+  }
 }
 
+.form__title span {
+  display: none;
+
+  @include tablet {
+    display: inline;
+  }
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
