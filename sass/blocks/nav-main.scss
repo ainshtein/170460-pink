@@ -2,6 +2,8 @@
 // Block
 // ==========================================================================
 .nav-main {
+  position: relative;
+
 
   @include desktop {
     float: right;
@@ -15,11 +17,125 @@
 // ==========================================================================
 
 .nav-main__toggle {
+  position: absolute;
+  top: -46px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+
   padding: 0;
   border: none;
   background: none;
   font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:active {
+    outline: none;
+  }
+
+  @include tablet {
+    top: -66px;
+    right: 40px;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.nav-main--closed .nav-main__toggle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: $WHITE;
+  box-shadow: 0 10px 0 0 $WHITE,
+              0 20px 0 0 $WHITE;
+
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+}
+
+.nav-main--closed .nav-main__toggle:hover::before {
+  background-color: $red;
+  box-shadow: 0 10px 0 0 $red,
+              0 20px 0 0 $red;
+}
+
+.nav-main--closed .nav-main__toggle:active::before {
+  background-color: rgba($red, 0.3);
+  box-shadow: 0 10px 0 0 rgba($red, 0.3),
+              0 20px 0 0 rgba($red, 0.3);
+  outline: none;
+}
+
+.nav-main--opened .nav-main__toggle {
+  top: -35px;
+
+  @include tablet {
+    top: -50px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 18px;
+
+    width: 24px;
+    height: 4px;
+
+    background-color: $WHITE;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $red;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($red, 0.3);
+  }
+}
+
+.nav-main--nojs .nav-main__toggle {
   display: none;
+}
+
+.nav-main--nojs .nav-main__list {
+  display: block;
 }
 
 .nav-main__container {
@@ -67,6 +183,14 @@
   box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   margin-bottom: 1px;
 
+  &:hover {
+    color: $red;
+  }
+
+  &:active {
+    color: rgba($WHITE, 0.3);
+  }
+
   @include desktop {
     box-shadow: none;
     font-size: 18px;
@@ -75,6 +199,17 @@
   }
 }
 
+.nav-main--closed .nav-main__list {
+  display: none;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
@@ -87,9 +222,16 @@
 
 }
 
-.nav-main__item--active {
+.nav-main__item--active .nav-main__link {
 
-    & .nav-main__link {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
+    cursor: default;
+
+  &:hover {
+    color: $WHITE;
+  }
+
+  &:active {
+    color: $WHITE;
+  }
 }

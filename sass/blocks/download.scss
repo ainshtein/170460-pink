@@ -4,23 +4,31 @@
 
 .download {
   @include color($blue-dark, $WHITE);
-  padding: 30px 20px 35px 20px;
+  padding: 30px 20px 35px;
+  position: absolute;
+  bottom: -323px;
+  width: 100%;
+  z-index: 5;
 
   @include tablet {
     padding: 0;
     margin: 0;
+    margin-left: 40px;
     background-color: transparent;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
+    position: static;
+    padding: 102px 0 112px;
+    // position: absolute;
+    // bottom: 50px;
+    // left: 50%;
     width: 300px;
-    margin-left: -300px;
+    // margin-left: -300px;
   }
 
   @include desktop {
-    bottom: 200px;
-    left: 50%;
-    margin-left: -450px;
+    // bottom: 200px;
+    // left: 50%;
+    // margin-left: -450px;
+    padding: 118px 0 124px;
   }
 }
 
@@ -32,12 +40,15 @@
 
 }
 
+.download__wrapper {
+  @include container;
+}
+
 .download__container {
   width: 280px;
-  margin: 0 auto;
 
   @include tablet {
-    width: auto;
+    width: 300px;
   }
 }
 

@@ -3,22 +3,29 @@
 // ==========================================================================
 
 .header-main {
-  background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
-              url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  // background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
+  //             url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   color: $WHITE;
   background-color: $blue-nav;
   padding-bottom: 395px;
+  margin-bottom: 323px;
+  position: relative;
 
   @include tablet {
-    background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
-              url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+    // background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
+    //           url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
     background-color: $blue-nav;
-    padding-bottom: 620px;
-    position: relative;
+    padding-bottom: 0;
+    // padding-bottom: 620px;
+    margin-bottom: 0;
+
   }
 
   @include desktop {
-    padding-bottom: 743px;
+    // padding-bottom: 743px;
+    background-size: cover;
+
   }
 }
 
@@ -51,12 +58,16 @@
 }
 
 .header-main__top {
-
+  background-color: rgba($BLACK, 0.3);
   // padding: 0 20px;
 
   // background-color: rgba($blue-dark, 0.3);
 
-  // background-color: rgba($red, 0.3); //temp
+  // background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  // background-size: cover;
+  @include tablet {
+
+  }
   @include desktop {
     background-color: rgba($BLACK, 0.3);
   }
@@ -70,6 +81,33 @@
   }
 }
 
+.header-main__top-image {
+  // padding-top: 110px;
+  position: absolute;
+  bottom: 0;
+
+  @include tablet {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include desktop {
+
+  }
+}
+
+.header-main__top-image img {
+  width: 258px;
+  height: 286px;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
