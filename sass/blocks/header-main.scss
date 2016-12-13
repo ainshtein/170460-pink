@@ -85,27 +85,33 @@
   // padding-top: 110px;
   position: absolute;
   bottom: 0;
+  width: 258px;
+  height: 286px;
 
   @include tablet {
+    width: 470px;
+    height: 547px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @include desktop {
-
+    width: 555px;
+    height: 645px;
   }
 }
 
-.header-main__top-image img {
+.header-main__top-image img{
   width: 258px;
   height: 286px;
 
   @include tablet {
-
-  }
-
+    width: 470px;
+    height: 547px;
+}
   @include desktop {
-
+    width: 555px;
+    height: 645px;
   }
 }
 // ==========================================================================

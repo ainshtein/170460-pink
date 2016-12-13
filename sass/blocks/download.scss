@@ -13,14 +13,15 @@
   @include tablet {
     padding: 0;
     margin: 0;
-    margin-left: 40px;
+    // margin-left: 40px;
     background-color: transparent;
-    position: static;
+    position: relative;
+    bottom: 0;
     padding: 102px 0 112px;
     // position: absolute;
     // bottom: 50px;
     // left: 50%;
-    width: 300px;
+    // width: 300px;
     // margin-left: -300px;
   }
 
@@ -41,14 +42,23 @@
 }
 
 .download__wrapper {
-  @include container;
+
+  @include tablet {
+    margin-left: 40px;
+  }
+
+  @include desktop {
+    @include container;
+  }
 }
 
 .download__container {
   width: 280px;
+  margin: 0 auto;
 
   @include tablet {
     width: 300px;
+    margin: 0;
   }
 }
 

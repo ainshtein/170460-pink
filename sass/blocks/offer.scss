@@ -50,13 +50,15 @@
 
 .offer__table {
   border-collapse: collapse;
-  border: 2px solid $grey-dark;
+  // border: 2px solid $grey-dark;
+
 }
 
 .offer__table-header {
-  @include color($blue-nav, $WHITE);
-  border: 2px solid $grey-dark;
-  border-bottom: 2px solid $blue-nav;
+  // @include color($blue-nav, $WHITE);
+  // border: 2px solid $grey-dark;
+  // border-bottom: 2px solid $blue-nav;
+
 
   // @include tablets {
   //   display: block;
@@ -67,13 +69,34 @@
   // }
 }
 
+.offer__table-header th {
+  @include color($blue-nav, $WHITE);
+}
+
+.offer__table-header th:first-child {
+  display: none;
+
+  @include tablet {
+    display: table-cell;
+    background-color: transparent;
+    border: none;
+  }
+
+  @include desktop {
+    display: table-cell;
+  }
+}
+
+
 .offer__table-header th,
 .offer__table-header tr,
 .offer__table-header td {
   border: 2px solid $grey-dark;
 }
 
-
+.empty-cell {
+  border: none;
+}
 .offer__table tr td:nth-child(2n+3) {
   @include tablet {
     display: none;
@@ -113,6 +136,12 @@
   }
 }
 
+.offer__heading--empty {
+  background-color: transparent;
+  border: none;
+}
+
+
 .offer__price {
   @include opensans(light);
   font-size: 24px;
@@ -126,6 +155,11 @@
   @include desktop {
     font-size: 24px;
   }
+}
+
+.offer__price--empty {
+  background-color: transparent;
+  border: none;
 }
 
 .offer__option {
