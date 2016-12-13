@@ -1,15 +1,16 @@
 // ==========================================================================
 // Block
 // ==========================================================================
-.form {
+
+.effect {
+  display: none;
 
   @include tablet {
-
+    display: block;
   }
 
   @include desktop {
-    position: relative;
-    @include container;
+    background-color: $grey;
   }
 }
 
@@ -17,31 +18,56 @@
 // Elements
 // ==========================================================================
 
-.form__title {
+.effect__wrapper {
   @include container;
-  font: inherit;
-  font-size: inherit;
-  line-height: 30px;
-  text-align: center;
-  padding: 20px 0 40px;
+}
 
-  @include tablet {
-    font-size: 18px;
-    padding: 100px 25px 40px;
-  }
+.effect__title {
+
+}
+
+.effect__content {
+  text-align: left;
+  padding: 100px 0 120px 310px;
 
   @include desktop {
-    padding: 100px 0 40px;
+    padding-left: 370px;
   }
 }
 
-.form__title span {
-  display: none;
+.effect__heading {
+  @include opensans(bold);
+  font-size: 30px;
+  line-height: 36px;
 
-  @include tablet {
-    display: inline;
+  @include desktop {
+    @include opensans;
   }
 }
+
+.effect__text {
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: $red;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+
 // ==========================================================================
 // Modifiers
 // ==========================================================================

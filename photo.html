@@ -4,31 +4,33 @@
     <meta charset="utf-8">
     <title>Фото</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=1220">  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="разные, ключевые, слова">
     <meta name="description" content="краткое описание сайта">
     <meta name="author" content="ainshtein">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page  page--inner">
     <header class="header-main  header-main--inner">
       <div class="header-main__top">
-        <a href="index.html" class="logo">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-        </a>
-        <nav class="nav-main  nav-main--closed  nav-main--nojs">
-          <button class="nav-main__toggle" type="button">Открыть меню</button>
-          <div class="nav-main__container">
-            <ul class="nav-main__list">
-              <li class="nav-main__item"><a href="index.html" class="nav-main__link">Главная</a></li>
-              <li class="nav-main__item  nav-main__item--active"><a class="nav-main__link">Фотографии</a></li>
-              <li class="nav-main__item"><a href="form.html" class="nav-main__link">Конкурс</a></li>
-              <li class="nav-main__item"><a href="https://htmlacademy.ru/" class="nav-main__link">Html Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="header-main__top-wrapper">
+          <a href="index.html" class="logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+          </a>
+          <nav class="nav-main  nav-main--closed  nav-main--nojs">
+            <button class="nav-main__toggle" type="button">Открыть меню</button>
+            <div class="nav-main__container">
+              <ul class="nav-main__list">
+                <li class="nav-main__item"><a href="index.html" class="nav-main__link">Главная</a></li>
+                <li class="nav-main__item  nav-main__item--active"><a class="nav-main__link">Фотографии</a></li>
+                <li class="nav-main__item"><a href="form.html" class="nav-main__link">Конкурс</a></li>
+                <li class="nav-main__item"><a href="https://htmlacademy.ru/" class="nav-main__link">Html Academy</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-      <h1 class="header-main__title">Фотографии пользователей</h1>
+      <h1 class="header-main__title">Фотографии<br> пользователей</h1>
     </header>
     <main class="content">
       <article class="gallery">
@@ -38,99 +40,113 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </header>
+        <div class="gallery__best-photo">
+          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+          <div class="flag  flag--photo">Панорама дня</div>
+        </div>
+        <div class="gallery__description  gallery__description--best-foto">
+          <span class="gallery__user">Анна</span>
+          <time class="gallery__date" datetime="2017-11-27T18:18:18+04:00">(5 минут назад)</time>
+          <p class="gallery__text">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <a href="#" class="gallery__likes">Нравится: 215</a>
+            </div>
         <div class="gallery__content">
-          <figure class="gallery__item">
-            <div class="gallery__image  gallery__image--active">
-              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-              <div class="flag  flag--photo">Панорама дня</div>
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Анна</span>
-              <time class="gallery__date" datetime="2017-11-27T18:18:18+04:00">(5 минут назад)</time>
-              <p class="gallery__text">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 215</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo-1-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Левон</span>
-              <time class="gallery__date" datetime="2017-11-27T13:18:18+04:00">(5 часов назад)</time>
-              <p class="gallery__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 356</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo-2-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Антон</span>
-              <time class="gallery__date" datetime="2017-11-27T06:18:18+04:00">(12 часов назад)</time>
-              <p class="gallery__text">
-                Соседи будут рады!
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 666</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo-3-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Борис</span>
-              <time class="gallery__date" datetime="2017-11-26T02:18:18+04:00">(20 часов назад)</time>
-              <p class="gallery__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 215</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo-4-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Сергей</span>
-              <time class="gallery__date" datetime="2017-11-26T07:18:18+04:00">(25 часов назад)</time>
-              <p class="gallery__text">
-                Самая кубанская в мире!
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 4</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo-5-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Максим</span>
-              <time class="gallery__date" datetime="2017-11-26T22:18:18+04:00">(40 часов назад)</time>
-              <p class="gallery__text">
-                Где снег-то?
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 150</a>
-            </figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <div class="gallery__image">
-              <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo-6-mobile.jpg">
-            </div>
-            <figcaption class="gallery__description">
-              <span class="gallery__user">Надежда</span>
-              <time class="gallery__date" datetime="2017-11-25T03:18:18+04:00">(45 часов назад)</time>
-              <p class="gallery__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <a href="#" class="gallery__likes">Нравится: 2560</a>
-            </figcaption>
-          </figure>
+          <div class="gallery__wrapper">
+            <!-- <figure class="gallery__item  gallery__item--active">
+              <div class="gallery__image">
+                <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <div class="flag  flag--photo">Панорама дня</div>
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Анна</span>
+                <time class="gallery__date" datetime="2017-11-27T18:18:18+04:00">(5 минут назад)</time>
+                <p class="gallery__text">
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 215</a>
+              </figcaption>
+            </figure> -->
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo-1-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Левон</span>
+                <time class="gallery__date" datetime="2017-11-27T13:18:18+04:00">(5 часов назад)</time>
+                <p class="gallery__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 356</a>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo-2-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Антон</span>
+                <time class="gallery__date" datetime="2017-11-27T06:18:18+04:00">(12 часов назад)</time>
+                <p class="gallery__text">
+                  Соседи будут рады!
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 666</a>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo-3-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Борис</span>
+                <time class="gallery__date" datetime="2017-11-26T02:18:18+04:00">(20 часов назад)</time>
+                <p class="gallery__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 215</a>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo-4-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Сергей</span>
+                <time class="gallery__date" datetime="2017-11-26T07:18:18+04:00">(25 часов назад)</time>
+                <p class="gallery__text">
+                  Самая кубанская в мире!
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 4</a>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo-5-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Максим</span>
+                <time class="gallery__date" datetime="2017-11-26T22:18:18+04:00">(40 часов назад)</time>
+                <p class="gallery__text">
+                  Где снег-то?
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 150</a>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__image">
+                <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo-6-mobile.jpg">
+              </div>
+              <figcaption class="gallery__description">
+                <span class="gallery__user">Надежда</span>
+                <time class="gallery__date" datetime="2017-11-25T03:18:18+04:00">(45 часов назад)</time>
+                <p class="gallery__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <a href="#" class="gallery__likes">Нравится: 2560</a>
+              </figcaption>
+            </figure>
+          </div>
         </div>
         <footer class="gallery__footer">
           <p class="gallery__footer-text">
@@ -140,27 +156,60 @@
       </article>
       <section class="editor">
         <h2 class="editor__title  visually-hidden">Визуальный редактор</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="editor__top">
-            <div class="editor__image">
-              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="photo-7-mobile.jpg">
-            </div>
-            <div class="editor__tools">
-              <span class="editor__tool  editor__tool--crop">Обрезать изображение</span>
-              <span class="editor__tool  editor__tool--fill">Залить цветом изображение</span>
-              <span class="editor__tool  editor__tool--contrast">Контраст изображения</span>
-            </div>
-            <div class="range">
-              <div class="range__scale">Шкала
-                <div class="range__toggle">Переключатель</div>
+        <div class="editor__wrapper">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <!-- <div class="editor__top"> -->
+              <div class="editor__image">
+                <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="photo-7-mobile.jpg">
               </div>
+              <div class="editor__tools">
+
+
+                <div class="editor__tool  editor__tool--crop">
+                  <span>Обрезать изображение</span>
+                  <img src="../img/icon-editor-crop.svg" alt="Обрезать изображение">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="editor__tool  editor__tool--fill">
+                  <span>Залить цветом изображение</span>
+                  <img src="../img/icon-editor-fill.svg" alt="Залить цветом изображение">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="editor__tool  editor__tool--contrast">
+                  <span>Контраст изображения</span>
+                  <img src="../img/icon-editor-contrast.svg" alt="Контраст изображения">
+                  <div class="range">
+                    <div class="range__scale">Шкала
+                      <div class="range__toggle">Переключатель</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <span class="editor__tool  editor__tool--crop">Обрезать изображение</span>
+                <span class="editor__tool  editor__tool--fill">Залить цветом изображение</span>
+                <span class="editor__tool  editor__tool--contrast">Контраст изображения</span> -->
+              </div>
+              <div class="range">
+                <div class="range__scale">Шкала
+                  <div class="range__toggle">Переключатель</div>
+                </div>
+              </div>
+            <!-- </div> -->
+            <div class="editor__buttons">
+              <button class="btn  btn--red  btn--block" type="submit">Запостить</button>
+              <button class="btn  btn--grey  btn--block" type="reset">Отмена</button>
             </div>
-          </div>
-          <div class="editor__bottom">
-            <button class="btn  btn--red  btn--block" type="submit">Запостить</button>
-            <button class="btn  btn--gray  btn--block" type="reset">Отмена</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer-main">
@@ -177,6 +226,6 @@
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Копирайт">
       </div>
     </footer>
-    <!-- <script src="js/script.min.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 .modal {
   @include color;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  display: none;
 }
 
 // ==========================================================================
@@ -31,7 +32,7 @@
 }
 
 .modal__bottom {
-  background-color: $gray;
+  background-color: $grey;
   padding: 50px 20px;
 }
 

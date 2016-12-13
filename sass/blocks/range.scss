@@ -3,8 +3,20 @@
 // ==========================================================================
 
 .range {
-  margin-bottom: 25px;
+  position: relative;
 
+  width: 240px;
+  margin: 0 auto;
+
+  font-size: 0;
+
+  @include tablet {
+    width: 202px;
+  }
+
+  @include desktop {
+    width: 288px;
+  }
 }
 
 // ==========================================================================
@@ -12,11 +24,23 @@
 // ==========================================================================
 
 .range__scale {
+  height: 2px;
 
+  background-color: $blue-nav;
 }
 
 .range__toggle {
+  position: absolute;
+  top: 50%;
+  left: 20px;
 
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+
+  border: 2px solid $red;
+  border-radius: 50%;
+  background-color: $grey;
 }
 
 // ==========================================================================

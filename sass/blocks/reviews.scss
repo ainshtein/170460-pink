@@ -3,7 +3,12 @@
 // ==========================================================================
 
 .reviews {
-  padding: 60px 20px ;
+  padding: 60px 0;
+  @include container;
+
+  @include desktop {
+    padding: 190px 120px 45px;
+  }
 }
 
 // ==========================================================================
@@ -25,8 +30,15 @@
 .reviews__item {
   font: inherit;
   line-height: 30px;
+  margin: 0;
   margin-bottom: 30px;
   text-align: center;
+
+  @include tablet {
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 100px;
+  }
 }
 
 .reviews__author {
@@ -36,6 +48,38 @@
   line-height: 30px;
   margin-bottom: 25px;
   text-align: center;
+  font-style: normal;
+
+
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 20px;
+    line-height: 30px;
+    width: 360px;
+    margin-left: -180px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-status {
+  display: none;
+  font-style: normal;
+
+  @include tablet {
+    display: block;
+    @include opensans;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .reviews__toggles {

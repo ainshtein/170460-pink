@@ -1,5 +1,5 @@
 // ==========================================================================
-// Миксины для работы со шрифтами
+// Mixins for text properties
 // ==========================================================================
 
 @mixin opensans($style: regular) {
@@ -20,7 +20,7 @@
 }
 
 // ==========================================================================
-// Миксины для работы с цветом
+// Mixins for color properties
 // ==========================================================================
 @mixin color($bg: $WHITE, $color: $BLACK) {
   background: $bg;
@@ -28,20 +28,80 @@
 }
 
 // ==========================================================================
-// Миксины для работы с инлайн-блоками
+// Mixins for layout properties
 // ==========================================================================
 @mixin inlineblock($valign: top) {
   display: inline-block;
   vertical-align: $valign;
 }
 
-// ==========================================================================
-// Миксины для работы с сеткой
-// ==========================================================================
 @mixin clearfix {
   &:after {
     content: " ";
     display: table;
     clear: both;
+  }
+}
+
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin container {
+  width: $container-small;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    width: $container-medium;
+  }
+
+  @media #{$desktop-width} {
+    width: $container-large;
+  }
+}
+
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media #{$laptop-width} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media #{$phone-width} {
+    @content;
   }
 }

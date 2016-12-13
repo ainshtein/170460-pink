@@ -2,37 +2,127 @@
 // Block
 // ==========================================================================
 
-.footer-main {
-  padding: 40px 20px;
+.page .footer-main {
+  display: none;
+  @include clearfix;
+
+  @include tablet {
+    display: block;
+  }
 }
+
+.footer-main {
+  @include container;
+    padding: 35px 0;
+
+  @include desktop {
+    padding: 70px 0 85px;
+  }
+}
+
+.page--inner .footer-main {
+  display: block;
+  padding: 40px 0;
+}
+
+
 
 // ==========================================================================
 // Elements
 // ==========================================================================
 
-.footer-main__logo,
-.footer-main__socials {
-  margin-left: auto;
-  margin-right: auto;
+.footer-main__logo {
+  float: left;
+  width: 150px;
+}
+
+.page--inner .footer-main__logo {
+  float: none;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  @include tablet {
+    float: left;
+    width: 150px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .footer-main__socials {
+  float: left;
+  width: 310px;
   font-size: 0;
   text-align: center;
+
+  @include desktop {
+    width: 630px;
+  }
+}
+
+.page--inner .footer-main__socials {
+  float: none;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @include tablet {
+    float: left;
+    width: 310px;
+    font-size: 0;
+    text-align: center;
+  }
+
+  @include desktop {
+    width: 630px;
+  }
+}
+
+.footer-main__copy {
+  float: right;
+  width: 160px;
 }
 
 .footer-main__copy {
   font: inherit;
   font-size: inherit;
   line-height: 14px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 10px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .footer-main__copy span {
-  padding-right: 15px;
+  @include inlineblock(middle);
   margin-right: 15px;
+
+  @include desktop {
+    margin-right: 10px;
+  }
+}
+
+.footer-main__copy img {
+  @include inlineblock(middle);
+}
+
+.page--inner .footer-main__copy {
+  float: none;
+  margin: 0 auto;
+
+  @include tablet {
+    float: right;
+    width: 160px;
+    margin-top: 10px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 // ==========================================================================

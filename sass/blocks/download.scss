@@ -4,7 +4,32 @@
 
 .download {
   @include color($blue-dark, $WHITE);
-  padding: 30px 20px 35px 20px;
+  padding: 30px 20px 35px;
+  position: absolute;
+  bottom: -323px;
+  width: 100%;
+  z-index: 5;
+
+  @include tablet {
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+    background-color: transparent;
+    position: static;
+    padding: 102px 0 112px;
+    // position: absolute;
+    // bottom: 50px;
+    // left: 50%;
+    width: 300px;
+    // margin-left: -300px;
+  }
+
+  @include desktop {
+    // bottom: 200px;
+    // left: 50%;
+    // margin-left: -450px;
+    padding: 118px 0 124px;
+  }
 }
 
 // ==========================================================================
@@ -15,8 +40,27 @@
 
 }
 
-.download__container {
+.download__wrapper {
+  @include container;
+}
 
+.download__container {
+  width: 280px;
+
+  @include tablet {
+    width: 300px;
+  }
+}
+
+.download .heading {
+  display: none;
+  color: $WHITE;
+
+  @include tablet {
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+  }
 }
 .download__list {
   padding: 0;
@@ -30,6 +74,11 @@
 
 .download__item {
   @include inlineblock(middle);
+  margin-right: 30px;
+}
+
+.download__link {
+
 }
 
 .download__text {

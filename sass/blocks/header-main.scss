@@ -3,10 +3,30 @@
 // ==========================================================================
 
 .header-main {
-  background: url("../../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
-              url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  // background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
+  //             url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   color: $WHITE;
-  background-color: $blue-dark;
+  background-color: $blue-nav;
+  padding-bottom: 395px;
+  margin-bottom: 323px;
+  position: relative;
+
+  @include tablet {
+    // background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
+    //           url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+    background-color: $blue-nav;
+    padding-bottom: 0;
+    // padding-bottom: 620px;
+    margin-bottom: 0;
+
+  }
+
+  @include desktop {
+    // padding-bottom: 743px;
+    background-size: cover;
+
+  }
 }
 
 // ==========================================================================
@@ -14,26 +34,85 @@
 // ==========================================================================
 
 .header-main__title {
+  @include container;
   @include opensans(light);
+  width: 280px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding: 30px 50px 80px;
+  padding: 30px 0 80px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+
+  @include tablet {
+    // width: 400px;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    // padding: 80px 0 145px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .header-main__top {
-  background-color: rgba($blue-dark, 0.3);
-  padding: 22px 20px;
-  // margin-bottom: 400px;
+  background-color: rgba($BLACK, 0.3);
+  // padding: 0 20px;
+
+  // background-color: rgba($blue-dark, 0.3);
+
+  // background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  // background-size: cover;
+  @include tablet {
+
+  }
+  @include desktop {
+    background-color: rgba($BLACK, 0.3);
+  }
 }
 
+.header-main__top-wrapper {
+  @include desktop {
+    @include container;
+    @include clearfix;
+    padding: 27px 0 40px;
+  }
+}
+
+.header-main__top-image {
+  // padding-top: 110px;
+  position: absolute;
+  bottom: 0;
+
+  @include tablet {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include desktop {
+
+  }
+}
+
+.header-main__top-image img {
+  width: 258px;
+  height: 286px;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
 
 .header-main--inner {
-  // margin-bottom: 170px;
-  background: $blue-dark url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  padding: 0;
 }
