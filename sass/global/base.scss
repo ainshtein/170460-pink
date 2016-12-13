@@ -19,8 +19,8 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  // max-width: 100%;
+  // max-height: 100%;
 }
 
 // On screen - hidden, in accessibility tree - visible
@@ -59,18 +59,18 @@ body {
   min-width: 320px;
 }
 
-  @include tablet {
+ //  @include tablet {
 
-  }
+ //  }
 
-  @include desktop {
+ //  @include desktop {
 
-  }
+ //  }
 
- &:hover {
+ // &:hover {
 
-  }
+ //  }
 
-  &:active {
+ //  &:active {
 
-  }
+ //  }

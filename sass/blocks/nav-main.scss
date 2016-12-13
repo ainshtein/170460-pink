@@ -68,7 +68,7 @@
   }
 
   @include desktop {
-
+    display: none;
   }
 }
 
@@ -130,13 +130,6 @@
   }
 }
 
-.nav-main--nojs .nav-main__toggle {
-  display: none;
-}
-
-.nav-main--nojs .nav-main__list {
-  display: block;
-}
 
 .nav-main__container {
 
@@ -147,6 +140,12 @@
   margin: 0;
   list-style: none;
   font-size: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-grow: 1;
 
   @include desktop {
     text-align: right;
@@ -210,6 +209,15 @@
     display: block;
   }
 }
+
+.nav-main--nojs .nav-main__toggle {
+  display: none;
+}
+
+.nav-main--nojs .nav-main__list {
+  display: block;
+}
+
 // ==========================================================================
 // Modifiers
 // ==========================================================================

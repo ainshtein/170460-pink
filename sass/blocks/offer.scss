@@ -50,13 +50,66 @@
 
 .offer__table {
   border-collapse: collapse;
-  border: 2px solid $grey-dark;
+  // border: 2px solid $grey-dark;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+
+  }
+
+}
+
+//РУШИМ ТАБЛИЦУ
+.offer__table tbody {
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.offer__table tr {
+
+  @include tablet {
+    display: block;
+    margin-bottom: -2px;
+  }
+
+  @include desktop {
+
+  }
 }
 
 .offer__table-header {
-  @include color($blue-nav, $WHITE);
-  border: 2px solid $grey-dark;
-  border-bottom: 2px solid $blue-nav;
+
+  @include tablet {
+    margin-left: 156px;
+  }
+
+  @include desktop {
+    margin-left: 233px;
+  }
+
+}
+
+
+
+
+
+
+
+
+.offer__table-header {
+  // @include color($blue-nav, $WHITE);
+  // border: 2px solid $grey-dark;
+  // border-bottom: 2px solid $blue-nav;
+
 
   // @include tablets {
   //   display: block;
@@ -67,13 +120,34 @@
   // }
 }
 
+.offer__table-header th {
+  @include color($blue-nav, $WHITE);
+}
+
+// .offer__table-header th:first-child {
+//   display: none;
+
+//   @include tablet {
+//     display: table-cell;
+//     background-color: transparent;
+//     border: none;
+//   }
+
+//   @include desktop {
+//     display: table-cell;
+//   }
+// }
+
+
 .offer__table-header th,
 .offer__table-header tr,
 .offer__table-header td {
   border: 2px solid $grey-dark;
 }
 
-
+.empty-cell {
+  border: none;
+}
 .offer__table tr td:nth-child(2n+3) {
   @include tablet {
     display: none;
@@ -91,11 +165,11 @@
   border: 2px solid $grey-dark;
 
   @include tablet {
-    width: 156px;
+    width: 153px;
   }
 
   @include desktop {
-    width: 237px;
+    width: 235px;
   }
 }
 .offer__heading {
@@ -113,6 +187,12 @@
   }
 }
 
+.offer__heading--empty {
+  background-color: transparent;
+  border: none;
+}
+
+
 .offer__price {
   @include opensans(light);
   font-size: 24px;
@@ -128,6 +208,11 @@
   }
 }
 
+.offer__price--empty {
+  background-color: transparent;
+  border: none;
+}
+
 .offer__option {
   width: 210px;
   font: inherit;
@@ -140,6 +225,8 @@
   background-color: $WHITE;
 
   @include tablet {
+    font-size: 14px;
+    text-transform: none;
     width: 156px;
   }
 
@@ -155,6 +242,14 @@
   border: 2px solid $grey-dark;
   // border-left: 0;
   background-color: $WHITE;
+
+  @include tablet {
+    width: 153px;
+  }
+
+  @include desktop {
+    width: 238px;
+  }
 
 }
 
