@@ -101,10 +101,10 @@
     content: "";
     position: absolute;
     display: block;
-    top: 0;
-    left: 18px;
+    top: -4px;
+    left: 25px;
 
-    width: 24px;
+    width: 28px;
     height: 4px;
 
     background-color: $WHITE;
@@ -141,14 +141,15 @@
   list-style: none;
   font-size: 0;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  flex-grow: 1;
+
 
   @include desktop {
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    // text-align: right;
   }
 }
 
@@ -206,7 +207,7 @@
   }
 
   @include desktop {
-    display: block;
+    display: flex;
   }
 }
 

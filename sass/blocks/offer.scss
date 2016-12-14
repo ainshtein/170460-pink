@@ -2,7 +2,7 @@
 // Block
 // ==========================================================================
 .offer {
-  padding: 60px 0 100px;
+  padding: 469px 0 0;
   background: $grey;
   position: relative;
 
@@ -22,11 +22,11 @@
    }
 
    @include tablet {
-      padding: 90px 0 68px;
+      padding: 83px 0 71px;
    }
 
    @include desktop {
-      padding: 150px 0 96px;
+      padding: 105px 0 96px;
    }
 }
 
@@ -49,11 +49,19 @@
 }
 
 .offer__table {
+  position: absolute;
+  left: 50%;
+  bottom: 109px;
+  width: 840px;
+  transform: translateX(-50%);
   border-collapse: collapse;
   // border: 2px solid $grey-dark;
 
   @include tablet {
+    position: static;
     display: block;
+    transform: none;
+    width: auto;
   }
 
   @include desktop {
@@ -163,13 +171,16 @@
   width: 140px;
   text-align: center;
   border: 2px solid $grey-dark;
+  padding: 20px;
 
   @include tablet {
     width: 153px;
+    padding: 10px;
   }
 
   @include desktop {
     width: 235px;
+    padding: 19px;
   }
 }
 .offer__heading {
@@ -177,6 +188,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 
   @include tablet {
     font-size: 16px;
@@ -219,7 +231,8 @@
   font-size: inherit;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 12px;
+  padding-left: 20px;
   border: 2px solid $grey-dark;
   // border-right: 0;
   background-color: $WHITE;
@@ -228,11 +241,14 @@
     font-size: 14px;
     text-transform: none;
     width: 156px;
+    padding: 7px;
+    padding-left: 20px;
   }
 
   @include desktop {
     width: 238px;
     font-size: 18px;
+    padding: 14px;
   }
 }
 
@@ -255,6 +271,7 @@
 
 .offer__toggles {
   font-size: 0;
+  bottom: 35px;
 
   @include tablet {
     display: none;

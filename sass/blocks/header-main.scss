@@ -9,7 +9,7 @@
   color: $WHITE;
   background-color: $blue-nav;
   padding-bottom: 395px;
-  margin-bottom: 323px;
+  margin-bottom: 266px;
   position: relative;
 
   @include tablet {
@@ -80,10 +80,10 @@
   @include desktop {
     @include container-fluid;
     // @include container;
-    @include clearfix;
+    // @include clearfix;
     flex-direction: row;
     justify-content: space-between;
-    padding: 27px 0 40px;
+    padding: 44px 0 40px;
   }
 }
 

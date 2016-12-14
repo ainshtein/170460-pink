@@ -82,7 +82,7 @@
 
 .footer-main__copy {
   float: right;
-  width: 160px;
+  max-width: 160px;
 }
 
 .footer-main__copy {
@@ -116,7 +116,7 @@
 
   @include tablet {
     float: right;
-    width: 160px;
+    max-width: 160px;
     margin-top: 10px;
   }
 

@@ -4,13 +4,13 @@
 
 .logo {
   display: block;
-  padding: 17px 20px 20px;
+  padding: 20px 20px 26px;
   // box-shadow: 0 1px 0 black;
   // margin-bottom: 1px;
   // background-color: $blue-nav;
 
   @include tablet {
-    padding: 27px 40px 40px;
+    padding: 47px 40px 40px;
   }
 
   @include desktop {

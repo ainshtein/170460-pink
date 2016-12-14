@@ -28,10 +28,11 @@
 
 .effect__content {
   text-align: left;
-  padding: 100px 0 120px 310px;
+  padding: 66px 0 120px 317px;
 
   @include desktop {
     padding-left: 370px;
+    padding-bottom: 111px;
   }
 }
 
@@ -39,9 +40,17 @@
   @include opensans(bold);
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 10px;
 
   @include desktop {
     @include opensans;
+  }
+}
+
+.effect__heading br {
+
+  @include desktop {
+    display: none;
   }
 }
 
@@ -49,10 +58,12 @@
   font: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin-bottom: 7px;
 
   @include desktop {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 35px;
   }
 }
 
