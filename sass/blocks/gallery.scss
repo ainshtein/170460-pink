@@ -3,7 +3,8 @@
 // ==========================================================================
 
 .gallery {
-
+  display: flex;
+  flex-direction: column;
 }
 
 // ==========================================================================
@@ -12,7 +13,7 @@
 
 .gallery__header {
   @include container;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .gallery__title {
@@ -26,18 +27,18 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 50px 20px;
 }
 
 .gallery__header-text {
+    padding: 47px 0;
 
   @include tablet {
     font-size: 18px;
-    padding: 100px 90px 80px;
+    padding: 92px 10px 76px;
   }
 
   @include desktop {
-    padding: 100px 180px 80px;
+    padding: 92px 140px 88px;
   }
 }
 
@@ -47,10 +48,9 @@
   // width: 320px;
   // height: 137px;
 
-  // @include tablet {
-  //   width: 700px;
-  //   height: 509px;
-  // }
+  @include tablet {
+    min-height: 509px;  //temp
+  }
 
   // @include desktop {
   //   width: 1200px;
@@ -63,25 +63,7 @@
   width: 100%;
 }
 
-.gallery__description--best-foto {
-  @include container;
-  position: relative;
-  margin-bottom: 20px;
 
-  @include tablet {
-    padding: 30px 80px 30px 25px;
-    margin-bottom: 50px;
-  }
-}
-
-.gallery__description--best-foto .gallery__likes {
-
-    @include tablet {
-    position: absolute;
-    top: 25px;
-    left: 440px;
-  }
-}
 
 .gallery__content {
   @include container;
@@ -98,6 +80,9 @@
 
 .gallery__wrapper {
   margin-right: -20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .gallery__item {
@@ -113,6 +98,10 @@
       // &:nth-child(2n) {
       //   margin-right: 0;
       // }
+
+    @include desktop {
+      margin-bottom: 45px;
+    }
   }
 
   @include desktop {
@@ -145,12 +134,14 @@
 }
 
 .gallery__description {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: $grey;
-  padding: 25px 15px;
+  padding: 19px 15px 15px;
 
   @include tablet {
-    padding: 30px 25px;
+    padding: 25px 25px;
   }
 
   @include desktop {
@@ -158,11 +149,76 @@
   }
 }
 
+.gallery__description--best-foto {
+  @include container;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 18px 14px 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.gallery__description--best-foto .gallery__user {
+
+  @include tablet {
+    order: 1;
+    width: 50%;
+  }
+
+  @include desktop {
+
+  }
+
+}
+
+.gallery__description--best-foto .gallery__text {
+
+  @include tablet {
+    order: 3;
+    width: 100%;
+  }
+
+  @include desktop {
+
+  }
+
+}
+
+.gallery__description--best-foto .gallery__likes {
+
+  @include tablet {
+    order: 2;
+    width: 50%;
+    text-align: right;
+
+  }
+
+  @include desktop {
+
+  }
+
+}
+
+.gallery__description--best-foto .gallery__likes {
+
+  //   @include tablet {
+  //   position: absolute;
+  //   top: 25px;
+  //   left: 440px;
+  // }
+}
+
 .gallery__user {
   @include opensans(bold);
   font-size: 14px;
   line-height: 24px;
-  margin-right: 5px;
+  // margin-right: 5px;
 }
 
 .gallery__date {
@@ -177,7 +233,9 @@
   font: inherit;
   font-size: 14px;
   line-height: 24px;
-  min-height: 50px;
+  // min-height: 50px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .gallery__likes {
@@ -185,10 +243,8 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  text-decoration: none;
   color: $red;
   padding-left: 30px;
-  cursor: pointer;
 
   @include tablet {
     padding: 0;
@@ -200,21 +256,38 @@
 
 }
 
+.gallery__likes-link {
+  @include inlineblock(middle);
+  width: 13px;
+  height: 12px;
+  font: inherit;
+  font-size: 0;
+  text-decoration: none;
+  color: $red;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: $red; //temp
+}
+
 .gallery__footer {
   @include container;
 
   @include tablet {
     font-size: 18px;
-    padding: 70px 90px 75px;
+    padding: 45px 10px 28px;
   }
 
   @include desktop {
-    padding: 70px 250px 75px;
+    padding: 21px 250px 6px;
   }
 }
 
 .gallery__footer-text {
-  padding: 50px 10px;
+  padding: 18px 0 41px;
+
+  @include desktop {
+    padding: 18px 0 0;
+  }
 }
 
 
