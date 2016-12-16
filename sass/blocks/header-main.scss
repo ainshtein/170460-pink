@@ -57,6 +57,18 @@
   }
 }
 
+.header-main__title--form {
+  padding: 30px 0 51px;
+
+  @include tablet {
+    padding: 68px 0 75px;
+  }
+
+  @include desktop {
+    padding: 68px 0 96px;
+  }
+}
+
 .header-main__top {
   background-color: rgba($BLACK, 0.3);
   // padding: 0 20px;

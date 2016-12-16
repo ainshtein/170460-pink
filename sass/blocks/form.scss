@@ -13,6 +13,20 @@
   }
 }
 
+.form form {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 // ==========================================================================
 // Elements
 // ==========================================================================
@@ -23,15 +37,27 @@
   font-size: inherit;
   line-height: 30px;
   text-align: center;
-  padding: 20px 0 40px;
+  padding: 45px 0 34px;
 
   @include tablet {
     font-size: 18px;
-    padding: 100px 25px 40px;
+    padding: 92px 25px 71px;
   }
 
   @include desktop {
-    padding: 100px 0 40px;
+    padding: 92px 0 40px;
+  }
+}
+
+.form__title br {
+  display: none;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
   }
 }
 

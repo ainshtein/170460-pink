@@ -74,6 +74,7 @@
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+  padding: 21px 35px 23px;
 
     &:hover {
       @include color($green-hvr, $WHITE);
@@ -82,6 +83,15 @@
     &:active {
       @include color($green-hvr, rgba($WHITE, 0.3));
     }
+
+  @include tablet {
+    padding: 21px 60px 23px;
+  }
+
+  @include desktop {
+
+  }
+
 }
 
 .btn--block {
