@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .reviews {
-  padding: 3px 0 60px;
+  padding: 42px 0 60px;
   @include container;
 
   @include tablet {
@@ -11,6 +11,7 @@
   }
 
   @include desktop {
+    background: url("../img/icon-quotes.svg") 50% 70px no-repeat;
     padding: 190px 120px 45px;
   }
 }

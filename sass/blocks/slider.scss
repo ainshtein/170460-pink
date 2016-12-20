@@ -29,12 +29,18 @@
 
 .slider__toggle {
   @include inlineblock;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background-color: #bec2c7;
   border: 3px solid transparent;
   border-radius: 50%;
   margin-right: 13px;
+  background-clip: content-box;
+  box-sizing: content-box;
+
+  &:hover {
+    border-color: #000;
+  }
 }
 
 // ==========================================================================

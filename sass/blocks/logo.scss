@@ -3,14 +3,24 @@
 // ==========================================================================
 
 .logo {
+  // display: inline-block;
   display: block;
+  // width: 150px;
   padding: 20px 20px 26px;
   // box-shadow: 0 1px 0 black;
   // margin-bottom: 1px;
   // background-color: $blue-nav;
 
+  // &:hover .logo__words {
+  //   fill: $red;
+  // }
+
+  // &:active .logo__words {
+  //     fill: rgba($WHITE, 0.3);
+  //   }
+
   @include tablet {
-    padding: 47px 40px 40px;
+    padding: 29px 40px 40px;
   }
 
   @include desktop {
@@ -23,9 +33,52 @@
   }
 }
 
+.logo svg {
+  width: 75px;
+  height: 22px;
+
+  @include tablet {
+    width: 147px;
+    height: auto;
+  }
+
+  @include desktop {
+  }
+}
+
+// .logo__words {
+//   fill: $WHITE;
+
+//     &:hover {
+//       fill: red;
+//     }
+
+//     &:active {
+//       fill: rgba($WHITE, 0.3);
+//     }
+// }
+
+// --- SVG-classes
+.logo__star {
+  display: none;
+}
+
+.logo__glass {
+  display: none;
+}
+
+
 .logo img {
   width: 75px;
   height: 22px;
+
+  @include tablet {
+    width: 147px;
+    height: 40px;
+  }
+
+  @include desktop {
+  }
 }
 
 // ==========================================================================

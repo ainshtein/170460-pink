@@ -34,8 +34,52 @@
 .footer-main__logo {
   float: left;
   width: 150px;
+
+  @include tablet {
+    margin-right: 19px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
 }
 
+.footer-main__logo-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+    &:hover .footer-main__logo-text{
+      fill: $red;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+}
+
+.footer-main__logo-tablet {
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.footer-main__logo-desktop {
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.footer-main__logo-text {
+  fill: $BLACK;
+}
 .page--inner .footer-main__logo {
   float: none;
   margin: 0 auto;
@@ -85,6 +129,21 @@
   max-width: 160px;
 }
 
+.footer-main__copy-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+
+    &:hover svg {
+      fill: $BLACK;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+
 .footer-main__copy {
   font: inherit;
   font-size: inherit;
@@ -100,10 +159,16 @@
 .footer-main__copy span {
   @include inlineblock(middle);
   margin-right: 15px;
+  color: $BLACK;
 
   @include desktop {
     margin-right: 10px;
   }
+}
+
+.footer-main__copy svg {
+  @include inlineblock(middle);
+  fill: $red;
 }
 
 .footer-main__copy img {

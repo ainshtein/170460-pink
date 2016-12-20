@@ -18,12 +18,29 @@
   background: #eae6dd url("../img/bg-map-mobile@1x.png") 50% 100% no-repeat;
   min-height: 200px;
 
+  @include retina {
+  background: #eae6dd url("../img/bg-map-mobile@2x.jpg") 50% 100% no-repeat;
+  background-size: 320px auto;
+  }
+
   @include tablet {
+    background: #eae6dd url("../img/bg-map-tablet@1x.jpg") 50% 100% no-repeat;
     min-height: 365px;
+
+    @include retina {
+      background: #eae6dd url("../img/bg-map-tablet@2x.jpg") 50% 100% no-repeat;
+      background-size: 700px auto;
+    }
   }
 
   @include desktop {
-    min-height: 483px;
+    background: #eae6dd url("../img/bg-map-desktop@1x.jpg") 50% 100% no-repeat;
+    min-height: 520px;
+
+    @include retina {
+      background: #eae6dd url("../img/bg-map-desktop@2x.jpg") 50% 100% no-repeat;
+      background-size: 1200px auto;
+    }
   }
 }
 
