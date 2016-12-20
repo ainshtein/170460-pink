@@ -3,29 +3,38 @@
 // ==========================================================================
 
 .header-main {
-  // background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,
-  //             url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   color: $WHITE;
   background-color: $blue-nav;
   padding-bottom: 395px;
   margin-bottom: 266px;
   position: relative;
 
+  @include retina {
+    background: $blue-nav url("../img/bg-back-mobile@2x.jpg") 0 100% no-repeat;
+    background-size: 700px auto;
+  }
+
   @include tablet {
-    // background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat,
-    //           url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+    background: $blue-nav url("../img/bg-back-tablet@1x.jpg") 0 100% no-repeat;
     background-color: $blue-nav;
     padding-bottom: 0;
-    // padding-bottom: 620px;
     margin-bottom: 0;
 
+    @include retina {
+    background: $blue-nav url("../img/bg-back-tablet@2x.jpg") 0 100% no-repeat;
+    background-size: 1200px auto;
+  }
   }
 
   @include desktop {
-    // padding-bottom: 743px;
+    background: $blue-nav url("../img/bg-back-desktop@1x.jpg") 0 100% no-repeat;
     background-size: cover;
 
+    @include retina {
+    background: $blue-nav url("../img/bg-back-desktop@2x.jpg") 0 100% no-repeat;
+    background-size: 2560px auto;
+  }
   }
 }
 
@@ -95,7 +104,8 @@
     // @include clearfix;
     flex-direction: row;
     justify-content: space-between;
-    padding: 44px 0 40px;
+    align-items: center;
+    padding: 34px 0 40px;
   }
 }
 
@@ -107,14 +117,14 @@
   height: 286px;
 
   @include tablet {
-    width: 470px;
-    height: 547px;
+    width: 700px;
+    height: 545px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @include desktop {
-    width: 555px;
+    width: 1050px;
     height: 645px;
   }
 }
@@ -124,11 +134,11 @@
   height: 286px;
 
   @include tablet {
-    width: 470px;
-    height: 547px;
+    width: 700px;
+    height: 545px;
 }
   @include desktop {
-    width: 555px;
+    width: 1050px;
     height: 645px;
   }
 }
@@ -137,7 +147,7 @@
 // ==========================================================================
 
 .header-main--inner {
-  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  // background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
   padding: 0;
   margin: 0;
 }

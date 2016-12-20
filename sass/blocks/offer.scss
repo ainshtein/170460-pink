@@ -3,23 +3,25 @@
 // ==========================================================================
 .offer {
   padding: 469px 0 0;
-  background: $grey;
+  // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
+  background: $grey url("../img/bg-triangle-white.svg") 50% 0 no-repeat;
+  // background: $grey;
   position: relative;
 
-    &::before {
-      display: block;
-      content: "";
-      width: 0;
-      height: 0;
-      border-color: rgba(255, 255, 255, 0);
-      border-style: solid;
-      border-width: 20px 100px;
-      border-right-color: #92c100;
-      position: absolute;
-      bottom: 100%;
-      right: 0;
-      margin-bottom: -20px;
-   }
+   //  &::before {
+   //    display: block;
+   //    content: "";
+   //    width: 0;
+   //    height: 0;
+   //    border-color: rgba(255, 255, 255, 0);
+   //    border-style: solid;
+   //    border-width: 20px 100px;
+   //    border-right-color: #92c100;
+   //    position: absolute;
+   //    bottom: 100%;
+   //    right: 0;
+   //    margin-bottom: -20px;
+   // }
 
    @include tablet {
       padding: 83px 0 71px;
@@ -130,6 +132,7 @@
 
 .offer__table-header th {
   @include color($blue-nav, $WHITE);
+  position: relative;
 }
 
 // .offer__table-header th:first-child {
@@ -256,6 +259,8 @@
   width: 70px;
   font-size: 0;
   border: 2px solid $grey-dark;
+  text-align: center;
+  vertical-align: bottom;
   // border-left: 0;
   background-color: $WHITE;
 
@@ -269,6 +274,9 @@
 
 }
 
+.offer__option-status img {
+  display: inline-block;
+}
 .offer__toggles {
   font-size: 0;
   bottom: 35px;

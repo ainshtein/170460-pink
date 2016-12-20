@@ -284,9 +284,15 @@
   width: 39px;
   height: 39px;
   border: 2px solid #e5e5e5;
-  background-color: $red;
 }
 
+.form-group--goals-data .form-group__label:hover::before {
+  border-color: $BLACK;
+}
+
+.form-group--goals-data .form-group__label:active::before {
+  border-color: $red;
+}
 // .form-group--goals-data .form-group__label:nth-child(11n) {
 //   margin-right: 0;
 // }
@@ -596,6 +602,14 @@
   }
 }
 
+.form-group__inner--phone::after {
+  background: url("../img/icon-phone.svg") 50% 50% no-repeat;
+}
+
+.form-group__inner--email::after {
+  background: url("../img/icon-mail.svg") 50% 50% no-repeat;
+}
+
 .form-group--contacts-data .form-group__inner .form-group__input{
   margin-bottom: 9px;
 }
@@ -621,7 +635,7 @@
 }
 
 .form-group__checkbox:checked + .form-group__label::before {
-  background-color: green;
+  background: url("../img/icon-yes--red.svg") 50% 50% no-repeat;
 }
 
 .form-group--app-data {
@@ -651,17 +665,36 @@
   left: 0;
   width: 39px;
   height: 39px;
-  border: 2px solid #e5e5e5;
-  background-color: $red;
+  border: 2px solid $grey-dark;
   border-radius: 50%;
+}
+
+.form-group--app-data .form-group__label:hover::before {
+  border-color: $BLACK;
+}
+
+.form-group--app-data .form-group__label:active::before {
+  border-color: $red;
 }
 
 .form-group__radio {
   display: none;
 }
 
-.form-group__radio:checked + .form-group__label::before {
-  background-color: green;
+.form-group__radio:checked + .form-group__label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $red;
+}
+
+.form-group__radio:checked + .form-group__label:active::after {
+  display: none;
 }
 
 .form-group--feel-data .form-group__wrapper {

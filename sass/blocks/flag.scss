@@ -6,10 +6,6 @@
   position: absolute;
 }
 
-.flag {
-
-}
-v
 // ==========================================================================
 // Elements
 // ==========================================================================
@@ -19,7 +15,39 @@ v
 // Modifiers
 // ==========================================================================
 .flag--profit {
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 73px;
+  background: url("../img/bg-hit.svg") 0 0 no-repeat;
+  font-size: 0;
 
+  @include tablet {
+    background: url("../img/bg-hit-tablet.svg") 0 0 no-repeat;
+  }
+
+  @include desktop {
+  }
+}
+
+.flag--profit span {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  @include opensans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+  @include tablet {
+    top: 5px;
+    left: 8px;
+  }
+
+  @include desktop {
+  }
 }
 
 .flag--photo {

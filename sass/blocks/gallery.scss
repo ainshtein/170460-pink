@@ -266,7 +266,8 @@
   color: $red;
   cursor: pointer;
   margin-left: 20px;
-  background-color: $red; //temp
+  background: url("../img/icon-heart.svg") 0 0 no-repeat;
+  // background-color: $red; //temp
 }
 
 .gallery__footer {

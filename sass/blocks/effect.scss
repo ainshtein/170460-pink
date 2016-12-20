@@ -7,10 +7,14 @@
 
   @include tablet {
     display: block;
+    background: url("../img/icon-timer.svg") 40px 60px no-repeat;
+    background-size: 238px 276px;
   }
 
   @include desktop {
     background-color: $grey;
+    background-position: 130px 4px;
+    background-size: 298px 345px;
   }
 }
 

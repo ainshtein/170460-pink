@@ -3,10 +3,42 @@
 // ==========================================================================
 
 .contacts {
+  // background: $WHITE url("../img/bg-triangle-white-footer.svg") 50% 100% no-repeat;
   background-color: $WHITE;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
   // margin-bottom: -221px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -31px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 31px;
+      background: transparent url("../img/bg-triangle-white-footer.svg") 50% 100% no-repeat;
+      background-size: cover;
+    }
+
+  @include tablet {
+
+    &::after {
+      bottom: -72px;
+      height: 72px;
+      // background-size: cover;
+    }
+  }
+
+  @include desktop {
+
+    &::after {
+      bottom: -129px;
+      height: 129px;
+      // background-size: 1300px;
+      // background-size: cover;
+    }
+  }
 }
 
 // ==========================================================================
@@ -73,6 +105,8 @@
 
   @include desktop {
     order: 1;
+    margin-bottom: 0;
+
   }
 }
 
@@ -80,6 +114,7 @@
 
   @include desktop {
     order: 3;
+    margin-bottom: 0;
   }
 }
 
@@ -87,6 +122,8 @@
 
   @include desktop {
     order: 2;
+    margin-bottom: 0;
+
   }
 }
 
@@ -115,6 +152,17 @@
 .contacts__group-link {
   text-decoration: none;
   cursor: pointer;
+
+    &:hover {
+      color: $BLACK;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $BLACK;
+      opacity: 0.3;
+      text-decoration: none;
+    }
 }
 
 // ==========================================================================

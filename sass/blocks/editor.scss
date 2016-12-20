@@ -103,6 +103,7 @@
   @include tablet {
     float: left;
     width: 275px;
+    text-align: right;
   }
 
   @include desktop {
@@ -135,7 +136,33 @@
   }
 }
 
-.editor__tool img {
+// .editor__tool img {
+
+//   @include tablet {
+//     @include inlineblock(middle);
+//     margin-right: 5px;
+//   }
+
+//   @include desktop {
+//     margin-right: 51px;
+//   }
+// }
+
+.editor__tool svg {
+  fill: $BLACK;
+  opacity: 0.3;
+  cursor: pointer;
+
+    &:hover {
+      fill: $BLACK;
+      opacity: 0.5;
+    }
+
+    &:active {
+      fill: $red;
+      opacity: 1;
+    }
+
 
   @include tablet {
     @include inlineblock(middle);
@@ -144,6 +171,17 @@
 
   @include desktop {
     margin-right: 51px;
+  }
+}
+
+.editor__tool--contrast svg {
+
+  @include tablet {
+    margin-right: 10px;
+  }
+
+  @include desktop {
+    margin-right: 65px;
   }
 }
 
