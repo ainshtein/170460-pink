@@ -4,7 +4,8 @@
 .offer {
   padding: 469px 0 0;
   // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
-  background: $grey url("../img/bg-triangle-white.svg") 50% 0 no-repeat;
+  background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+  background-size: 100%;
   // background: $grey;
   position: relative;
 

@@ -32,7 +32,8 @@
 .promo__wrapper {
   @include color($grey, $BLACK);
   // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
-  background: $grey url("../img/bg-triangle-white.svg") 50% 0 no-repeat;
+  background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+  background-size: 100%;
   position: relative;
   // padding-top: 10px;
 
@@ -49,7 +50,7 @@
 
   @include tablet {
     padding-top: 45px;
-    background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+    // background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
   }
 
   @include desktop {
@@ -93,7 +94,7 @@
     padding-left: 317px;
 
     @include retina {
-      background: url("../img/iphone-screen-3-tablet@2x.png") 50% 109% no-repeat;
+      background: url("../img/iphone-screen-3-tablet@2x.png") 0 100% no-repeat;
       background-size: 268px auto;
     }
    }
@@ -138,6 +139,7 @@
 
     @include retina {
       background: url("../img/iphone-screen-1-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
   }
 }
@@ -148,6 +150,7 @@
 
     @include retina {
       background: url("../img/iphone-screen-2-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
   }
 }
@@ -158,6 +161,7 @@
 
     @include retina {
       background: url("../img/iphone-screen-3-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
   }
 }
