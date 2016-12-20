@@ -4,22 +4,22 @@
 
 .logo {
   display: block;
-  padding: 17px 20px 20px;
+  padding: 20px 20px 26px;
   // box-shadow: 0 1px 0 black;
   // margin-bottom: 1px;
   // background-color: $blue-nav;
 
   @include tablet {
-    padding: 27px 40px 40px;
+    padding: 47px 40px 40px;
   }
 
   @include desktop {
-    float: left;
-    width: 150px;
+    // float: left;
+    max-width: 150px;
     padding: 0;
     margin: 0;
-    box-shadow: none;
-    background-color: transparent;
+    // box-shadow: none;
+    // background-color: transparent;
   }
 }
 
@@ -27,6 +27,7 @@
   width: 75px;
   height: 22px;
 }
+
 // ==========================================================================
 // Elements
 // ==========================================================================
@@ -34,3 +35,8 @@
 // ==========================================================================
 // Modifiers
 // ==========================================================================
+.logo--nav-opened {
+  background-color: $blue-nav;
+  box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  margin-bottom: 1px;
+}

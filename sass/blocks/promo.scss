@@ -19,7 +19,7 @@
   padding: 45px 35px 30px;
 
   @include tablet {
-    padding: 55px 0 45px;
+    padding: 65px 0 45px;
   }
 }
 
@@ -45,8 +45,8 @@
 }
 
 .promo__list {
-  background: url("../img/iphone-screen-mobile@1x.png") 50% 100% no-repeat;
-  padding: 55px 20px 320px;
+  background: url("../img/iphone-screen-mobile@1x.png") 50% 109% no-repeat;
+  padding: 48px 20px 284px;
   margin: 0;
   list-style: none;
   text-align: center;
@@ -55,15 +55,17 @@
 
    @include tablet {
     @include container;
-    padding: 45px 0;
+    padding: 70px 0 15px;
     background: $grey url("../img/iphone-screen-mobile@1x.png") 0 100% no-repeat;
     text-align: left;
-    padding-left: 200px;
+    padding-left: 317px;
    }
 
    @include desktop {
     padding-left: 0;
     background: $grey;
+    padding-top: 13px;
+    padding-bottom: 0;
    }
 }
 
@@ -89,7 +91,7 @@
     text-align: center;
     font-size: 30px;
     line-height: 35px;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
   }
 }
 
@@ -98,7 +100,7 @@
   font-size: 14px;
   line-height: inherit;
   color: inherit;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @include desktop {
     font-size: 18px;

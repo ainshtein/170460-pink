@@ -5,12 +5,12 @@
 .editor {
   @include color($grey, $WHITE);
   position: relative;
-  padding: 20px 0 40px;
+  padding: 20px 0 37px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 550px;
+    top: 555px;
     left: 0;
     width: 100%;
     border: 1px solid $grey-border;
@@ -22,7 +22,7 @@
   }
 
   @include tablet {
-    padding: 60px 0;
+    padding: 60px 0 61px;
   }
 
   @include desktop {
@@ -45,7 +45,7 @@
 
   @include desktop {
       background-color: $grey;
-      padding: 60px 70px;
+      padding: 57px 5px 36px 80px;
     }
 
 }
@@ -80,7 +80,7 @@
   width: 280px;
   height: 374px;
   background-color: $blue-dark;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 
   @include tablet {
     float: left;
@@ -98,7 +98,7 @@
   margin: 0 auto;
   text-align: center;
   font-size: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   @include tablet {
     float: left;
@@ -107,6 +107,7 @@
 
   @include desktop {
     width: 410px;
+    margin-bottom: 120px;
   }
 }
 
@@ -126,7 +127,11 @@
   }
 
   @include desktop {
-    margin-right: 45px;
+    text-align: left;
+    margin-bottom: 10px;
+    // margin-right: 45px;
+    padding: 0 0 10px 0;
+
   }
 }
 
@@ -138,7 +143,7 @@
   }
 
   @include desktop {
-
+    margin-right: 51px;
   }
 }
 
@@ -155,7 +160,7 @@
 }
 
 .editor__buttons {
-  padding: 40px 0;
+  padding: 33px 0 0;
 
   @include tablet {
     float: left;
@@ -171,8 +176,12 @@
 .editor__buttons .btn--red {
   margin-bottom: 10px;
 
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
   @include desktop {
-    margin-right: 10px;
+    margin-right: 40px;
   }
 }
 

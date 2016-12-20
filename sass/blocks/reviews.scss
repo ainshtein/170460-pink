@@ -3,8 +3,12 @@
 // ==========================================================================
 
 .reviews {
-  padding: 60px 0;
+  padding: 3px 0 60px;
   @include container;
+
+  @include tablet {
+    padding: 3px 0 37px;
+  }
 
   @include desktop {
     padding: 190px 120px 45px;
@@ -46,7 +50,7 @@
   display: block;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
   text-align: center;
   font-style: normal;
 
@@ -85,6 +89,7 @@
 .reviews__toggles {
   text-align: center;
   font-size: 0;
+  bottom: -58px;
 }
 
 // ==========================================================================

@@ -21,6 +21,78 @@
 // Elements
 // ==========================================================================
 
+.form-group--name-data {
+  order: 1;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    width: 470px;
+  }
+}
+
+.form-group--goals-data {
+  order: 2;
+
+  @include tablet {
+    order: 4;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.form-group--contacts-data {
+  order: 3;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.form-group--app-data {
+  order: 4;
+
+  @include tablet {
+    order: 2;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--feel-data {
+  order: 5;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.form-group--btn-data {
+  order: 6;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
 .form-group__wrapper {
   @include container;
 
@@ -61,6 +133,24 @@
   }
 }
 
+.form-group__inner {
+  position: relative;
+
+   @include tablet {
+    @include inlineblock(middle);
+    // width: 515px;
+    margin-bottom: 35px;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group__inner .form-group__input {
+  width: 100%;
+}
+
 .form-group__label {
   position: relative;
   display: block;
@@ -72,14 +162,192 @@
   padding-left: 20px;
   margin-bottom: 5px;
   color: $red;
+  cursor: pointer;
 
   @include tablet {
     @include inlineblock(middle);
-    margin-right: 20px;
+    margin-right: 16px;
+    padding-left: 7px;
+    margin-bottom: 17px;
   }
 
   @include desktop {
 
+  }
+}
+
+.form-group__label[for="surname-field"] {
+
+  @include tablet {
+    margin-bottom: 48px;
+
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.form-group__label[for="name-field"] {
+
+  @include tablet {
+    margin-bottom: 48px;
+
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.form-group__label[for="middle-name-field"] {
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.form-group__label[for="name-field"] + .form-group__inner {
+
+  @include tablet {
+    width: 555px;
+  }
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.form-group--goals-data {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 8px;
+
+  @include tablet {
+    padding-top: 37px;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--goals-data .form-group__heading br{
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--goals-data .form-group__label {
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+
+  }
+
+}
+
+.form-group--goals-data .form-group__wrapper {
+
+  @include tablet {
+    padding: 51px 60px 25px;
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 0;
+    // margin-right: -45px;
+  }
+
+}
+
+.form-group--goals-data .form-group__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  background-color: $red;
+}
+
+// .form-group--goals-data .form-group__label:nth-child(11n) {
+//   margin-right: 0;
+// }
+
+.form-group__label[for="selfie-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 2;
+  }
+}
+
+.form-group__label[for="beach-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 5;
+  }
+}
+
+.form-group__label[for="CHUCK-NORRIS-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 3;
+  }
+}
+
+.form-group__label[for="souvenir-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 6;
+  }
+}
+
+.form-group__label[for="tower-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 4;
+  }
+}
+
+.form-group__label[for="hotel-field"] {
+
+  @include tablet {
+  }
+
+  @include desktop {
+    order: 7;
   }
 }
 
@@ -91,54 +359,373 @@
   line-height: 30px;
   outline: none;
   border: 2px solid $grey-dark;
-  padding: 23px;
+  padding: 15px;
+  padding-left: 20px;
   width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $BLACK;
+  }
+
+  &:focus {
+    border-color: $red;
+  }
 
   @include tablet {
     @include inlineblock(middle);
-    width: 80%;
+    // width: 80%;
     margin-bottom: 20px;
   }
 
   @include desktop {
-    width: 70%;
+    // width: 70%;
   }
 }
 
+.form-group__input::-webkit-input-placeholder {
+  color: $BLACK;
+}
+
 .form-group__flag {
-  position: relative;
+  position: absolute;
+  top: -8px;
+  left: 190px;
   font-size: 0;
 }
 
-.form-group__checkbox {
+.form-group__flag--required::after {
+  content: "*";
   display: block;
+  width: 10px;
+  height: 10px;
+
+  @include opensans;
+  font-size: 18px;
+  line-height: 30px;
+  color: $BLACK;
+}
+
+.form-group--name-data .form-group__wrapper {
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+
+  }
+  // display: flex;
+  // flex-direction: row;
+  // // flex-wrap: wrap;
+  // align-items: center;
+}
+
+.form-group__input[id="surname-field"] {
+
+  @include tablet {
+    width: 515px;
+  }
+
+  @include desktop {
+    width: 340px;
+  }
+
+}
+
+.form-group__input[id="name-field"] {
+
+  @include tablet {
+    width: 555px;
+  }
+
+  @include desktop {
+    width: 380px;
+  }
+
+}
+
+.form-group__input[id="middle-name-field"] {
+
+  @include tablet {
+    width: 515px;
+  }
+
+  @include desktop {
+    width: 340px;
+  }
+
+}
+
+.form-group--name-data .form-group__input {
+  margin-bottom: 16px;
 
   @include tablet {
 
   }
 
   @include desktop {
-    display: inline-block;
+
   }
 }
 
-.form-group__radio {
-  display: block;
+.form-group--contacts-data {
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 27px;
+
+  @include tablet {
+    padding-top: 16px;
+  }
+
+  @include desktop {
+
+  }
 }
 
+.form-group--contacts-data .form-group__flag {
+  left: 155px;
+}
+
+.form-group--contacts-data .form-group__wrapper {
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 60px 10px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+.form-group--contacts-data .form-group__heading {
+  order: 1;
+
+  @include tablet {
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--contacts-data .form-group__label[for="phone-field"] {
+  order: 2;
+
+  @include tablet {
+    order: 3;
+    margin-bottom: 28px;
+    width: 80%;
+    padding-left: 25px;
+  }
+
+  @include desktop {
+    order: 4;
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.form-group--contacts-data .form-group__label + .form-group__inner {
+  order: 3;
+
+  @include tablet {
+    order: 2;
+  }
+
+  @include desktop {
+    width: 375px;
+    margin-right: 66px;
+  }
+}
+
+.form-group--contacts-data .form-group__label[for="email-field"] {
+  order: 4;
+
+  @include tablet {
+    order: 5;
+    width: 80%;
+    padding-left: 25px;
+  }
+
+  @include desktop {
+    width: 50%;
+    margin: 0;
+    padding-left: 61px;
+  }
+}
+
+.form-group--contacts-data .form-group__label[for="email-field"] + .form-group__inner {
+  order: 5;
+
+  @include tablet {
+    order: 4;
+  }
+
+  @include desktop {
+    order: 3;
+    width: 375px;
+    margin-right: 0;
+  }
+}
+
+.form-group--contacts-data .form-group__inner {
+  margin-bottom: 0;
+
+  @include tablet {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $grey-dark;
+    }
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--contacts-data .form-group__inner .form-group__input{
+  margin-bottom: 9px;
+}
+
+.form-group__inner--phone .form-group__input {
+  padding-right: 80px;
+}
+
+.form-group__inner--email .form-group__input {
+  padding-right: 80px;
+}
+
+.form-group__checkbox {
+  display: none;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    //  display: inline-block;
+  }
+}
+
+.form-group__checkbox:checked + .form-group__label::before {
+  background-color: green;
+}
+
+.form-group--app-data {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 9px;
+
+  @include tablet {
+    padding-top: 23px;
+  }
+
+  @include desktop {
+    padding-top: 38px;
+  }
+
+}
+
+.form-group--app-data .form-group__heading {
+  margin-bottom: 30px;
+}
+
+.form-group--app-data .form-group__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  background-color: $red;
+  border-radius: 50%;
+}
+
+.form-group__radio {
+  display: none;
+}
+
+.form-group__radio:checked + .form-group__label::before {
+  background-color: green;
+}
+
+.form-group--feel-data .form-group__wrapper {
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--feel-data .form-group__heading {
+  margin-bottom: 14px;
+}
+
+.form-group--feel-data {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+
+  }
+}
+
+.form-group--btn-data {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    padding-bottom: 30px;
+  }
+ }
+
+.form-group--btn-data .form-group__heading {
+  margin-bottom: 10px;
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
 .form-group--name-data {
+  padding: 0;
+  padding-bottom: 25px;
 
   @include tablet {
 
   }
 
   @include desktop {
-    @include inlineblock;
-    width: 450px;
-    padding-bottom: 600px;
+    // @include inlineblock;
+    // width: 450px;
+    // padding-bottom: 600px;
+    padding-top: 44px;
+    margin-right: 40px;
   }
 
 }
@@ -150,10 +737,10 @@
   }
 
   @include desktop {
-    position: absolute;
-    top: 196px;
-    right: 0;
-    width: 450px;
+    // position: absolute;
+    // top: 196px;
+    // right: 0;
+    // width: 450px;
   }
 
 }
@@ -165,8 +752,8 @@
   }
 
   @include desktop {
-    position: absolute;
-    top: 520px;
+    // position: absolute;
+    // top: 520px;
   }
 }
 
@@ -177,17 +764,18 @@
   }
 
   @include desktop {
-    position: absolute;
-    top: 880px;
+    // position: absolute;
+    // top: 880px;
   }
 }
 
 
 
 .form-group--contacts-data .form-group__wrapper .form-group__heading {
-  font-size: 0;
+  display: none;
 
   @include tablet {
+    display: table;
     font-size: 14px;
   }
 
@@ -223,6 +811,36 @@
   @include desktop {
     margin: 0;
   }
+}
+
+.form-group--goals-data .form-group__label {
+  margin-bottom: 40px;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    width: 33.33%;
+    // margin-right: 45px;
+  }
+}
+
+.form-group--app-data .form-group__wrapper {
+
+  @include tablet {
+    padding: 52px 66px 20px;
+  }
+
+  @include desktop {
+    padding: 52px 77px 20px;
+    padding-right: 125px;
+  }
+}
+
+.form-group--app-data .form-group__label {
+  margin-bottom: 35px;
+  display: block;
 }
 
 .form-group--btn-data {
@@ -272,7 +890,7 @@
   }
 
   @include desktop {
-
+    margin-bottom: 0;
   }
 }
 
@@ -286,17 +904,31 @@
 
   @include tablet {
     float: right;
-    margin-top: 10px;
+    margin-top: 22px;
     position: static;
+    min-width: 200px;
+    transform: none;
   }
 
   @include desktop {
-
+    width: auto;
   }
 }
 
 .form-group__heading--ordinar-text sup {
   color: $red;
+}
+
+.form-group__heading--ordinar-text span {
+  display: none;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    display: inline;
+  }
+
 }
 
 .form-group__input--text {
@@ -305,6 +937,10 @@
   resize: none;
   width: 100%;
   height: 200px;
+
+  @include desktop {
+    height: 128px;
+  }
 }
 
 .form-group__flag--required {

@@ -39,11 +39,11 @@
 .page--inner .footer-main__logo {
   float: none;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @include tablet {
     float: left;
-    width: 150px;
+    width: 170px;
   }
 
   @include desktop {
@@ -66,7 +66,7 @@
   float: none;
   width: 200px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @include tablet {
     float: left;
@@ -76,13 +76,13 @@
   }
 
   @include desktop {
-    width: 630px;
+    width: 610px;
   }
 }
 
 .footer-main__copy {
   float: right;
-  width: 160px;
+  max-width: 160px;
 }
 
 .footer-main__copy {
@@ -116,7 +116,7 @@
 
   @include tablet {
     float: right;
-    width: 160px;
+    max-width: 160px;
     margin-top: 10px;
   }
 

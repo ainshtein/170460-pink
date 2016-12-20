@@ -19,11 +19,11 @@
   min-height: 200px;
 
   @include tablet {
-    min-height: 376px;
+    min-height: 365px;
   }
 
   @include desktop {
-    min-height: 501px;
+    min-height: 483px;
   }
 }
 

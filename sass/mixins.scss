@@ -81,6 +81,15 @@
   }
 }
 
+@mixin container-fluid {
+  width: auto;
+
+  @media #{$tablet-width} {
+    width: 89%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
 
 @mixin desktop {
   @media #{$desktop-width} {

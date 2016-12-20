@@ -15,14 +15,14 @@
 
 .contacts__wrapper {
   @include container;
-  padding: 45px 0 40px;
+  padding: 42px 0 28px;
 
   @include tablet {
-    padding: 55px 0 30px;
+    padding: 46px 0 0;
   }
 
   @include desktop {
-    padding: 75px 0 25px;
+    padding: 64px 0 0;
   }
 }
 
@@ -31,14 +31,14 @@
 }
 
 .contacts__heading {
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   @include tablet {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
   @include desktop {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 }
 
@@ -49,19 +49,44 @@
 .contacts__list {
   text-align: center;
   font-size: 0;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .contacts__group {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   @include tablet {
     @include inlineblock;
     width: 50%;
-    margin-bottom: 70px;
+    margin-bottom: 38px;
   }
 
   @include desktop {
     width: 33.33%;
+  }
+}
+
+.contacts__group--phone {
+
+  @include desktop {
+    order: 1;
+  }
+}
+
+.contacts__group--mail {
+
+  @include desktop {
+    order: 3;
+  }
+}
+
+.contacts__group--address {
+
+  @include desktop {
+    order: 2;
   }
 }
 
@@ -71,11 +96,11 @@
   line-height: 30px;
 
   @include tablet {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 
   @include desktop {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
