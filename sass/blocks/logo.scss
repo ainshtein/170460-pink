@@ -3,21 +3,21 @@
 // ==========================================================================
 
 .logo {
-  // display: inline-block;
-  display: block;
-  // width: 150px;
+  display: inline-block;
+  // display: block;
+  max-width: 160px;
   padding: 20px 20px 26px;
   // box-shadow: 0 1px 0 black;
   // margin-bottom: 1px;
   // background-color: $blue-nav;
 
-  // &:hover .logo__words {
-  //   fill: $red;
-  // }
+  &:hover .logo__words {
+    fill: $red;
+  }
 
-  // &:active .logo__words {
-  //     fill: rgba($WHITE, 0.3);
-  //   }
+  &:active .logo__words {
+      fill: rgba($WHITE, 0.3);
+    }
 
   @include tablet {
     padding: 29px 40px 40px;
@@ -32,6 +32,71 @@
     // background-color: transparent;
   }
 }
+
+.page--inner .logo:hover  .logo__mobile-image {
+  fill: $red;
+}
+
+.page--inner .logo:active  .logo__mobile-image {
+  fill: rgba($WHITE, 0.3);
+}
+
+.logo__mobile {
+    width: 75px;
+    height: 22px;
+    fill: $WHITE;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+}
+
+.logo__tablet {
+  width: 147px;
+  height: 40px;
+  fill: $WHITE;
+  display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      display: none;
+    }
+}
+
+.page--inner .logo:hover  .logo__tablet-image {
+  fill: $red;
+}
+
+.page--inner .logo:active  .logo__tablet-image {
+  fill: rgba($WHITE, 0.3);
+}
+
+.logo__desktop {
+  width: 147px;
+  height: 40px;
+  fill: $WHITE;
+  display: none;
+
+    @include desktop {
+      display: block;
+    }
+}
+
+.page--inner .logo:hover  .logo__desktop-image {
+  fill: $red;
+}
+
+.page--inner .logo:active  .logo__desktop-image {
+  fill: rgba($WHITE, 0.3);
+}
+
 
 .logo svg {
   width: 75px;

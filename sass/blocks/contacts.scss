@@ -12,11 +12,12 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -34px;
+      // bottom: -34px;
       left: 0;
       display: block;
       width: 100%;
-      height: 34px;
+      // height: 34px;
+      height: 45%;
       background: transparent url("../img/bg-triangle-white-footer.svg") 0 0 no-repeat;
       background-size: 100%;
     }
@@ -24,8 +25,8 @@
   @include tablet {
 
     &::after {
-      bottom: -72px;
-      height: 72px;
+      // bottom: -72px;
+      // height: 72px;
       // background-size: cover;
     }
   }
@@ -33,8 +34,8 @@
   @include desktop {
 
     &::after {
-      bottom: -129px;
-      height: 129px;
+      // bottom: -129px;
+      // height: 129px;
       // background-size: 1300px;
       // background-size: cover;
     }
