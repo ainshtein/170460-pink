@@ -22,11 +22,12 @@
   }
 
   @include tablet {
-    padding: 60px 0 61px;
+    padding: 60px 0 6px;
   }
 
   @include desktop {
     background-color: $WHITE;
+    margin-bottom: 55px;
   }
 }
 
@@ -45,7 +46,7 @@
 
   @include desktop {
       background-color: $grey;
-      padding: 57px 5px 36px 80px;
+      padding: 57px 5px 12px 80px;
     }
 
 }
@@ -80,7 +81,7 @@
   width: 280px;
   height: 374px;
   background-color: $blue-dark;
-  margin-bottom: 18px;
+  margin-bottom: 45px;
 
   @include tablet {
     float: left;
@@ -98,7 +99,7 @@
   margin: 0 auto;
   text-align: center;
   font-size: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   @include tablet {
     float: left;
@@ -108,7 +109,7 @@
 
   @include desktop {
     width: 410px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 
@@ -123,8 +124,9 @@
   @include tablet {
     display: block;
     margin: 0;
-    padding: 12px 20px 10px 0;
+    padding: 7px 9px 10px 0;
     border-bottom: 1px solid $grey-border;
+    margin-bottom: 28px;
   }
 
   @include desktop {
@@ -136,6 +138,70 @@
   }
 }
 
+.editor__tool--crop svg {
+  width: 44px;
+  height: auto;
+
+  @include tablet {
+    width: 22px;
+    height: 22px;
+  }
+
+  @include desktop {
+    width: 44px;
+    height: auto;
+  }
+}
+
+.editor__tool--fill svg {
+  width: 48px;
+  height: auto;
+
+  @include tablet {
+    width: 24px;
+    height: 22px;
+  }
+
+  @include desktop {
+    width: 48px;
+    height: auto;
+  }
+}
+
+.editor__tool--contrast svg {
+  width: 32px;
+  height: auto;
+
+  @include tablet {
+    width: 16px;
+    height: 16px;
+
+  }
+
+  @include desktop {
+    width: 32px;
+    height: auto;
+  }
+}
+
+.editor__tool--contrast {
+
+  @include desktop {
+    padding: 10px 0 20px;
+  }
+}
+
+.editor__tool--crop .range__toggle {
+  left: 150px;
+}
+
+.editor__tool--fill .range__toggle {
+  left: 20px;
+}
+
+.editor__tool--contrast .range__toggle {
+  left: 100px;
+}
 // .editor__tool img {
 
 //   @include tablet {
@@ -166,7 +232,7 @@
 
   @include tablet {
     @include inlineblock(middle);
-    margin-right: 5px;
+    margin-right: 30px;
   }
 
   @include desktop {
@@ -177,7 +243,7 @@
 .editor__tool--contrast svg {
 
   @include tablet {
-    margin-right: 10px;
+    margin-right: 32px;
   }
 
   @include desktop {
@@ -235,20 +301,6 @@
 // Modifiers
 // ==========================================================================
 
-// .editor__tool--crop {
-//   width: 44px;
-//   height: 44px;
-//   background: url("../img/icon-editor-crop.svg") 0 0 no-repeat;
-// }
 
-// .editor__tool--fill {
-//   width: 48px;
-//   height: 43px;
-//   background: url("../img/icon-editor-fill.svg") 0 0 no-repeat;
-// }
 
-// .editor__tool--contrast {
-//   width: 32px;
-//   height: 32px;
-//   background: url("../img/icon-editor-contrast.svg") 0 0 no-repeat;
-// }
+
