@@ -3,39 +3,40 @@
 // ==========================================================================
 
 .header-main {
-  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
-  color: $WHITE;
-  background-color: $blue-nav;
-  padding-bottom: 395px;
-  margin-bottom: 266px;
-  position: relative;
-
   @include retina {
     background: $blue-nav url("../img/bg-back-mobile@2x.jpg") 0 100% no-repeat;
     background-size: 700px auto;
   }
-
   @include tablet {
+    @include retina {
+      background: $blue-nav url("../img/bg-back-tablet@2x.jpg") 0 100% no-repeat;
+      background-size: 1200px auto;
+    }
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+
     background: $blue-nav url("../img/bg-back-tablet@1x.jpg") 0 100% no-repeat;
     background-color: $blue-nav;
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    @include retina {
-    background: $blue-nav url("../img/bg-back-tablet@2x.jpg") 0 100% no-repeat;
-    background-size: 1200px auto;
   }
-  }
-
   @include desktop {
+    @include retina {
+      background: $blue-nav url("../img/bg-back-desktop@2x.jpg") 0 100% no-repeat;
+      background-size: 2560px auto;
+    }
+
     background: $blue-nav url("../img/bg-back-desktop@1x.jpg") 0 100% no-repeat;
     background-size: cover;
+  }
 
-    @include retina {
-    background: $blue-nav url("../img/bg-back-desktop@2x.jpg") 0 100% no-repeat;
-    background-size: 2560px auto;
-  }
-  }
+  position: relative;
+
+  margin-bottom: 266px;
+  padding-bottom: 395px;
+
+  color: $WHITE;
+  background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  background-color: $blue-nav;
 }
 
 // ==========================================================================
@@ -45,120 +46,113 @@
 .header-main__title {
   @include container;
   @include opensans(light);
-  width: 280px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  padding: 30px 0 80px;
-  text-align: center;
-  margin: 0 auto;
-
   @include tablet {
-    // width: 400px;
+    padding: 69px 0 98px;
+
+    text-align: center;
+
     font-size: 50px;
     line-height: 62px;
-    text-align: center;
-    padding: 69px 0 98px;
   }
-
   @include desktop {
     padding: 65px 0 98px;
   }
+
+  width: 280px;
+  margin: 0 auto;
+  padding: 30px 0 80px;
+
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
 }
 
 .header-main__title--photo {
-
   @include tablet {
     padding: 69px 0 134px;
   }
-
   @include desktop {
     padding: 58px 0 97px;
   }
 }
 
 .header-main__title--form {
-  padding: 30px 0 51px;
-
   @include tablet {
     padding: 68px 0 75px;
   }
-
   @include desktop {
-    padding: 68px 0 96px;
+    padding: 59px 0 96px;
   }
+
+  padding: 30px 0 51px;
 }
 
 .header-main__top {
-  background-color: rgba($BLACK, 0.3);
-  // padding: 0 20px;
-
-  // background-color: rgba($blue-dark, 0.3);
-
-  // background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
-  // background-size: cover;
-  @include tablet {
-
-  }
   @include desktop {
-    background-color: rgba($BLACK, 0.3);
+    background-color: rgba($BLACK, .3);
   }
+
+  background-color: rgba($BLACK, .3);
 }
 
 .header-main__top-wrapper {
-  display: flex;
-  flex-direction: column;
-
   @include desktop {
     @include container-fluid;
-    // @include container;
-    // @include clearfix;
+
     flex-direction: row;
+
+    padding: 34px 0 40px;
+
     justify-content: space-between;
     align-items: center;
-    padding: 34px 0 40px;
   }
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header-main__top-image {
-  // padding-top: 110px;
-  position: absolute;
-  bottom: 0;
-  width: 258px;
-  height: 286px;
-
   @include tablet {
+    left: 50%;
+
     width: 700px;
     height: 545px;
-    left: 50%;
+
     transform: translateX(-50%);
   }
-
   @include desktop {
     width: 1050px;
     height: 645px;
   }
-}
 
-.header-main__top-image img{
+  position: absolute;
+  bottom: 0;
+
   width: 258px;
   height: 286px;
+}
 
+.header-main__top-image img {
   @include tablet {
     width: 700px;
     height: 545px;
-}
+  }
   @include desktop {
     width: 1050px;
     height: 645px;
   }
+
+  width: 258px;
+  height: 286px;
 }
+
 // ==========================================================================
 // Modifiers
 // ==========================================================================
 
 .header-main--inner {
-  // background: $blue-nav url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }

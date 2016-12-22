@@ -2,47 +2,30 @@
 // Block
 // ==========================================================================
 .offer {
-  padding: 469px 0 0;
-  // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
-  background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
-  background-size: 100%;
-  // background: $grey;
+  @include tablet {
+    padding: 83px 0 71px;
+  }
+  @include desktop {
+    padding: 149px 0 96px;
+  }
+
   position: relative;
+
   overflow: hidden;
 
-   //  &::before {
-   //    display: block;
-   //    content: "";
-   //    width: 0;
-   //    height: 0;
-   //    border-color: rgba(255, 255, 255, 0);
-   //    border-style: solid;
-   //    border-width: 20px 100px;
-   //    border-right-color: #92c100;
-   //    position: absolute;
-   //    bottom: 100%;
-   //    right: 0;
-   //    margin-bottom: -20px;
-   // }
+  padding: 469px 0 0;
 
-   @include tablet {
-      padding: 83px 0 71px;
-   }
-
-   @include desktop {
-      padding: 149px 0 96px;
-   }
+  background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+  background-size: 100%;
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
-.offer__title {
 
-}
+
 
 .offer__container {
-
   @include tablet {
     @include container;
   }
@@ -50,16 +33,19 @@
 
 .offer__container .slider__input[id="offer-input-1"]:checked ~ .offer__list .offer__table {
   left: 20px;
+
   transform: none;
 }
 
 .offer__container .slider__input[id="offer-input-2"]:checked ~ .offer__list .offer__table {
   left: 50%;
+
   transform: translateX(-50%);
 }
 
 .offer__container .slider__input[id="offer-input-3"]:checked ~ .offer__list .offer__table {
   left: -540px;
+
   transform: none;
 }
 
@@ -74,110 +60,63 @@
 .offer__container .slider__input[id="offer-input-3"]:checked ~ .offer__toggles .slider__toggle[for="offer-input-3"] {
   border-color: $BLACK;
 }
-.offer__list {
-
-}
 
 .offer__table {
-  position: absolute;
-  // left: 50%;
-  bottom: 109px;
-  width: 840px;
-  // transform: translateX(-50%);
-  border-collapse: collapse;
-  // border: 2px solid $grey-dark;
-  transition: all 0.5s;
-
   @include tablet {
     position: static !important;
+
     display: block;
-    transform: none !important;
+
     width: auto;
-  }
 
+    transform: none !important;
+  }
   @include desktop {
-
   }
 
+  position: absolute;
+  bottom: 109px;
+
+  width: 840px;
+
+  transition: all .5s;
+
+  border-collapse: collapse;
 }
 
-//РУШИМ ТАБЛИЦУ
+//DESTROY TABLE
 .offer__table tbody {
-
   @include tablet {
     display: block;
   }
-
   @include desktop {
-
   }
 }
 
 .offer__table tr {
-
   @include tablet {
     display: block;
+
     margin-bottom: -2px;
   }
-
   @include desktop {
-
   }
 }
 
 .offer__table-header {
-
   @include tablet {
     margin-left: 156px;
   }
-
   @include desktop {
     margin-left: 233px;
   }
-
-}
-
-
-
-
-
-
-
-
-.offer__table-header {
-  // @include color($blue-nav, $WHITE);
-  // border: 2px solid $grey-dark;
-  // border-bottom: 2px solid $blue-nav;
-
-
-  // @include tablets {
-  //   display: block;
-  // }
-
-  // @include desktop {
-  //   display: block;
-  // }
 }
 
 .offer__table-header th {
   @include color($blue-nav, $WHITE);
+
   position: relative;
 }
-
-// .offer__table-header th:first-child {
-//   display: none;
-
-//   @include tablet {
-//     display: table-cell;
-//     background-color: transparent;
-//     border: none;
-//   }
-
-//   @include desktop {
-//     display: table-cell;
-//   }
-// }
-
 
 .offer__table-header th,
 .offer__table-header tr,
@@ -188,131 +127,138 @@
 .empty-cell {
   border: none;
 }
+
 .offer__table tr td:nth-child(2n+3) {
   @include tablet {
     display: none;
   }
-
   @include desktop {
     display: none;
   }
 }
 
-
 .offer__table-header th {
-  width: 140px;
-  text-align: center;
-  border: 2px solid $grey-dark;
-  padding: 20px;
-
   @include tablet {
     width: 153px;
     padding: 10px;
   }
-
   @include desktop {
     width: 235px;
     padding: 19px;
   }
+
+  width: 140px;
+  padding: 20px;
+
+  text-align: center;
+
+  border: 2px solid $grey-dark;
 }
+
 .offer__heading {
   @include opensans(bold);
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin: 0;
-
   @include tablet {
     font-size: 16px;
   }
-
   @include desktop {
     font-size: 18px;
   }
+
+  margin: 0;
+
+  text-transform: uppercase;
+
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .offer__heading--empty {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
-
 
 .offer__price {
   @include opensans(light);
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-
   @include tablet {
     font-size: 18px;
   }
-
   @include desktop {
     font-size: 24px;
   }
+
+  text-transform: uppercase;
+
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .offer__price--empty {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 .offer__option {
-  width: 210px;
-  font: inherit;
-  font-size: inherit;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding: 12px;
-  padding-left: 20px;
-  border: 2px solid $grey-dark;
-  // border-right: 0;
-  background-color: $WHITE;
-
   @include tablet {
-    font-size: 14px;
-    text-transform: none;
     width: 156px;
     padding: 7px;
     padding-left: 20px;
-  }
 
+    text-transform: none;
+
+    font-size: 14px;
+  }
   @include desktop {
     width: 238px;
-    font-size: 18px;
     padding: 14px;
+
+    font-size: 18px;
   }
+
+  width: 210px;
+  padding: 12px;
+  padding-left: 20px;
+
+  text-transform: uppercase;
+
+  border: 2px solid $grey-dark;
+  background-color: $WHITE;
+
+  font: inherit;
+  font-size: inherit;
+  line-height: 30px;
 }
 
 .offer__option-status {
-  width: 70px;
-  font-size: 0;
-  border: 2px solid $grey-dark;
-  text-align: center;
-  vertical-align: bottom;
-  // border-left: 0;
-  background-color: $WHITE;
-
   @include tablet {
     width: 153px;
   }
-
   @include desktop {
     width: 238px;
   }
 
+  width: 70px;
+
+  text-align: center;
+  vertical-align: bottom;
+
+  border: 2px solid $grey-dark;
+  background-color: $WHITE;
+
+  font-size: 0;
 }
 
 .offer__option-status img {
   display: inline-block;
 }
-.offer__toggles {
-  font-size: 0;
-  bottom: 35px;
 
+.offer__toggles {
   @include tablet {
     display: none;
-   }
+  }
+
+  bottom: 35px;
+
+  font-size: 0;
 }
 
 // ==========================================================================

@@ -2,29 +2,22 @@
 // Block
 // ==========================================================================
 .form {
-
-  @include tablet {
-
-  }
-
   @include desktop {
-    position: relative;
     @include container;
+
+    position: relative;
   }
 }
 
 .form form {
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
-
-  }
-
   @include desktop {
     flex-direction: row;
+
     flex-wrap: wrap;
   }
+
+  display: flex;
+  flex-direction: column;
 }
 
 // ==========================================================================
@@ -33,41 +26,36 @@
 
 .form__title {
   @include container;
-  font: inherit;
-  font-size: inherit;
-  line-height: 30px;
-  text-align: center;
-  padding: 45px 0 34px;
-
   @include tablet {
-    font-size: 18px;
     padding: 92px 25px 71px;
-  }
 
+    font-size: 18px;
+  }
   @include desktop {
     padding: 92px 0 40px;
   }
+
+  padding: 45px 0 34px;
+
+  text-align: center;
+
+  font: inherit;
+  font-size: inherit;
+  line-height: 30px;
 }
 
 .form__title br {
   display: none;
-
-  @include tablet {
-
-  }
-
-  @include desktop {
-
-  }
 }
 
 .form__title span {
-  display: none;
-
   @include tablet {
     display: inline;
   }
+
+  display: none;
 }
+
 // ==========================================================================
 // Modifiers
 // ==========================================================================

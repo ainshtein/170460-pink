@@ -3,15 +3,14 @@
 // ==========================================================================
 
 .effect {
-  display: none;
-
   @include tablet {
     display: block;
   }
-
   @include desktop {
     background-color: $grey;
   }
+
+  display: none;
 }
 
 // ==========================================================================
@@ -22,67 +21,67 @@
   @include container;
 }
 
-.effect__title {
-
-}
-
 .effect__content {
-  text-align: left;
-  padding: 66px 0 120px 317px;
-
   @include tablet {
     background: url("../img/icon-timer.svg") 2% 60px no-repeat;
     background-size: 238px 276px;
   }
-
   @include desktop {
-    padding-left: 370px;
     padding-bottom: 111px;
+    padding-left: 370px;
+
     background-position: 1% 4px;
     background-size: 298px 345px;
   }
+
+  padding: 66px 0 120px 317px;
+
+  text-align: left;
 }
 
 .effect__heading {
   @include opensans(bold);
-  font-size: 30px;
-  line-height: 36px;
-  margin-bottom: 10px;
-
   @include desktop {
     @include opensans;
   }
+
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .effect__heading br {
-
   @include desktop {
     display: none;
   }
 }
 
 .effect__text {
+  @include desktop {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  margin-bottom: 7px;
+
   font: inherit;
   font-size: inherit;
   line-height: inherit;
-  margin-bottom: 7px;
-
-  @include desktop {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 35px;
-  }
 }
 
 .effect__link {
-  font-size: 14px;
-  line-height: 24px;
-  color: $red;
-
   @include desktop {
     font-size: 18px;
     line-height: 30px;
   }
+
+  color: $red;
+
+  font-size: 14px;
+  line-height: 24px;
 }
 
 

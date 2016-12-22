@@ -13,340 +13,273 @@
 
 .gallery__header {
   @include container;
+
   padding: 0 15px;
-}
-
-.gallery__title {
-
 }
 
 .gallery__header-text,
 .gallery__footer-text {
+  margin: 0;
+
+  text-align: center;
+
   font: inherit;
   font-size: inherit;
   line-height: 30px;
-  text-align: center;
-  margin: 0;
 }
 
 .gallery__header-text {
-    padding: 47px 0;
-
   @include tablet {
-    font-size: 18px;
     padding: 92px 10px 76px;
-  }
 
+    font-size: 18px;
+  }
   @include desktop {
     padding: 92px 140px 88px;
   }
+
+  padding: 47px 0;
 }
 
 .gallery__best-photo {
   position: relative;
+
   background-color: $blue-dark;
-  // width: 320px;
-  // height: 137px;
-
-  @include tablet {
-    // min-height: 509px;  //temp
-  }
-
-  // @include desktop {
-  //   width: 1200px;
-  //   height: 506px;
-  // }
 }
 
 .gallery__best-photo img {
   display: block;
+
   width: 100%;
 }
 
-
-
 .gallery__content {
   @include container;
+
   font-size: 0;
-
-  @include tablet {
-
-  }
-
-  @include desktop {
-
-  }
 }
 
 .gallery__wrapper {
-  margin-right: -20px;
   display: flex;
   flex-direction: row;
+
+  margin-right: -20px;
+
   flex-wrap: wrap;
 }
 
 .gallery__item {
   @include inlineblock;
-  background-color: #f2f2f2;
+  @include tablet {
+    @include desktop {
+      margin-bottom: 45px;
+    }
+
+    width: 300px;
+    margin-right: 20px;
+  }
+
   width: 280px;
   margin: 0;
   margin-bottom: 20px;
 
-  @include tablet {
-    width: 300px;
-    margin-right: 20px;
-
-      // &:nth-child(2n) {
-      //   margin-right: 0;
-      // }
-
-    @include desktop {
-      margin-bottom: 45px;
-    }
-  }
-
-  @include desktop {
-
-
-
-  }
-
+  background-color: #f2f2f2;
 }
 
 .gallery__image {
-  position: relative;
-  background-color: $blue-dark;
-  width: 280px;
-  height: 180px;
-
   @include tablet {
     width: 300px;
     height: 300px;
   }
-
   @include desktop {
     width: 300px;
     height: 400px;
   }
-}
 
-.gallery__image img {
+  position: relative;
 
+  width: 280px;
+  height: 180px;
+
+  background-color: $blue-dark;
 }
 
 .gallery__description {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: $grey;
-  padding: 19px 15px 15px;
-
   @include tablet {
     padding: 25px 25px;
   }
 
-  @include desktop {
+  position: relative;
 
-  }
+  display: flex;
+  flex-direction: column;
+
+  padding: 19px 15px 15px;
+
+  background-color: $grey;
 }
 
 .gallery__description--best-foto {
   @include container;
-  position: relative;
-  margin-bottom: 24px;
-  display: flex;
-
-
   @include tablet {
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 24px 18px 14px 36px;
+
     margin-bottom: 50px;
+    padding: 24px 18px 14px 36px;
+
+    flex-wrap: wrap;
   }
+
+  position: relative;
+
+  display: flex;
+
+  margin-bottom: 24px;
 }
 
 .gallery__description--best-foto .gallery__user {
-
   @include tablet {
-    order: 1;
     width: 50%;
+
+    order: 1;
   }
-
-  @include desktop {
-
-  }
-
 }
 
 .gallery__description--best-foto .gallery__text {
-
   @include tablet {
-    order: 3;
     width: 100%;
-  }
 
+    order: 3;
+  }
   @include desktop {
     min-height: 0;
   }
-
 }
 
 .gallery__description--best-foto .gallery__likes {
-
   @include tablet {
-    order: 2;
     width: 50%;
+
     text-align: right;
 
+    order: 2;
   }
-
-  @include desktop {
-
-  }
-
-}
-
-.gallery__description--best-foto .gallery__likes {
-
-  //   @include tablet {
-  //   position: absolute;
-  //   top: 25px;
-  //   left: 440px;
-  // }
 }
 
 .gallery__user {
   @include opensans(bold);
+
   font-size: 14px;
   line-height: 24px;
-  // margin-right: 5px;
 }
 
 .gallery__date {
   @include opensans(light);
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 300;
+
   text-transform: uppercase;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 .gallery__text {
-  font: inherit;
-  font-size: 14px;
-  line-height: 24px;
-  // min-height: 48px;
-  margin: 0;
-  margin-bottom: 10px;
-
   @include tablet {
     min-height: 48px;
   }
+
+  margin: 0;
+  margin-bottom: 10px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .gallery__likes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font: inherit;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: $red;
-  // padding-left: 30px;
-
   @include tablet {
     padding: 0;
+
     justify-content: space-between;
   }
 
-  @include desktop {
+  display: flex;
+  flex-direction: row;
 
-  }
+  text-transform: uppercase;
 
+  color: $red;
+
+  font: inherit;
+  font-size: 12px;
+  line-height: 24px;
+
+  align-items: center;
 }
 
 .gallery__likes--main {
-
   @include tablet {
     justify-content: flex-end;
   }
-
-  @include desktop {
-
-  }
-
 }
 
 .gallery__likes--main .gallery__likes-link {
-
   @include tablet {
     margin-left: 20px;
   }
-
-  @include desktop {
-
-  }
 }
+
 .gallery__likes-link {
   @include inlineblock(middle);
-  order: 1;
+  @include tablet {
+    margin-right: 0;
+
+    order: 2;
+  }
+
   width: 13px;
   height: 12px;
+  margin-right: 20px;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  color: $red;
+  background: url("../img/icon-heart.svg") 0 0 no-repeat;
+
   font: inherit;
   font-size: 0;
-  text-decoration: none;
-  color: $red;
-  cursor: pointer;
-  // margin-left: 20px;
-  margin-right: 20px;
-  background: url("../img/icon-heart.svg") 0 0 no-repeat;
-  // background-color: $red; //temp
 
-  @include tablet {
-    order: 2;
-    margin-right: 0;
-  }
-
-  @include desktop {
-
-  }
-
+  order: 1;
 }
 
 .gallery__likes-text {
-  order: 2;
-
   @include tablet {
     order: 1;
   }
 
-  @include desktop {
-
-  }
+  order: 2;
 }
 
 .gallery__footer {
   @include container;
-
   @include tablet {
-    font-size: 18px;
     padding: 23px 10px 28px;
-  }
 
+    font-size: 18px;
+  }
   @include desktop {
     padding: 2px 250px 6px;
   }
 }
 
 .gallery__footer-text {
-  padding: 18px 0 41px;
-
   @include desktop {
     padding: 18px 0 0;
   }
+
+  padding: 18px 0 41px;
 }
-
-
 
 // ==========================================================================
 // Modifiers

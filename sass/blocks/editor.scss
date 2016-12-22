@@ -4,30 +4,33 @@
 
 .editor {
   @include color($grey, $WHITE);
+  @include tablet {
+    padding: 60px 0 6px;
+  }
+  @include desktop {
+    margin-bottom: 55px;
+
+    background-color: $WHITE;
+  }
+
   position: relative;
+
   padding: 20px 0 37px;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 555px;
-    left: 0;
-    width: 100%;
-    border: 1px solid $grey-border;
-
     @include tablet {
       display: none;
     }
 
-  }
+    position: absolute;
+    top: 555px;
+    left: 0;
 
-  @include tablet {
-    padding: 60px 0 6px;
-  }
+    width: 100%;
 
-  @include desktop {
-    background-color: $WHITE;
-    margin-bottom: 55px;
+    content: "";
+
+    border: 1px solid $grey-border;
   }
 }
 
@@ -35,157 +38,138 @@
 // Elements
 // ==========================================================================
 
-.editor__title {
 
-
-}
 
 .editor__wrapper {
   @include container;
   @include clearfix;
-
   @include desktop {
-      background-color: $grey;
-      padding: 57px 5px 12px 80px;
-    }
+    padding: 57px 5px 12px 80px;
 
+    background-color: $grey;
+  }
 }
-
-// .editor__top {
-//   margin-bottom: 40px;
-
-//   @include tablet {
-//     @include clearfix;
-//   }
-
-//   @include desktop {
-
-//   }
-
-// }
 
 .editor__wrapper .range {
-  margin-bottom: 40px;
-
   @include tablet {
     display: none;
+
     margin: 0;
-
   }
-
   @include desktop {
-
   }
-}
-.editor__image {
-  width: 280px;
-  height: 374px;
-  background-color: $blue-dark;
-  margin-bottom: 45px;
 
+  margin-bottom: 40px;
+}
+
+.editor__image {
   @include tablet {
     float: left;
+
     width: 300px;
     height: 400px;
     margin-right: 45px;
   }
-
   @include desktop {
     margin-right: 90px;
   }
+
+  width: 280px;
+  height: 374px;
+  margin-bottom: 45px;
+
+  background-color: $blue-dark;
 }
 
 .editor__tools {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 0;
-  margin-bottom: 25px;
-
   @include tablet {
     float: left;
+
     width: 275px;
+
     text-align: right;
   }
-
   @include desktop {
     width: 410px;
     margin-bottom: 100px;
   }
+
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  text-align: center;
+
+  font-size: 0;
 }
 
 .editor__tool {
   @include inlineblock(middle);
+  @include tablet {
+    display: block;
+
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 7px 9px 10px 0;
+
+    border-bottom: 1px solid $grey-border;
+  }
+  @include desktop {
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+
+    text-align: left;
+  }
+
   margin-right: 35px;
 
   &:last-child {
     margin-right: 0;
   }
-
-  @include tablet {
-    display: block;
-    margin: 0;
-    padding: 7px 9px 10px 0;
-    border-bottom: 1px solid $grey-border;
-    margin-bottom: 28px;
-  }
-
-  @include desktop {
-    text-align: left;
-    margin-bottom: 10px;
-    // margin-right: 45px;
-    padding: 0 0 10px 0;
-
-  }
 }
 
 .editor__tool--crop svg {
-  width: 44px;
-  height: auto;
-
   @include tablet {
     width: 22px;
     height: 22px;
   }
-
   @include desktop {
     width: 44px;
     height: auto;
   }
+
+  width: 44px;
+  height: auto;
 }
 
 .editor__tool--fill svg {
-  width: 48px;
-  height: auto;
-
   @include tablet {
     width: 24px;
     height: 22px;
   }
-
   @include desktop {
     width: 48px;
     height: auto;
   }
+
+  width: 48px;
+  height: auto;
 }
 
 .editor__tool--contrast svg {
-  width: 32px;
-  height: auto;
-
   @include tablet {
     width: 16px;
     height: 16px;
-
   }
-
   @include desktop {
     width: 32px;
     height: auto;
   }
+
+  width: 32px;
+  height: auto;
 }
 
 .editor__tool--contrast {
-
   @include desktop {
     padding: 10px 0 20px;
   }
@@ -202,96 +186,81 @@
 .editor__tool--contrast .range__toggle {
   left: 100px;
 }
-// .editor__tool img {
-
-//   @include tablet {
-//     @include inlineblock(middle);
-//     margin-right: 5px;
-//   }
-
-//   @include desktop {
-//     margin-right: 51px;
-//   }
-// }
 
 .editor__tool svg {
-  fill: $BLACK;
-  opacity: 0.3;
-  cursor: pointer;
-
-    &:hover {
-      fill: $BLACK;
-      opacity: 0.5;
-    }
-
-    &:active {
-      fill: $red;
-      opacity: 1;
-    }
-
-
   @include tablet {
     @include inlineblock(middle);
+
     margin-right: 30px;
   }
-
   @include desktop {
     margin-right: 51px;
+  }
+
+  cursor: pointer;
+
+  opacity: .3;
+
+  fill: $BLACK;
+
+  &:hover {
+    opacity: .5;
+
+    fill: $BLACK;
+  }
+
+  &:active {
+    opacity: 1;
+
+    fill: $red;
   }
 }
 
 .editor__tool--contrast svg {
-
   @include tablet {
     margin-right: 32px;
   }
-
   @include desktop {
     margin-right: 65px;
   }
 }
 
 .editor__tool .range {
-  display: none;
-
   @include tablet {
     @include inlineblock(middle);
   }
-
   @include desktop {
-
   }
+
+  display: none;
 }
 
 .editor__buttons {
-  padding: 33px 0 0;
-
   @include tablet {
     float: left;
-    // @include inlineblock;
+
     width: 265px;
   }
-
   @include desktop {
     width: 410px;
   }
+
+  padding: 33px 0 0;
 }
 
 .editor__buttons .btn--red {
-  margin-bottom: 10px;
-
   @include tablet {
     margin-bottom: 20px;
   }
-
   @include desktop {
     margin-right: 40px;
   }
+
+  margin-bottom: 10px;
 }
 
 .editor__buttons .btn--red,
-.editor__buttons .btn--grey{
-
+.editor__buttons .btn--grey {
   @include desktop {
     width: 183px;
   }
@@ -300,7 +269,3 @@
 // ==========================================================================
 // Modifiers
 // ==========================================================================
-
-
-
-

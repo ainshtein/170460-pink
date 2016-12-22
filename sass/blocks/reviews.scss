@@ -3,36 +3,22 @@
 // ==========================================================================
 
 .reviews {
-  padding: 42px 0 60px;
   @include container;
-
   @include tablet {
     padding: 3px 0 37px;
   }
-
   @include desktop {
-    background: url("../img/icon-quotes.svg") 50% 70px no-repeat;
     padding: 190px 120px 0;
+
+    background: url("../img/icon-quotes.svg") 50% 70px no-repeat;
   }
+
+  padding: 42px 0 60px;
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
-
-.reviews__title {
-
-}
-
-.reviews__container {
-
-}
-
-
-
-.reviews__list {
-
-}
 
 .reviews__list .slider__item--1,
 .reviews__list .slider__item--2,
@@ -59,74 +45,81 @@
 .reviews__container .slider__input[id="reviews-input-2"]:checked ~ .reviews__toggles .slider__toggle[for="reviews-input-2"] {
   border-color: $BLACK;
 }
+
 .reviews__container .slider__input[id="reviews-input-3"]:checked ~ .reviews__toggles .slider__toggle[for="reviews-input-3"] {
   border-color: $BLACK;
 }
-.reviews__item {
-  font: inherit;
-  line-height: 30px;
-  margin: 0;
-  margin-bottom: 30px;
-  text-align: center;
 
+.reviews__item {
   @include tablet {
     position: relative;
-    font-size: 18px;
+
     padding-bottom: 100px;
+
+    font-size: 18px;
   }
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font: inherit;
+  line-height: 30px;
 }
-
-
 
 .reviews__author {
   @include opensans(bold);
-  display: block;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 11px;
-  text-align: center;
-  font-style: normal;
-
-
   @include tablet {
     position: absolute;
     bottom: 0;
     left: 50%;
-    font-size: 20px;
-    line-height: 30px;
+
     width: 360px;
     margin-left: -180px;
-  }
 
+    font-size: 20px;
+    line-height: 30px;
+  }
   @include desktop {
     font-size: 24px;
   }
+
+  display: block;
+
+  margin-bottom: 11px;
+
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
 }
 
 .reviews__author-status {
-  display: none;
-  font-style: normal;
-
   @include tablet {
-    display: block;
     @include opensans;
+
+    display: block;
+
     font-size: 14px;
     line-height: 30px;
   }
-
   @include desktop {
     font-size: 18px;
   }
+
+  display: none;
+
+  font-style: normal;
 }
 
 .reviews__toggles {
-  text-align: center;
-  font-size: 0;
   bottom: -58px;
 
-  @include desktop {
-    // display: none;
-  }
+  text-align: center;
+
+  font-size: 0;
 }
 
 .reviews__toggles .slider__toggle {
