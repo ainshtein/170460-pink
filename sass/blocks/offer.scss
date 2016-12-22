@@ -8,6 +8,7 @@
   background-size: 100%;
   // background: $grey;
   position: relative;
+  overflow: hidden;
 
    //  &::before {
    //    display: block;
@@ -29,7 +30,7 @@
    }
 
    @include desktop {
-      padding: 105px 0 96px;
+      padding: 149px 0 96px;
    }
 }
 
@@ -47,23 +48,50 @@
   }
 }
 
+.offer__container .slider__input[id="offer-input-1"]:checked ~ .offer__list .offer__table {
+  left: 20px;
+  transform: none;
+}
+
+.offer__container .slider__input[id="offer-input-2"]:checked ~ .offer__list .offer__table {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.offer__container .slider__input[id="offer-input-3"]:checked ~ .offer__list .offer__table {
+  left: -540px;
+  transform: none;
+}
+
+.offer__container .slider__input[id="offer-input-1"]:checked ~ .offer__toggles .slider__toggle[for="offer-input-1"] {
+  border-color: $BLACK;
+}
+
+.offer__container .slider__input[id="offer-input-2"]:checked ~ .offer__toggles .slider__toggle[for="offer-input-2"] {
+  border-color: $BLACK;
+}
+
+.offer__container .slider__input[id="offer-input-3"]:checked ~ .offer__toggles .slider__toggle[for="offer-input-3"] {
+  border-color: $BLACK;
+}
 .offer__list {
 
 }
 
 .offer__table {
   position: absolute;
-  left: 50%;
+  // left: 50%;
   bottom: 109px;
   width: 840px;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
   border-collapse: collapse;
   // border: 2px solid $grey-dark;
+  transition: all 0.5s;
 
   @include tablet {
-    position: static;
+    position: static !important;
     display: block;
-    transform: none;
+    transform: none !important;
     width: auto;
   }
 

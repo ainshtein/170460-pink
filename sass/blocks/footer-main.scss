@@ -40,7 +40,7 @@
   }
 
   @include desktop {
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 
@@ -102,7 +102,7 @@
   text-align: center;
 
   @include desktop {
-    width: 630px;
+    width: 600px;
   }
 }
 

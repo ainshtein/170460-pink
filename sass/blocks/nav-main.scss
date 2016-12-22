@@ -108,6 +108,10 @@
     height: 4px;
 
     background-color: $WHITE;
+
+    @include tablet {
+      left: 42px;
+    }
   }
 
   &::before {

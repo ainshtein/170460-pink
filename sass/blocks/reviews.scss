@@ -12,7 +12,7 @@
 
   @include desktop {
     background: url("../img/icon-quotes.svg") 50% 70px no-repeat;
-    padding: 190px 120px 45px;
+    padding: 190px 120px 0;
   }
 }
 
@@ -28,10 +28,40 @@
 
 }
 
+
+
 .reviews__list {
 
 }
 
+.reviews__list .slider__item--1,
+.reviews__list .slider__item--2,
+.reviews__list .slider__item--3 {
+  display: none;
+}
+
+.reviews__container .slider__input[id="reviews-input-1"]:checked ~ .reviews__list .slider__item--1 {
+  display: block;
+}
+
+.reviews__container .slider__input[id="reviews-input-2"]:checked ~ .reviews__list .slider__item--2 {
+  display: block;
+}
+
+.reviews__container .slider__input[id="reviews-input-3"]:checked ~ .reviews__list .slider__item--3 {
+  display: block;
+}
+
+.reviews__container .slider__input[id="reviews-input-1"]:checked ~ .reviews__toggles .slider__toggle[for="reviews-input-1"] {
+  border-color: $BLACK;
+}
+
+.reviews__container .slider__input[id="reviews-input-2"]:checked ~ .reviews__toggles .slider__toggle[for="reviews-input-2"] {
+  border-color: $BLACK;
+}
+.reviews__container .slider__input[id="reviews-input-3"]:checked ~ .reviews__toggles .slider__toggle[for="reviews-input-3"] {
+  border-color: $BLACK;
+}
 .reviews__item {
   font: inherit;
   line-height: 30px;
@@ -45,6 +75,8 @@
     padding-bottom: 100px;
   }
 }
+
+
 
 .reviews__author {
   @include opensans(bold);
@@ -91,8 +123,17 @@
   text-align: center;
   font-size: 0;
   bottom: -58px;
+
+  @include desktop {
+    // display: none;
+  }
 }
 
+.reviews__toggles .slider__toggle {
+  @include desktop {
+    display: none;
+  }
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
