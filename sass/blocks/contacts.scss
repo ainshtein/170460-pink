@@ -20,6 +20,10 @@
 
     background: transparent url("../img/bg-triangle-white-footer.svg") 0 0 no-repeat;
     background-size: 100%;
+
+    @include desktop {
+      height: 100%;
+    }
   }
 }
 

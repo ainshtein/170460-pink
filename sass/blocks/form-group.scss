@@ -405,6 +405,8 @@
     flex-direction: row;
 
     flex-wrap: wrap;
+
+    padding: 45px 50px 10px;
   }
 }
 
@@ -423,7 +425,7 @@
   @include desktop {
     width: 50%;
     margin: 0;
-
+    padding-left: 40px;
     order: 4;
   }
 

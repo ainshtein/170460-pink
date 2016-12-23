@@ -5,6 +5,7 @@
 .logo {
   @include tablet {
     padding: 29px 40px 40px;
+
   }
   @include desktop {
     max-width: 150px;
