@@ -29,18 +29,6 @@ gulp.task("style", function() {
         "last 4 IE versions"
       ]})
     ]))
-    //   autoprefixer({browsers: [
-    //     "last 2 versions",
-    //     "last 3 Chrome versions",
-    //     "last 3 Firefox versions",
-    //     "last 3 Opera versions",
-    //     "last 3 Edge versions",
-    //     "last 4 IE versions"
-    //   ]}),
-    //   mqpacker({  //Минифицируем медиазапросы
-    //     sort: false
-    //   })
-    // ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify()) //Минифицируем
     .pipe(rename("style.min.css")) //Переименовываем файл
