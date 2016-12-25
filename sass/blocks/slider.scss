@@ -22,7 +22,6 @@
 
 .slider__toggles {
   position: absolute;
-  // bottom: -50px;
   left: 50%;
   margin-left: -31px;
 }
@@ -43,13 +42,38 @@
   }
 }
 
+.slider__toggle-arrow svg{
+  display: none;
+  fill: rgba($BLACK, 0.3);
+
+    &:hover {
+      fill: rgba($BLACK, 0.6);
+    }
+
+    &:active {
+      fill: rgba($BLACK, 0.1);
+    }
+
+  @include desktop {
+    position: absolute;
+    top: -230px;
+    display: block;
+    width: 22px;
+    height: 41px;
+  }
+
+}
+
+.slider__toggle-arrow--left svg{
+  left: -435px;
+}
+
+.slider__toggle-arrow--right svg{
+  right: -510px;
+}
 // ==========================================================================
 // Modifiers
 // ==========================================================================
-
-.slider__item--1 {
-
-}
 
 .slider__item--2 {
   display: none;

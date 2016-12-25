@@ -4,130 +4,119 @@
 
 .download {
   @include color($blue-dark, $WHITE);
-  padding: 30px 20px 16px;
-  position: absolute;
-  bottom: -271px;
-  width: 100%;
-  z-index: 5;
-
   @include tablet {
-    padding: 0;
-    margin: 0;
-    // margin-left: 40px;
-    background-color: transparent;
     position: relative;
     bottom: 0;
-    padding: 90px 0 91px;
-    // position: absolute;
-    // bottom: 50px;
-    // left: 50%;
-    // width: 300px;
-    // margin-left: -300px;
-  }
 
+    margin: 0;
+    padding: 0;
+    padding: 90px 0 91px;
+
+    background-color: transparent;
+  }
   @include desktop {
-    // bottom: 200px;
-    // left: 50%;
-    // margin-left: -450px;
     padding: 100px 0 103px;
   }
+
+  position: absolute;
+  z-index: 5;
+  bottom: -271px;
+
+  width: 100%;
+  padding: 30px 20px 16px;
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
 
-.download__title {
 
-}
 
 .download__wrapper {
-
   @include tablet {
     margin-left: 40px;
   }
-
   @include desktop {
     @include container;
   }
 }
 
 .download__container {
-  width: 280px;
-  margin: 0 auto;
-
   @include tablet {
     width: 300px;
     margin: 0;
   }
+
+  width: 280px;
+  margin: 0 auto;
 }
 
 .download__container .btn {
-  margin-bottom: 8px;
-
   @include tablet {
     margin-bottom: 20px;
   }
-
   @include desktop {
     margin-bottom: 40px;
   }
+
+  margin-bottom: 8px;
 }
 
 .download .heading {
-  display: none;
-  color: $WHITE;
-
   @include tablet {
     display: block;
-    // line-height: 30px;
-    text-align: center;
-    padding: 0 40px;
-    margin-bottom: 27px;
-  }
 
+    margin-bottom: 27px;
+    padding: 0 40px;
+
+    text-align: center;
+  }
   @include desktop {
     margin-bottom: 39px;
   }
-}
-.download__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 0;
-  text-align: center;
-  // margin-top: 30px;
-  margin-bottom: 17px;
 
+  display: none;
+
+  color: $WHITE;
+}
+
+.download__list {
   @include tablet {
     margin-bottom: 36px;
   }
-
   @include desktop {
     margin-bottom: 56px;
   }
+
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+
+  font-size: 0;
 }
 
 .download__item {
   @include inlineblock(middle);
+
   margin-right: 30px;
-}
-
-.download__link {
-
 }
 
 .download__text {
   @include opensans(light);
-  font-size: inherit;
-  line-height: inherit;
-  text-align: center;
-
   @include tablet {
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
   }
+
+  text-align: center;
+
+  font-size: inherit;
+  line-height: inherit;
 }
 
 // ==========================================================================

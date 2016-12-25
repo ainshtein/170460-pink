@@ -15,57 +15,63 @@
 // Modifiers
 // ==========================================================================
 .flag--profit {
-  top: 0;
-  left: 0;
-  width: 74px;
-  height: 73px;
-  background: url("../img/bg-hit.svg") 0 0 no-repeat;
-  font-size: 0;
-
   @include tablet {
     background: url("../img/bg-hit-tablet.svg") 0 0 no-repeat;
   }
-
   @include desktop {
   }
+
+  top: 0;
+  left: 0;
+
+  width: 74px;
+  height: 73px;
+
+  background: url("../img/bg-hit.svg") 0 0 no-repeat;
+
+  font-size: 0;
 }
 
 .flag--profit span {
-  position: absolute;
-  top: 11px;
-  left: 14px;
   @include opensans;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 30px;
-  text-transform: uppercase;
-  transform: rotate(-45deg);
-
   @include tablet {
     top: 5px;
     left: 8px;
   }
-
   @include desktop {
   }
+
+  position: absolute;
+  top: 11px;
+  left: 14px;
+
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 .flag--photo {
   @include color($red, $WHITE);
   @include opensans(bold);
-  left: 50%;
-  top: 0;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 7px 20px 6px;
-
   @include tablet {
     top: 57px;
+
     margin-left: 178px;
   }
-
   @include desktop {
     margin-left: 338px;
   }
+
+  top: 0;
+  left: 50%;
+
+  padding: 7px 20px 6px;
+
+  text-transform: uppercase;
+
+  font-size: 12px;
+  line-height: 24px;
 }

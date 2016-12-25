@@ -4,175 +4,158 @@
 
 .promo {
   position: relative;
-
 }
 
 // ==========================================================================
 // Elements
 // ==========================================================================
 
-.promo__title {
 
-}
 
 .promo__heading {
   @include container;
-  // padding: 45px 35px 30px;
-  padding: 45px 35px 0;
-
   @include tablet {
-    padding: 47px 0 0;
+    padding: 47px 0 40px;
+  }
+  @include desktop {
+    padding: 65px 0 60px;
   }
 
-  @include desktop {
-    padding: 65px 0 0;
-   }
+  padding: 45px 35px 0;
 }
 
 .promo__wrapper {
   @include color($grey, $BLACK);
-  // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
-  background: $grey url("../img/bg-triangle-white.svg") 50% 0 no-repeat;
-  position: relative;
-  // padding-top: 10px;
-
-  // &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     display: block;
-  //     width: 100%;
-  //     height: 100px;
-  //     background: url("../img/bg-triangle-white.svg") 0 0 no-repeat;
-  //   }
-
   @include tablet {
-    padding-top: 45px;
-    background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+    padding-top: 5px;
   }
 
-  @include desktop {
-   }
+  position: relative;
+  // background: $grey url("../img/bg-triangle-white.svg") 0 -70px no-repeat;
 
-   // &::before {
-   //    display: block;
-   //    content: "";
-   //    width: 0;
-   //    height: 0;
-   //    border-color: rgba(255, 255, 255, 0);
-   //    border-style: solid;
-   //    border-width: 20px 100px;
-   //    border-right-color: #92c100;
-   //    position: absolute;
-   //    bottom: 100%;
-   //    right: 0;
-   //    margin-bottom: -20px;
-   // }
-
+  background: $grey url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+  background-size: 100%;
 }
 
 .promo__list {
-  background: url("../img/iphone-screen-mobile@1x.png") 50% 109% no-repeat;
-  padding: 79px 20px 284px;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 0;
-
   @include retina {
     background: url("../img/iphone-screen-mobile@2x.png") 50% 109% no-repeat;
     background-size: 157px auto;
   }
-
-   @include tablet {
+  @include tablet {
     @include container;
-    padding: 70px 0 15px;
-    background: url("../img/iphone-screen-3-tablet@1x.png") 0 100% no-repeat;
-    text-align: left;
-    padding-left: 317px;
-
     @include retina {
-      background: url("../img/iphone-screen-3-tablet@2x.png") 50% 109% no-repeat;
+      background: url("../img/iphone-screen-3-tablet@2x.png") 0 100% no-repeat;
       background-size: 268px auto;
     }
-   }
 
-   @include desktop {
-    padding-left: 0;
-    background: none;
-    padding-top: 13px;
+    padding: 70px 0 15px;
+    padding-left: 317px;
+
+    text-align: left;
+
+    background: url("../img/iphone-screen-3-tablet@1x.png") 0 100% no-repeat;
+  }
+  @include desktop {
+    display: flex;
+
+    padding-top: 0;
     padding-bottom: 0;
-   }
+    padding-left: 0;
+
+    background: none;
+
+    justify-content: space-between;
+  }
+
+  margin: 0;
+  padding: 79px 20px 284px;
+
+  list-style: none;
+
+  text-align: center;
+
+  background: url("../img/iphone-screen-mobile@1x.png") 50% 109% no-repeat;
+
+  font-size: 0;
 }
 
 .promo__item {
   @include opensans(bold);
-  font-size: 18px;
-  line-height: inherit;
-  color: inherit;
-  margin-bottom: 20px;
-  width: 280px;
-  margin: 0 auto;
-
   @include tablet {
     width: 310px;
   }
-
   @include desktop {
     @include inlineblock;
-    width: 310px;
+
+    width: 280px;
+    margin-bottom: 25px;
     padding-top: 360px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+
     text-align: center;
+
     font-size: 30px;
     line-height: 35px;
-    // margin-bottom: 25px;
   }
+
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: inherit;
+
+  font-size: 18px;
+  line-height: inherit;
 }
 
 .promo__item--bg-mood {
   @include desktop {
-    background: url("../img/iphone-screen-1-desktop@1x.png") 0 0 no-repeat;
-
     @include retina {
       background: url("../img/iphone-screen-1-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
+
+    background: url("../img/iphone-screen-1-desktop@1x.png") 0 0 no-repeat;
   }
 }
 
 .promo__item--bg-peace {
   @include desktop {
-    background: url("../img/iphone-screen-2-desktop@1x.png") 0 0 no-repeat;
-
     @include retina {
       background: url("../img/iphone-screen-2-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
+
+    background: url("../img/iphone-screen-2-desktop@1x.png") 0 0 no-repeat;
   }
 }
 
 .promo__item--bg-friends {
   @include desktop {
-    background: url("../img/iphone-screen-3-desktop@1x.png") 0 0 no-repeat;
-
     @include retina {
       background: url("../img/iphone-screen-3-desktop@2x.png") 0 0 no-repeat;
+      background-size: 292px auto;
     }
+
+    background: url("../img/iphone-screen-3-desktop@1x.png") 0 0 no-repeat;
   }
 }
 
 .promo__item p {
   @include opensans;
-  font-size: 14px;
-  line-height: inherit;
-  color: inherit;
-  margin-bottom: 30px;
-
   @include desktop {
     font-size: 18px;
     line-height: 30px;
   }
+
+  margin-bottom: 30px;
+
+  color: inherit;
+
+  font-size: 14px;
+  line-height: inherit;
 }
 
 // ==========================================================================

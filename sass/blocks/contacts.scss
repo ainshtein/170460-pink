@@ -3,40 +3,26 @@
 // ==========================================================================
 
 .contacts {
-  // background: $WHITE url("../img/bg-triangle-white-footer.svg") 50% 100% no-repeat;
-  background-color: $WHITE;
   position: relative;
-  // z-index: 1;
-  // margin-bottom: -221px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -31px;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 31px;
-      background: transparent url("../img/bg-triangle-white-footer.svg") 50% 100% no-repeat;
-      background-size: cover;
-    }
+  background-color: $WHITE;
 
-  @include tablet {
+  &::after {
+    position: absolute;
+    left: 0;
 
-    &::after {
-      bottom: -72px;
-      height: 72px;
-      // background-size: cover;
-    }
-  }
+    display: block;
 
-  @include desktop {
+    width: 100%;
+    height: 45%;
 
-    &::after {
-      bottom: -129px;
-      height: 129px;
-      // background-size: 1300px;
-      // background-size: cover;
+    content: "";
+
+    background: transparent url("../img/bg-triangle-white-footer.svg") 0 0 no-repeat;
+    background-size: 100%;
+
+    @include desktop {
+      height: 100%;
     }
   }
 }
@@ -47,31 +33,25 @@
 
 .contacts__wrapper {
   @include container;
-  padding: 42px 0 28px;
-
   @include tablet {
     padding: 46px 0 0;
   }
-
   @include desktop {
     padding: 64px 0 0;
   }
-}
 
-.contacts__title {
-
+  padding: 42px 0 28px;
 }
 
 .contacts__heading {
-  margin-bottom: 27px;
-
   @include tablet {
     margin-bottom: 36px;
   }
-
   @include desktop {
     margin-bottom: 45px;
   }
+
+  margin-bottom: 27px;
 }
 
 .contacts__heading  .heading {
@@ -79,90 +59,91 @@
 }
 
 .contacts__list {
-  text-align: center;
-  font-size: 0;
-
   @include desktop {
     display: flex;
   }
+
+  text-align: center;
+
+  font-size: 0;
 }
 
 .contacts__group {
-  margin-bottom: 12px;
-
   @include tablet {
     @include inlineblock;
+
     width: 50%;
     margin-bottom: 38px;
   }
-
   @include desktop {
     width: 33.33%;
   }
+
+  margin-bottom: 12px;
 }
 
 .contacts__group--phone {
-
   @include desktop {
-    order: 1;
     margin-bottom: 0;
 
+    order: 1;
   }
 }
 
 .contacts__group--mail {
-
   @include desktop {
-    order: 3;
     margin-bottom: 0;
+
+    order: 3;
   }
 }
 
 .contacts__group--address {
-
   @include desktop {
-    order: 2;
     margin-bottom: 0;
 
+    order: 2;
   }
 }
 
 .contacts__group-title {
   @include opensans(bold);
-  font-size: 18px;
-  line-height: 30px;
-
   @include tablet {
-    // margin-bottom: 10px;
   }
-
   @include desktop {
     margin-bottom: 20px;
   }
+
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts__group-link,
-.contacts__group-text{
+.contacts__group-text {
   @include opensans(light);
+
+  color: $red;
+
   font-size: 24px;
   line-height: 30px;
-  color: $red;
 }
 
 .contacts__group-link {
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 
-    &:hover {
-      color: $BLACK;
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
 
-    &:active {
-      color: $BLACK;
-      opacity: 0.3;
-      text-decoration: none;
-    }
+    color: $BLACK;
+  }
+
+  &:active {
+    text-decoration: none;
+
+    opacity: .3;
+    color: $BLACK;
+  }
 }
 
 // ==========================================================================
