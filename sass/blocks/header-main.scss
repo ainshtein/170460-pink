@@ -135,6 +135,9 @@
 }
 
 .header-main__top-image img {
+  width: 258px;
+  height: 286px;
+
   @include tablet {
     width: 700px;
     height: 545px;
@@ -143,9 +146,6 @@
     width: 1050px;
     height: 645px;
   }
-
-  width: 258px;
-  height: 286px;
 }
 
 // ==========================================================================
