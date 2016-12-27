@@ -319,28 +319,42 @@
 }
 
 .form-group__flag {
-  position: absolute;
-  top: -8px;
-  left: 190px;
-
-  font-size: 0;
-}
-
-.form-group__flag--required::after {
+  //-------------------temp
   @include opensans;
+  //-------------------temp
+
+  position: absolute;
+  top: 8px;
+  // top: -8px;
+  left: 190px;
 
   display: block;
 
   width: 10px;
   height: 10px;
 
-  content: "*";
-
   color: $BLACK;
 
   font-size: 18px;
   line-height: 30px;
+  // font-size: 0;
 }
+
+// .form-group__flag--required::after {
+//   @include opensans;
+
+//   display: block;
+
+//   width: 10px;
+//   height: 10px;
+
+//   content: "*";
+
+//   color: $BLACK;
+
+//   font-size: 18px;
+//   line-height: 30px;
+// }
 
 .form-group--name-data .form-group__wrapper {
   @include tablet {
@@ -404,9 +418,9 @@
   @include desktop {
     flex-direction: row;
 
-    flex-wrap: wrap;
-
     padding: 45px 50px 10px;
+
+    flex-wrap: wrap;
   }
 }
 
@@ -426,6 +440,7 @@
     width: 50%;
     margin: 0;
     padding-left: 40px;
+
     order: 4;
   }
 
@@ -509,6 +524,7 @@
     margin-bottom: 9px;
   }
 
+  height: 64px;
   margin-bottom: 16px;
 }
 

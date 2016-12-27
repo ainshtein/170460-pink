@@ -134,11 +134,11 @@
   }
   @include desktop {
     width: 44px;
-    height: auto;
+    height: 44px;
   }
 
   width: 44px;
-  height: auto;
+  height: 44px;
 }
 
 .editor__tool--fill svg {
@@ -148,11 +148,11 @@
   }
   @include desktop {
     width: 48px;
-    height: auto;
+    height: 43px;
   }
 
   width: 48px;
-  height: auto;
+  height: 43px;
 }
 
 .editor__tool--contrast svg {
@@ -162,11 +162,11 @@
   }
   @include desktop {
     width: 32px;
-    height: auto;
+    height: 32px;
   }
 
   width: 32px;
-  height: auto;
+  height: 32px;
 }
 
 .editor__tool--contrast {
