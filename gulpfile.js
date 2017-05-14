@@ -3,10 +3,13 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+
+var postcss = require("gulp-postcss");
 var mqpacker = require("css-mqpacker"); //Минифицирует медиазапросы
+
 var minify = require("gulp-csso"); //Минифицирует css
+
 var rename = require("gulp-rename"); //Переименовывает файлы
 var imagemin = require("gulp-imagemin"); //Сжимаем картинки
 var svgstore = require("gulp-svgstore"); //Делает свг-спрайты
@@ -94,3 +97,4 @@ gulp.task("copy", function() {
 gulp.task("clean", function() {
   return del("build");
 });
+
